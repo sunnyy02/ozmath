@@ -100,9 +100,8 @@ test('real data: graph builds and is acyclic', function () {
   E.topoSort(G, topics.map(function (t) { return t.id; }));
 });
 
-test('real data: a consistent student gets the expected root cause', function () {
+['qm_m1_007', 'qm_m4_018', 'qm_m4_006'].forEach(function (target) { test('real data: a consistent student gets the expected root cause (' + target + ')', function () {
   // The student knows everything except topic X and everything that depends on X.
-  const target = 'qm_m1_007';
   const sub = E.subgraph(G, [target]).nodes;
   let checked = 0;
   sub.forEach(function (x) {
@@ -119,7 +118,7 @@ test('real data: a consistent student gets the expected root cause', function ()
     checked++;
   });
   assert.ok(checked > 10);
-});
+}); });
 
 test('real data: learning path is ordered by level', function () {
   let s = E.createSession(G, ['qm_m1_007'], { seed: 'p', limit: 200 });
@@ -138,7 +137,8 @@ test('real data: every keyed answer is judged correct', function () {
 
 test('gradeTargets understands levels and units', function () {
   assert.strictEqual(E.gradeTargets(G, 'Year 9').ids.length, topics.filter(function (t) { return t.band === 'y9'; }).length);
-  assert.strictEqual(E.gradeTargets(G, 'methods').label, 'Methods U1');
+  assert.deepStrictEqual(E.gradeTargets(G, 'methods').volumes, ['Methods U1', 'Methods U2', 'Methods U3', 'Methods U4']);
+  assert.strictEqual(E.gradeTargets(G, 'Methods U3').label, 'Methods U3');
   assert.strictEqual(E.gradeTargets(G, 'Specialist U4'), null);
 });
 

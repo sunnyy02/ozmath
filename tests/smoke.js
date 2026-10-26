@@ -70,6 +70,22 @@ const fs = require('fs');
   check(true, 'screening demo renders group summary');
   await p.screenshot({ path: OUT + '/05-screening.png', fullPage: true });
 
+  // Year 12: a Methods Unit 4 target backtracks across units, and a unit screen works
+  await p.goto(BASE + '/diagnose/?target=qm_m4_018&demo=1');
+  await p.waitForSelector('text=Where the gap starts');
+  const path = await p.locator('.path-list').textContent();
+  check(/Year 12/.test(path), 'Unit 4 demo learning path shows Year 12 labels');
+  await p.waitForTimeout(400);
+  await p.screenshot({ path: OUT + '/08-methods-u4-demo.png', fullPage: true });
+  await p.goto(BASE + '/diagnose/?scope=Methods%20U3&demo=1');
+  await p.waitForSelector('text=By topic group');
+  check((await p.locator('text=Checked: Methods U3 (Year 12)').count()) === 1, 'unit screen is labelled Year 12');
+  await p.goto(BASE + '/explore/?band=methods#qm_m4_014');
+  await p.waitForSelector('#cy canvas');
+  check((await p.locator('.topic-list li').count()) === 93, 'explore lists all 93 Methods topics');
+  await p.waitForTimeout(400);
+  await p.screenshot({ path: OUT + '/09-explore-methods-u4.png', fullPage: true });
+
   // start page, phone width, dark theme
   const m = await page(390, 'dark');
   await m.goto(BASE + '/diagnose/');

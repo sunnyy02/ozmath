@@ -12,16 +12,19 @@ This is a non-commercial fork of [cn-math-taxonomy](https://github.com/xiaoyang1
 
 ## Scope and progress
 
+Senior subjects are organised by QCAA unit: Units 1–2 are taught in Year 11 and Units 3–4 in Year 12. The site labels them that way, e.g. "Methods U3 (Year 12)".
+
 | Level | Curriculum | Topics | Questions | Status |
 |---|---|---:|---:|---|
-| Year 9 | AC v9.0 Year 9 | 10 | 40 | Pilot: Number and Algebra only |
-| Year 10 | AC v9.0 Year 10 | 6 | 24 | Pilot: Algebra only |
-| Year 10 Optional | AC v9.0 optional content for post-Year 10 pathways | 7 | 28 | Pilot: surds and quadratics |
-| General Mathematics | QCAA 2025, Units 1–4 | 0 | 0 | Standards loaded at topic level |
-| Mathematical Methods | QCAA 2025, Units 1–4 | 7 | 29 | Pilot: Unit 1 Topic 1 (Surds and quadratic functions) |
-| Specialist Mathematics | QCAA 2025, Units 1–4 | 0 | 0 | Standards loaded at topic level |
+| Year 9 | AC v9.0 Year 9 | 15 | 60 | Topics that Methods depends on (number, algebra, measurement, probability) |
+| Year 10 | AC v9.0 Year 10 | 11 | 44 | Topics that Methods depends on |
+| Year 10 Optional | AC v9.0 optional content for post-Year 10 pathways | 14 | 56 | Surds, quadratics, logs, polynomials, unit circle, sine/cosine rules, standard deviation |
+| Methods U1–U2 (Year 11) | QCAA Mathematical Methods 2025 | 51 | 205 | **Complete:** all 10 topics |
+| Methods U3–U4 (Year 12) | QCAA Mathematical Methods 2025 | 42 | 168 | **Complete:** all 10 topics |
+| General Mathematics | QCAA 2025, Units 1–4 | 0 | 0 | Not started (unit and topic titles loaded) |
+| Specialist Mathematics | QCAA 2025, Units 1–4 | 0 | 0 | Not started (unit and topic titles loaded) |
 
-The pilot slice runs from Year 9 algebra to Methods Unit 1 Topic 1. It has 30 topics, 40 prerequisite links and 121 questions. The aim was to prove the whole pipeline (content → validation → verification → site) before scaling up. Essential Mathematics and Years 7–8 are out of scope for now; Year 9 topics with no earlier topic carry a `root_reason`.
+Totals: 133 topics, 201 prerequisite links (150 hard, 51 soft), 533 questions. Every Methods topic maps to one of the 35 official Methods sub-topics. 454 answers are machine-checked with SymPy (0 mismatches); 79 are word or interval answers that need the blind pass. Years 7–8 and Essential Maths are out of scope; topics with no earlier topic carry a `root_reason`.
 
 ## Run it
 
@@ -30,7 +33,7 @@ python3 -m http.server 8000      # from the repo root
 # open http://localhost:8000/
 ```
 
-Useful links: `diagnose/?target=qm_m1_007&demo=1` (demo with a simulated student), `diagnose/?scope=Year%2010` (screen a whole level), `explore/#qm_10o_005`.
+Useful links: `diagnose/?target=qm_m4_018&demo=1` (Year 12 demo with a simulated student), `diagnose/?scope=Methods%20U3` (screen a whole unit), `diagnose/?scope=Methods` (all four units), `explore/?band=methods#qm_m3_011`.
 
 ## Build and check
 
@@ -43,7 +46,7 @@ node tests/test_engine.js            # diagnosis engine tests
 node tests/smoke.js http://localhost:8000 screenshots   # browser smoke test (needs Playwright)
 ```
 
-Current results: validate OK; verify 109 auto-verified, 0 mismatches, 12 without a machine check (word answers or inequalities, left for the blind pass); 14 engine tests pass; smoke test passes.
+Current results: validate OK; verify 454 auto-verified, 0 mismatches, 79 without a machine check (left for the blind pass); a mutation test that corrupts every checked answer catches all of them; 16 engine tests pass (including a simulated student for every possible gap behind three Methods targets); browser smoke test passes.
 
 ## How it is organised
 
@@ -84,4 +87,4 @@ Read `docs/modelling-guide.md` before adding topics.
 
 ## Curriculum sources (and what is still unverified)
 
-See `docs/sources.md`. In short: the Year 9–10 wording is a paraphrase until `scripts/ingest_mrac.py` is run on the official MRAC file; the optional-content list is inferred; Methods topic titles come from a third-party summary; QCAA sub-topic bullet points are not yet loaded.
+See `docs/sources.md`. In short: the Year 9–10 wording is a paraphrase until `scripts/ingest_mrac.py` is run on the official MRAC file; the optional-content list is inferred; Methods unit, topic and sub-topic titles are checked against the official syllabus, with paraphrased sub-topic summaries; General and Specialist sub-topics are not yet loaded.

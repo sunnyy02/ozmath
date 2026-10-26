@@ -6,9 +6,9 @@
     { id: 'y9', label: 'Year 9', blurb: 'Australian Curriculum v9.0, Year 9' },
     { id: 'y10', label: 'Year 10', blurb: 'Australian Curriculum v9.0, Year 10' },
     { id: 'y10opt', label: 'Year 10 Optional', blurb: 'Optional content for post-Year 10 pathways' },
-    { id: 'general', label: 'General', blurb: 'QCAA General Mathematics 2025, Units 1–4' },
-    { id: 'methods', label: 'Methods', blurb: 'QCAA Mathematical Methods 2025, Units 1–4' },
-    { id: 'specialist', label: 'Specialist', blurb: 'QCAA Specialist Mathematics 2025, Units 1–4' }
+    { id: 'general', label: 'General', blurb: 'QCAA General Mathematics 2025. Year 11: Units 1–2, Year 12: Units 3–4' },
+    { id: 'methods', label: 'Methods', blurb: 'QCAA Mathematical Methods 2025. Year 11: Units 1–2, Year 12: Units 3–4' },
+    { id: 'specialist', label: 'Specialist', blurb: 'QCAA Specialist Mathematics 2025. Year 11: Units 1–2, Year 12: Units 3–4' }
   ];
   const BAND_LABEL = {};
   BANDS.forEach(function (b) { BAND_LABEL[b.id] = b.label; });
@@ -57,7 +57,16 @@
 
   function volumeOf(t) { const k = (t.chapter || '').indexOf(' · '); return k < 0 ? t.chapter : t.chapter.slice(0, k); }
   function groupOf(t) { const k = (t.chapter || '').indexOf(' · '); return k < 0 ? '' : t.chapter.slice(k + 3); }
-  function bandTag(t) { return h('span', { class: 'tag ' + t.band, text: volumeOf(t) }); }
+  /** 'Methods U3' -> 'Methods U3 (Year 12)'; Years 9-10 unchanged. */
+  function volumeLabel(v) {
+    const m = /\bU([1-4])$/.exec(v || '');
+    return m ? v + ' (Year ' + (+m[1] <= 2 ? 11 : 12) + ')' : v;
+  }
+  function chapterLabel(ch) {
+    const k = (ch || '').indexOf(' · ');
+    return k < 0 ? ch : volumeLabel(ch.slice(0, k)) + ch.slice(k);
+  }
+  function bandTag(t) { return h('span', { class: 'tag ' + t.band, text: volumeLabel(volumeOf(t)) }); }
 
   function cssVar(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
   function bandColors(band) {
@@ -73,7 +82,7 @@
 
   window.QM = {
     BANDS: BANDS, BAND_LABEL: BAND_LABEL, h: h, append: append, loadData: loadData,
-    volumeOf: volumeOf, groupOf: groupOf, bandTag: bandTag, cssVar: cssVar, bandColors: bandColors,
+    volumeOf: volumeOf, groupOf: groupOf, volumeLabel: volumeLabel, chapterLabel: chapterLabel, bandTag: bandTag, cssVar: cssVar, bandColors: bandColors,
     lsGet: lsGet, lsSet: lsSet, lsDel: lsDel, clip: clip
   };
 })();

@@ -540,8 +540,8 @@
   ],
   "standards": [
    {
-    "id": "qcaa25:MM.U1.T1",
-    "confidence": "inferred"
+    "id": "qcaa25:MM.U1.T1.S1",
+    "confidence": "exact"
    }
   ],
   "tech": "free",
@@ -563,8 +563,8 @@
   ],
   "standards": [
    {
-    "id": "qcaa25:MM.U1.T1",
-    "confidence": "inferred"
+    "id": "qcaa25:MM.U1.T1.S2",
+    "confidence": "exact"
    }
   ],
   "tech": "free",
@@ -585,8 +585,8 @@
   ],
   "standards": [
    {
-    "id": "qcaa25:MM.U1.T1",
-    "confidence": "inferred"
+    "id": "qcaa25:MM.U1.T1.S2",
+    "confidence": "exact"
    }
   ],
   "tech": "free",
@@ -608,8 +608,8 @@
   ],
   "standards": [
    {
-    "id": "qcaa25:MM.U1.T1",
-    "confidence": "inferred"
+    "id": "qcaa25:MM.U1.T1.S2",
+    "confidence": "exact"
    }
   ],
   "tech": "free",
@@ -630,8 +630,8 @@
   ],
   "standards": [
    {
-    "id": "qcaa25:MM.U1.T1",
-    "confidence": "inferred"
+    "id": "qcaa25:MM.U1.T1.S2",
+    "confidence": "exact"
    }
   ],
   "tech": "free",
@@ -653,8 +653,8 @@
   ],
   "standards": [
    {
-    "id": "qcaa25:MM.U1.T1",
-    "confidence": "inferred"
+    "id": "qcaa25:MM.U1.T1.S2",
+    "confidence": "exact"
    }
   ],
   "tech": "free",
@@ -675,12 +675,2380 @@
   ],
   "standards": [
    {
-    "id": "qcaa25:MM.U1.T1",
-    "confidence": "inferred"
+    "id": "qcaa25:MM.U1.T1.S2",
+    "confidence": "exact"
    }
   ],
   "tech": "free",
   "status": "draft",
   "unit": 1
+ },
+ {
+  "id": "qm_9_011",
+  "name": "Pythagoras' theorem",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Measurement",
+  "type": "procedural",
+  "description": "Use a² + b² = c² to find a missing side of a right-angled triangle and to test for right angles.",
+  "mastery_criteria": [
+   "Identifies the hypotenuse",
+   "Finds the hypotenuse or a shorter side",
+   "Applies the theorem in context"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9M03",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Measurement",
+  "root_reason": "Year 9 is the lowest level in this graph; Year 7-8 assumed knowledge is not modelled."
+ },
+ {
+  "id": "qm_9_012",
+  "name": "Trigonometric ratios in right-angled triangles",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Measurement",
+  "type": "procedural",
+  "description": "Use sine, cosine and tangent to find unknown sides and angles in right-angled triangles.",
+  "mastery_criteria": [
+   "Labels opposite, adjacent and hypotenuse",
+   "Chooses the right ratio",
+   "Finds a side or angle with a calculator"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9SP01",
+    "confidence": "exact"
+   },
+   {
+    "id": "AC9M9M03",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "either",
+  "status": "draft",
+  "strand": "Measurement"
+ },
+ {
+  "id": "qm_9_013",
+  "name": "Scientific notation",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Measurement",
+  "type": "procedural",
+  "description": "Write very large and very small numbers as a × 10ⁿ with 1 ≤ a < 10, and convert back.",
+  "mastery_criteria": [
+   "Converts to and from scientific notation",
+   "Uses negative powers of 10 for small numbers",
+   "Multiplies and divides in scientific notation"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9M02",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Measurement"
+ },
+ {
+  "id": "qm_9_014",
+  "name": "Compound events with and without replacement",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Probability",
+  "type": "procedural",
+  "description": "List outcomes of two-step experiments with tables or tree diagrams and find probabilities, with and without replacement.",
+  "mastery_criteria": [
+   "Lists a sample space for two steps",
+   "Multiplies along tree branches",
+   "Adjusts probabilities when items are not replaced"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9P01",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Probability",
+  "root_reason": "Year 9 is the lowest level in this graph; Year 7-8 assumed knowledge is not modelled."
+ },
+ {
+  "id": "qm_9_015",
+  "name": "Venn diagrams and relative frequency",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Probability",
+  "type": "procedural",
+  "description": "Use Venn diagrams for 'and' and 'or' events and estimate probabilities from relative frequencies.",
+  "mastery_criteria": [
+   "Fills a two-set Venn diagram from counts",
+   "Distinguishes inclusive and exclusive 'or'",
+   "Estimates probability by relative frequency"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9P02",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Probability"
+ },
+ {
+  "id": "qm_10_007",
+  "name": "Exponential relations and equations",
+  "band": "y10",
+  "level": 10,
+  "chapter": "Year 10 · Algebra",
+  "type": "conceptual",
+  "description": "Recognise and graph y = aˣ and solve simple exponential equations by writing both sides with the same base.",
+  "mastery_criteria": [
+   "Evaluates aˣ for integer x",
+   "Describes the shape and y-intercept of y = aˣ",
+   "Solves equations such as 2ˣ⁺¹ = 32"
+  ],
+  "standards": [
+   {
+    "id": "AC9M10A03",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_10_008",
+  "name": "Exponential growth and decay models",
+  "band": "y10",
+  "level": 10,
+  "chapter": "Year 10 · Algebra",
+  "type": "application",
+  "description": "Model growth and decay, including compound interest and depreciation, with A = P(1 ± r)ⁿ.",
+  "mastery_criteria": [
+   "Writes a growth or decay rule from a percentage rate",
+   "Calculates compound interest",
+   "Interprets the base as the growth factor"
+  ],
+  "standards": [
+   {
+    "id": "AC9M10A04",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "either",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_10_009",
+  "name": "Trigonometry with elevation, depression and bearings",
+  "band": "y10",
+  "level": 10,
+  "chapter": "Year 10 · Measurement",
+  "type": "application",
+  "description": "Solve practical right-angled triangle problems involving angles of elevation and depression and true bearings.",
+  "mastery_criteria": [
+   "Draws a diagram from a description",
+   "Uses angles of elevation and depression",
+   "Uses three-figure true bearings"
+  ],
+  "standards": [
+   {
+    "id": "AC9M10M03",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "active",
+  "status": "draft",
+  "strand": "Measurement"
+ },
+ {
+  "id": "qm_10_010",
+  "name": "Conditional probability language and two-way tables",
+  "band": "y10",
+  "level": 10,
+  "chapter": "Year 10 · Probability",
+  "type": "procedural",
+  "description": "Read conditional statements ('given', 'knowing that') and find conditional probabilities from two-way tables.",
+  "mastery_criteria": [
+   "Builds a two-way table from counts",
+   "Restricts the sample space for 'given' statements",
+   "Translates words into P(A | B) notation"
+  ],
+  "standards": [
+   {
+    "id": "AC9M10P01",
+    "confidence": "exact"
+   },
+   {
+    "id": "AC9M10ST04",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Probability"
+ },
+ {
+  "id": "qm_10_011",
+  "name": "Comparing distributions with box plots",
+  "band": "y10",
+  "level": 10,
+  "chapter": "Year 10 · Statistics",
+  "type": "procedural",
+  "description": "Find the five-number summary, interquartile range and outliers, and compare data sets using box plots.",
+  "mastery_criteria": [
+   "Finds median and quartiles",
+   "Calculates the IQR and outlier fences",
+   "Compares centre and spread of two box plots"
+  ],
+  "standards": [
+   {
+    "id": "AC9M10ST02",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Statistics",
+  "root_reason": "Earlier statistics (Years 7-9) is not modelled in this graph."
+ },
+ {
+  "id": "qm_10o_008",
+  "name": "Rational exponents",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Number and algebra (optional)",
+  "type": "procedural",
+  "description": "Interpret a^(m/n) as the nth root of aᵐ and evaluate or simplify with fractional and negative exponents.",
+  "mastery_criteria": [
+   "Converts between roots and fractional exponents",
+   "Evaluates a^(m/n) for perfect powers",
+   "Applies index laws with fractional exponents"
+  ],
+  "standards": [
+   {
+    "id": "acopt:A.01",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number and algebra (optional)"
+ },
+ {
+  "id": "qm_10o_009",
+  "name": "Logarithms: definition and laws",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Number and algebra (optional)",
+  "type": "procedural",
+  "description": "Use logₐ y = x ⇔ aˣ = y and the product, quotient and power laws of logarithms.",
+  "mastery_criteria": [
+   "Converts between index and log form",
+   "Evaluates simple logarithms",
+   "Combines logarithms with the laws"
+  ],
+  "standards": [
+   {
+    "id": "acopt:A.07",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number and algebra (optional)"
+ },
+ {
+  "id": "qm_10o_010",
+  "name": "Polynomials: the factor and remainder theorems",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Number and algebra (optional)",
+  "type": "procedural",
+  "description": "Use P(a) to find the remainder on division by (x − a), and to find and use linear factors of cubics.",
+  "mastery_criteria": [
+   "Evaluates P(a) for the remainder",
+   "Finds a factor by testing values",
+   "Fully factorises a cubic"
+  ],
+  "standards": [
+   {
+    "id": "acopt:A.06",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number and algebra (optional)"
+ },
+ {
+  "id": "qm_10o_011",
+  "name": "Circles and hyperbolas",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Number and algebra (optional)",
+  "type": "conceptual",
+  "description": "Graph circles (x − h)² + (y − k)² = r² and hyperbolas y = a/(x − h) + k, identifying centre, radius and asymptotes.",
+  "mastery_criteria": [
+   "Reads centre and radius",
+   "Completes the square to find a circle's centre",
+   "Identifies hyperbola asymptotes"
+  ],
+  "standards": [
+   {
+    "id": "acopt:A.05",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number and algebra (optional)"
+ },
+ {
+  "id": "qm_10o_012",
+  "name": "The unit circle and exact values",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Measurement and statistics (optional)",
+  "type": "conceptual",
+  "description": "Define sine, cosine and tangent of any angle with the unit circle, use quadrant signs, and recall exact values for 30°, 45° and 60°.",
+  "mastery_criteria": [
+   "Recalls exact values",
+   "Uses symmetry to find values in all quadrants",
+   "States the sign of each ratio by quadrant"
+  ],
+  "standards": [
+   {
+    "id": "acopt:M.02",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Measurement and statistics (optional)"
+ },
+ {
+  "id": "qm_10o_013",
+  "name": "The sine and cosine rules",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Measurement and statistics (optional)",
+  "type": "procedural",
+  "description": "Use the sine rule, cosine rule and ½ab sin C for non-right-angled triangles.",
+  "mastery_criteria": [
+   "Chooses the sine or cosine rule",
+   "Finds a side or angle",
+   "Finds an area with ½ab sin C"
+  ],
+  "standards": [
+   {
+    "id": "acopt:M.01",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "active",
+  "status": "draft",
+  "strand": "Measurement and statistics (optional)"
+ },
+ {
+  "id": "qm_10o_014",
+  "name": "Standard deviation",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Measurement and statistics (optional)",
+  "type": "procedural",
+  "description": "Calculate and interpret the standard deviation as a measure of spread about the mean.",
+  "mastery_criteria": [
+   "Calculates the mean and standard deviation",
+   "Interprets a larger standard deviation",
+   "Knows how shifts and scalings change it"
+  ],
+  "standards": [
+   {
+    "id": "acopt:ST.01",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Measurement and statistics (optional)"
+ },
+ {
+  "id": "qm_m1_008",
+  "name": "Combinations and Pascal's triangle",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T2 Binomial expansion and cubic functions",
+  "type": "procedural",
+  "description": "Count unordered selections with ⁿCᵣ and link the entries of Pascal's triangle to combinations.",
+  "mastery_criteria": [
+   "Evaluates ⁿCᵣ",
+   "Counts selections in context",
+   "Reads combinations from Pascal's triangle"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T2.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_009",
+  "name": "The binomial theorem",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T2 Binomial expansion and cubic functions",
+  "type": "procedural",
+  "description": "Expand (a + b)ⁿ with binomial coefficients and find a particular term or coefficient.",
+  "mastery_criteria": [
+   "Writes a full expansion for small n",
+   "Finds a specific coefficient",
+   "Handles negative and fractional terms"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T2.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_010",
+  "name": "Polynomials: degree, coefficients and expanding cubics",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T2 Binomial expansion and cubic functions",
+  "type": "procedural",
+  "description": "Identify the degree and coefficients of a polynomial and expand cubic polynomials from their factors.",
+  "mastery_criteria": [
+   "States degree and leading coefficient",
+   "Expands a product of three linear factors"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T2.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_011",
+  "name": "Graphs of cubic functions",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T2 Binomial expansion and cubic functions",
+  "type": "conceptual",
+  "description": "Sketch cubic graphs showing intercepts, repeated roots and end behaviour.",
+  "mastery_criteria": [
+   "Finds intercepts from factored form",
+   "Describes end behaviour from the leading term",
+   "Recognises a touching point at a repeated root"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T2.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_012",
+  "name": "Solving cubic equations",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T2 Binomial expansion and cubic functions",
+  "type": "procedural",
+  "description": "Solve cubic equations that are factorised, have a common factor, or can be factorised with the factor theorem.",
+  "mastery_criteria": [
+   "Uses the null factor law on three factors",
+   "Takes out a common factor first",
+   "Finds a first root then factorises"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T2.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_013",
+  "name": "Cubic models",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T2 Binomial expansion and cubic functions",
+  "type": "application",
+  "description": "Build and use cubic models, choosing a sensible domain and interpreting solutions in context.",
+  "mastery_criteria": [
+   "Evaluates a cubic model",
+   "States a practical domain",
+   "Solves model equations and interprets them"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T2.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "either",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_014",
+  "name": "Functions, relations and function notation",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T3 Functions and relations",
+  "type": "conceptual",
+  "description": "Tell functions from relations with the vertical line test and use f(x) notation.",
+  "mastery_criteria": [
+   "Applies the vertical line test",
+   "Evaluates f(a) and solves f(x) = k",
+   "Uses independent and dependent variables"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_015",
+  "name": "Domain and range",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T3 Functions and relations",
+  "type": "conceptual",
+  "description": "State natural and restricted domains and the corresponding ranges, using interval or set notation.",
+  "mastery_criteria": [
+   "Finds natural domains (roots, fractions)",
+   "Finds ranges from graphs",
+   "Works with restricted domains"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_016",
+  "name": "Piecewise functions",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T3 Functions and relations",
+  "type": "procedural",
+  "description": "Evaluate, graph and solve with functions defined by different rules on different parts of the domain.",
+  "mastery_criteria": [
+   "Chooses the correct rule for an input",
+   "Checks solutions lie in the right piece",
+   "Models charges with piecewise rules"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_017",
+  "name": "Circles",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T3 Functions and relations",
+  "type": "procedural",
+  "description": "Use (x − h)² + (y − k)² = r² to find centre and radius, including by completing the square.",
+  "mastery_criteria": [
+   "Writes the equation from centre and radius",
+   "Reads centre and radius",
+   "Completes the square in x and y"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T3.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_018",
+  "name": "Reciprocal functions",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T3 Functions and relations",
+  "type": "conceptual",
+  "description": "Sketch y = a/(x − h) + k showing asymptotes, intercepts and behaviour near the asymptotes.",
+  "mastery_criteria": [
+   "Reads asymptotes from the rule",
+   "Finds intercepts",
+   "Describes reflections and dilations"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T3.S3",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_019",
+  "name": "Radian measure, arc length and sector area",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T4 Trigonometric functions",
+  "type": "procedural",
+  "description": "Convert between degrees and radians and use l = rθ and A = ½r²θ.",
+  "mastery_criteria": [
+   "Converts degrees and radians",
+   "Calculates arc length",
+   "Calculates sector area"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T4.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_020",
+  "name": "The unit circle in radians and exact values",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T4 Trigonometric functions",
+  "type": "conceptual",
+  "description": "Use the unit circle to evaluate sine, cosine and tangent at multiples of π/6 and π/4 in radians.",
+  "mastery_criteria": [
+   "Locates angles in radians on the unit circle",
+   "Recalls exact values",
+   "Uses quadrant signs and symmetry"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T4.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_021",
+  "name": "Graphs of sine, cosine and tangent",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T4 Trigonometric functions",
+  "type": "conceptual",
+  "description": "Sketch y = sin x, y = cos x and y = tan x over extended domains, showing period, amplitude and asymptotes.",
+  "mastery_criteria": [
+   "States period and amplitude",
+   "Sketches each graph",
+   "Locates the asymptotes of tan x"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T4.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_022",
+  "name": "Transformations of trigonometric graphs",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T4 Trigonometric functions",
+  "type": "procedural",
+  "description": "Find the amplitude, period, phase shift and vertical shift of y = a sin(b(x − h)) + k and y = a cos(b(x − h)) + k.",
+  "mastery_criteria": [
+   "Reads amplitude and vertical shift",
+   "Finds the period 2π/b",
+   "Sketches a transformed graph"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T4.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_023",
+  "name": "Solving trigonometric equations",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T4 Trigonometric functions",
+  "type": "procedural",
+  "description": "Solve equations such as 2 cos x + √3 = 0 over a given domain, including with the identity sin²x + cos²x = 1.",
+  "mastery_criteria": [
+   "Finds the related angle",
+   "Uses quadrant signs to find every solution in the domain",
+   "Uses the Pythagorean identity"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T4.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_024",
+  "name": "Trigonometric models",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T4 Trigonometric functions",
+  "type": "application",
+  "description": "Model periodic situations such as tides and temperatures with sine and cosine functions and interpret the parameters.",
+  "mastery_criteria": [
+   "Interprets amplitude, period and centre line in context",
+   "Evaluates the model",
+   "Solves for times when a value is reached"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T4.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_025",
+  "name": "Sample spaces, events and set notation",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T5 Probability",
+  "type": "conceptual",
+  "description": "Describe events as sets of outcomes and use complement, intersection, union and Venn diagrams.",
+  "mastery_criteria": [
+   "Lists a sample space",
+   "Uses A′, A ∩ B and A ∪ B",
+   "Recognises mutually exclusive events"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T5.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_026",
+  "name": "Rules of probability",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T5 Probability",
+  "type": "procedural",
+  "description": "Use P(A′) = 1 − P(A) and P(A ∪ B) = P(A) + P(B) − P(A ∩ B).",
+  "mastery_criteria": [
+   "Uses the complement rule",
+   "Uses the addition rule",
+   "Simplifies it for mutually exclusive events"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T5.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_027",
+  "name": "Conditional probability",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T5 Probability",
+  "type": "procedural",
+  "description": "Use P(A | B) = P(A ∩ B)/P(B), restrict the sample space, and use tree diagrams for multi-stage problems.",
+  "mastery_criteria": [
+   "Applies the conditional probability formula",
+   "Restricts the sample space",
+   "Uses the multiplication rule P(A ∩ B) = P(A)P(B | A)"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T5.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_028",
+  "name": "Independent events",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T5 Probability",
+  "type": "reasoning",
+  "description": "Test for independence with P(A ∩ B) = P(A)P(B) and use the multiplication rule for independent events.",
+  "mastery_criteria": [
+   "Tests independence numerically",
+   "Multiplies probabilities of independent events",
+   "Uses complements for 'at least one'"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T5.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_029",
+  "name": "Probabilities and independence from data",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T5 Probability",
+  "type": "application",
+  "description": "Use relative frequencies from tables as estimates of probabilities and conditional probabilities, and judge whether events appear independent.",
+  "mastery_criteria": [
+   "Estimates probabilities from counts",
+   "Estimates conditional probabilities",
+   "Compares P(A | B) with P(A) to judge independence"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T5.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m2_001",
+  "name": "Index laws with negative and fractional indices",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T1 Exponential functions",
+  "type": "procedural",
+  "description": "Simplify expressions with negative and fractional indices and convert between radicals and index form.",
+  "mastery_criteria": [
+   "Applies all index laws",
+   "Converts radicals to fractional indices",
+   "Writes answers with positive indices"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T1.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_002",
+  "name": "Calculating with scientific notation",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T1 Exponential functions",
+  "type": "procedural",
+  "description": "Multiply and divide numbers in scientific notation and interpret very large or small results.",
+  "mastery_criteria": [
+   "Multiplies and divides in scientific notation",
+   "Adjusts the result to standard form",
+   "Uses it in measurement contexts"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T1.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_003",
+  "name": "Graphs of exponential functions",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T1 Exponential functions",
+  "type": "conceptual",
+  "description": "Sketch y = aˣ and its transformations, showing the asymptote and intercepts.",
+  "mastery_criteria": [
+   "Identifies the horizontal asymptote",
+   "Finds intercepts",
+   "Describes translations, dilations and reflections"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T1.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_004",
+  "name": "Solving exponential equations with a common base",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T1 Exponential functions",
+  "type": "procedural",
+  "description": "Solve exponential equations by writing both sides with the same base, including quadratic-type equations.",
+  "mastery_criteria": [
+   "Rewrites numbers as powers of a common base",
+   "Equates indices",
+   "Substitutes u = aˣ for quadratic forms"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T1.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_005",
+  "name": "Exponential models",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T1 Exponential functions",
+  "type": "application",
+  "description": "Model growth and decay with exponential functions and interpret the parameters.",
+  "mastery_criteria": [
+   "Evaluates exponential models",
+   "Interprets initial value and growth factor",
+   "Solves for time in simple cases"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T1.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "either",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_006",
+  "name": "Logarithm definition and laws",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T2 Logarithms and logarithmic functions",
+  "type": "procedural",
+  "description": "Use logₐ y = x ⇔ aˣ = y and the logarithm laws to evaluate and simplify.",
+  "mastery_criteria": [
+   "Converts between index and logarithmic forms",
+   "Uses the product, quotient and power laws",
+   "Evaluates logs exactly"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T2.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_007",
+  "name": "Solving exponential equations with logarithms",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T2 Logarithms and logarithmic functions",
+  "type": "procedural",
+  "description": "Solve aˣ = b exactly with logarithms and approximately with technology.",
+  "mastery_criteria": [
+   "Takes logs of both sides",
+   "Gives exact answers in log form",
+   "Finds decimal approximations"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T2.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "active",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_008",
+  "name": "Graphs of logarithmic functions",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T2 Logarithms and logarithmic functions",
+  "type": "conceptual",
+  "description": "Sketch y = logₐ x and its transformations, showing the vertical asymptote and intercepts, and relate it to y = aˣ.",
+  "mastery_criteria": [
+   "Identifies the vertical asymptote",
+   "Finds intercepts",
+   "Recognises log and exponential graphs as reflections in y = x"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T2.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_009",
+  "name": "Solving logarithmic equations",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T2 Logarithms and logarithmic functions",
+  "type": "procedural",
+  "description": "Solve equations involving logarithms and check solutions lie in the domain.",
+  "mastery_criteria": [
+   "Converts a log equation to index form",
+   "Combines logs before solving",
+   "Rejects solutions outside the domain"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T2.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_010",
+  "name": "Logarithmic models",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T2 Logarithms and logarithmic functions",
+  "type": "application",
+  "description": "Use logarithmic scales such as decibels, pH and the Richter scale and interpret changes on them.",
+  "mastery_criteria": [
+   "Evaluates a logarithmic model",
+   "Interprets a change of 1 unit as a multiplicative change",
+   "Solves for the original quantity"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T2.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_011",
+  "name": "Average rate of change",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T3 Introduction to differential calculus",
+  "type": "procedural",
+  "description": "Calculate the average rate of change of a function over an interval and interpret it in context.",
+  "mastery_criteria": [
+   "Uses (f(b) − f(a))/(b − a)",
+   "Interprets the answer with units"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_012",
+  "name": "The derivative from first principles",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T3 Introduction to differential calculus",
+  "type": "reasoning",
+  "description": "Use f′(x) = lim (h → 0) [f(x + h) − f(x)]/h to differentiate simple polynomials.",
+  "mastery_criteria": [
+   "States the limit definition",
+   "Simplifies the difference quotient",
+   "Takes the limit as h → 0"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_013",
+  "name": "The derivative as rate of change and gradient",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T3 Introduction to differential calculus",
+  "type": "conceptual",
+  "description": "Interpret f′(a) as the instantaneous rate of change and as the gradient of the tangent at x = a.",
+  "mastery_criteria": [
+   "Interprets f′(a) in context",
+   "Links the sign of f′ to increasing and decreasing",
+   "Recognises f′(a) = 0 as a horizontal tangent"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_014",
+  "name": "The power rule and derivatives of polynomials",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T3 Introduction to differential calculus",
+  "type": "procedural",
+  "description": "Differentiate polynomials using d/dx(xⁿ) = nxⁿ⁻¹ with the sum and constant-multiple properties.",
+  "mastery_criteria": [
+   "Applies the power rule",
+   "Differentiates term by term",
+   "Expands before differentiating products"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_015",
+  "name": "Tangents and normals",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T4 Applications of differential calculus",
+  "type": "procedural",
+  "description": "Find the equations of the tangent and normal to a curve at a point.",
+  "mastery_criteria": [
+   "Finds the gradient at a point",
+   "Writes the tangent with y − y₁ = m(x − x₁)",
+   "Uses −1/m for the normal"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T4.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_016",
+  "name": "Displacement and velocity",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T4 Applications of differential calculus",
+  "type": "application",
+  "description": "Interpret velocity as the derivative of displacement, and use it to find when a particle is at rest or changes direction.",
+  "mastery_criteria": [
+   "Differentiates displacement to get velocity",
+   "Finds when velocity is zero",
+   "Interprets signs of velocity"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T4.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_017",
+  "name": "Stationary points and their nature",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T4 Applications of differential calculus",
+  "type": "procedural",
+  "description": "Find stationary points by solving f′(x) = 0 and classify them with the first derivative test.",
+  "mastery_criteria": [
+   "Solves f′(x) = 0",
+   "Uses the sign of f′ either side",
+   "Recognises stationary points of inflection"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T4.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_018",
+  "name": "Sketching polynomials and global extrema",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T4 Applications of differential calculus",
+  "type": "procedural",
+  "description": "Sketch polynomials up to degree 4 using stationary points and end behaviour, and find global maxima and minima on an interval.",
+  "mastery_criteria": [
+   "Combines intercepts, stationary points and end behaviour in a sketch",
+   "Compares endpoint and stationary values for global extrema"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T4.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_019",
+  "name": "The chain rule",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T5 Further differentiation",
+  "type": "procedural",
+  "description": "Differentiate composite power and polynomial functions with dy/dx = dy/du × du/dx.",
+  "mastery_criteria": [
+   "Identifies the inner and outer functions",
+   "Applies the chain rule",
+   "Differentiates roots as fractional powers"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T5.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_020",
+  "name": "The product rule",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T5 Further differentiation",
+  "type": "procedural",
+  "description": "Differentiate products with (uv)′ = u′v + uv′ and give the result in factorised form.",
+  "mastery_criteria": [
+   "Identifies u and v",
+   "Applies the product rule",
+   "Factorises the result"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T5.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_021",
+  "name": "The quotient rule",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T5 Further differentiation",
+  "type": "procedural",
+  "description": "Differentiate quotients with (u/v)′ = (u′v − uv′)/v².",
+  "mastery_criteria": [
+   "Identifies u and v",
+   "Applies the quotient rule with the correct order of subtraction",
+   "Simplifies the numerator"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T5.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m2_022",
+  "name": "Combining differentiation rules",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U2 · T5 Further differentiation",
+  "type": "procedural",
+  "description": "Choose and combine the chain, product and quotient rules, giving derivatives in simplest factorised form.",
+  "mastery_criteria": [
+   "Recognises which rules apply",
+   "Applies two rules in one derivative",
+   "Factorises fully"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U2.T5.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 2
+ },
+ {
+  "id": "qm_m3_001",
+  "name": "The number e and the derivative of eˣ",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T1 Differentiation of exponential and logarithmic functions",
+  "type": "procedural",
+  "description": "Recognise e as the base for which d/dx(eˣ) = eˣ, and differentiate e^(f(x)) with the chain rule.",
+  "mastery_criteria": [
+   "Knows d/dx(eˣ) = eˣ",
+   "Differentiates e^(kx) and e^(f(x))",
+   "Evaluates derivatives at a point"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T1.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_002",
+  "name": "Natural logarithms and equations with base e",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T1 Differentiation of exponential and logarithmic functions",
+  "type": "procedural",
+  "description": "Use ln x as the inverse of eˣ and solve equations with base e.",
+  "mastery_criteria": [
+   "Uses ln(eˣ) = x and e^(ln x) = x",
+   "Solves eˣ = k and ln(f(x)) = k",
+   "Solves quadratic-type equations in eˣ"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T1.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_003",
+  "name": "The derivative of ln x",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T1 Differentiation of exponential and logarithmic functions",
+  "type": "procedural",
+  "description": "Use d/dx(ln x) = 1/x and d/dx ln(f(x)) = f′(x)/f(x).",
+  "mastery_criteria": [
+   "Differentiates ln x",
+   "Differentiates ln(f(x)) with the chain rule",
+   "Uses log laws to simplify before differentiating"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T1.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_004",
+  "name": "Applications of exponential and logarithmic derivatives",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T1 Differentiation of exponential and logarithmic functions",
+  "type": "application",
+  "description": "Use derivatives of exponential and logarithmic functions for rates of change and stationary points in models.",
+  "mastery_criteria": [
+   "Finds rates of change in growth and decay models",
+   "Finds stationary points of exponential and log functions"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T1.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "either",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_005",
+  "name": "Derivatives of sine, cosine and tangent",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T2 Differentiation of trigonometric functions and differentiation rules",
+  "type": "procedural",
+  "description": "Use d/dx sin x = cos x, d/dx cos x = −sin x and d/dx tan x = 1/cos²x (x in radians).",
+  "mastery_criteria": [
+   "Recalls the three derivatives",
+   "Differentiates sums with trig terms",
+   "Uses radians"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T2.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_006",
+  "name": "Differentiation rules with exponential, log and trig functions",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T2 Differentiation of trigonometric functions and differentiation rules",
+  "type": "procedural",
+  "description": "Apply the chain, product and quotient rules to functions involving eˣ, ln x, sin x, cos x and tan x.",
+  "mastery_criteria": [
+   "Uses the chain rule with trig and exponential functions",
+   "Uses product and quotient rules",
+   "Gives answers in factorised form"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T2.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_007",
+  "name": "Applications of trigonometric derivatives",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T2 Differentiation of trigonometric functions and differentiation rules",
+  "type": "application",
+  "description": "Use derivatives of trigonometric functions for gradients, tangents, rates of change and stationary points.",
+  "mastery_criteria": [
+   "Finds gradients and tangents to trig curves",
+   "Interprets rates of change in periodic models",
+   "Finds stationary points on an interval"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T2.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_008",
+  "name": "The second derivative and acceleration",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T3 Further applications of differentiation",
+  "type": "procedural",
+  "description": "Find second derivatives and interpret acceleration as the second derivative of displacement.",
+  "mastery_criteria": [
+   "Differentiates twice",
+   "Finds acceleration from displacement",
+   "Interprets the sign of acceleration"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_009",
+  "name": "Concavity and points of inflection",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T3 Further applications of differentiation",
+  "type": "conceptual",
+  "description": "Link the sign of f″ to concavity and find points of inflection where the concavity changes.",
+  "mastery_criteria": [
+   "Uses f″ > 0 for concave up and f″ < 0 for concave down",
+   "Finds points of inflection and checks for a sign change"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_010",
+  "name": "The second derivative test and curve sketching",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T3 Further applications of differentiation",
+  "type": "procedural",
+  "description": "Classify stationary points with the second derivative and sketch curves showing stationary points and inflections.",
+  "mastery_criteria": [
+   "Applies the second derivative test",
+   "Knows when the test is inconclusive",
+   "Combines features in a sketch"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_011",
+  "name": "Optimisation",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T3 Further applications of differentiation",
+  "type": "application",
+  "description": "Develop a function from a description and use derivatives to find maximum or minimum values, checking endpoints.",
+  "mastery_criteria": [
+   "Writes the quantity to optimise in one variable",
+   "Finds and justifies the optimum",
+   "Answers in context"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_012",
+  "name": "Anti-derivatives and the power rule",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T4 Introduction to integration",
+  "type": "procedural",
+  "description": "Find indefinite integrals of powers of x, including negative and fractional powers, with a constant of integration.",
+  "mastery_criteria": [
+   "Uses ∫xⁿ dx = xⁿ⁺¹/(n + 1) + c",
+   "Rewrites roots and fractions as powers",
+   "Includes + c"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T4.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_013",
+  "name": "Integrals of eˣ, 1/x, sin x and cos x",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T4 Introduction to integration",
+  "type": "procedural",
+  "description": "Use the standard indefinite integrals of eˣ, 1/x, sin x and cos x.",
+  "mastery_criteria": [
+   "Recalls the standard integrals",
+   "Combines them with constant multiples and sums"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T4.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_014",
+  "name": "Integrals of linear composites",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T4 Introduction to integration",
+  "type": "procedural",
+  "description": "Integrate f(ax + b) for powers, eˣ, 1/x, sin and cos by dividing by a.",
+  "mastery_criteria": [
+   "Recognises the linear inner function",
+   "Divides by the coefficient of x"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T4.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_015",
+  "name": "Finding a function from its derivative",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T4 Introduction to integration",
+  "type": "procedural",
+  "description": "Determine f(x) from f′(x) and a known value, by integrating and solving for the constant.",
+  "mastery_criteria": [
+   "Integrates f′(x)",
+   "Uses the given point to find c",
+   "Evaluates the resulting function"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T4.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_016",
+  "name": "Motion: displacement from velocity and acceleration",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T4 Introduction to integration",
+  "type": "application",
+  "description": "Find velocity from acceleration and displacement from velocity using anti-derivatives and initial conditions.",
+  "mastery_criteria": [
+   "Integrates acceleration to velocity",
+   "Integrates velocity to displacement",
+   "Uses initial conditions for each constant"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T4.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_017",
+  "name": "Discrete random variables and probability functions",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T5 Discrete random variables",
+  "type": "conceptual",
+  "description": "Describe discrete random variables with probability functions and use them to find probabilities.",
+  "mastery_criteria": [
+   "Checks a probability function sums to 1",
+   "Finds unknown probabilities",
+   "Finds P(X ≥ a) and similar"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T5.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_018",
+  "name": "Expected value",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T5 Discrete random variables",
+  "type": "procedural",
+  "description": "Calculate E(X) = Σ x p(x) and interpret it, including E(aX + b) = aE(X) + b.",
+  "mastery_criteria": [
+   "Calculates the mean of a distribution",
+   "Interprets expected value in games and decisions",
+   "Uses linear changes"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T5.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_019",
+  "name": "Variance and standard deviation of a discrete random variable",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T5 Discrete random variables",
+  "type": "procedural",
+  "description": "Calculate Var(X) = E(X²) − [E(X)]² and the standard deviation, and use Var(aX + b) = a²Var(X).",
+  "mastery_criteria": [
+   "Calculates variance from a distribution",
+   "Takes the square root for standard deviation",
+   "Uses Var(aX + b) = a²Var(X)"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T5.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_020",
+  "name": "Bernoulli distributions",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T5 Discrete random variables",
+  "type": "conceptual",
+  "description": "Model a single trial with two outcomes as a Bernoulli random variable with mean p and variance p(1 − p).",
+  "mastery_criteria": [
+   "Identifies Bernoulli situations",
+   "Uses E(X) = p and Var(X) = p(1 − p)"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T5.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_021",
+  "name": "Binomial probabilities",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T5 Discrete random variables",
+  "type": "procedural",
+  "description": "Recognise binomial situations and calculate P(X = r) = ⁿCᵣ pʳ(1 − p)ⁿ⁻ʳ.",
+  "mastery_criteria": [
+   "Checks the binomial conditions",
+   "Calculates single binomial probabilities"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T5.S3",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m3_022",
+  "name": "Binomial mean, variance and cumulative probabilities",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U3 · T5 Discrete random variables",
+  "type": "procedural",
+  "description": "Use E(X) = np and Var(X) = np(1 − p), and find 'at least', 'at most' and 'between' probabilities.",
+  "mastery_criteria": [
+   "Calculates mean and variance",
+   "Uses complements for 'at least one'",
+   "Sums probabilities for ranges"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U3.T5.S3",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 3
+ },
+ {
+  "id": "qm_m4_001",
+  "name": "Estimating area with rectangles",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T1 Further integration",
+  "type": "procedural",
+  "description": "Estimate the area under a curve with sums of rectangles using left or right endpoints.",
+  "mastery_criteria": [
+   "Calculates left and right endpoint sums",
+   "Explains why more rectangles improve the estimate"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T1.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_002",
+  "name": "The fundamental theorem and definite integrals",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T1 Further integration",
+  "type": "procedural",
+  "description": "Evaluate definite integrals with ∫ₐᵇ f(x) dx = F(b) − F(a).",
+  "mastery_criteria": [
+   "Finds an anti-derivative",
+   "Substitutes the limits correctly",
+   "Evaluates exact values with e, ln and π"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T1.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_003",
+  "name": "Area between a curve and the x-axis",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T1 Further integration",
+  "type": "procedural",
+  "description": "Find areas bounded by a curve and the x-axis, splitting the integral where the curve crosses the axis.",
+  "mastery_criteria": [
+   "Finds where the curve crosses the axis",
+   "Splits the integral at each crossing",
+   "Adds absolute values of the parts"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T1.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_004",
+  "name": "Area between two curves",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T1 Further integration",
+  "type": "procedural",
+  "description": "Find the area between two curves by integrating (upper − lower) between their intersections.",
+  "mastery_criteria": [
+   "Finds intersection points",
+   "Identifies the upper curve",
+   "Integrates the difference"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T1.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_005",
+  "name": "The trapezoidal rule",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T1 Further integration",
+  "type": "procedural",
+  "description": "Approximate definite integrals with the trapezoidal rule and judge over- or underestimates.",
+  "mastery_criteria": [
+   "Applies the trapezoidal rule with equal strips",
+   "Explains over- and underestimates from concavity"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T1.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "either",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_006",
+  "name": "Total change and motion with definite integrals",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T1 Further integration",
+  "type": "application",
+  "description": "Find total change by integrating a rate, and displacement and distance travelled from velocity.",
+  "mastery_criteria": [
+   "Integrates a rate over an interval",
+   "Distinguishes displacement from distance",
+   "Splits the integral where velocity changes sign"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T1.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_007",
+  "name": "The sine rule and the ambiguous case",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T2 Trigonometry",
+  "type": "procedural",
+  "description": "Use the sine rule to find sides and angles, including the ambiguous case with two possible triangles.",
+  "mastery_criteria": [
+   "Uses the sine rule for sides and angles",
+   "Recognises when two triangles are possible",
+   "Finds both angles in the ambiguous case"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T2.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "active",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_008",
+  "name": "The cosine rule and the area rule",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T2 Trigonometry",
+  "type": "procedural",
+  "description": "Use a² = b² + c² − 2bc cos A and Area = ½bc sin A.",
+  "mastery_criteria": [
+   "Finds a side with the cosine rule",
+   "Finds an angle from three sides",
+   "Finds area with ½bc sin A"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T2.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "either",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_009",
+  "name": "Trigonometry problems with bearings and in 3D",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T2 Trigonometry",
+  "type": "application",
+  "description": "Solve two- and three-dimensional problems with bearings, elevation and depression using the sine and cosine rules.",
+  "mastery_criteria": [
+   "Draws and labels a diagram from bearings",
+   "Chooses the right triangle and rule",
+   "Works in three dimensions"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T2.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "active",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_010",
+  "name": "Continuous random variables and probability density functions",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T3 Continuous random variables and the normal distribution",
+  "type": "conceptual",
+  "description": "Use probability density functions, with probabilities as areas under the curve found by integration.",
+  "mastery_criteria": [
+   "Checks a pdf integrates to 1",
+   "Finds probabilities by integrating",
+   "Knows P(X = a) = 0"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_011",
+  "name": "Mean and variance of a continuous random variable",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T3 Continuous random variables and the normal distribution",
+  "type": "procedural",
+  "description": "Calculate E(X) = ∫x f(x) dx and Var(X) = E(X²) − [E(X)]².",
+  "mastery_criteria": [
+   "Calculates E(X) by integration",
+   "Calculates Var(X) and the standard deviation"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_012",
+  "name": "Standardised scores (z-scores)",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T3 Continuous random variables and the normal distribution",
+  "type": "procedural",
+  "description": "Calculate z = (x − μ)/σ and use z-scores to compare values from different distributions.",
+  "mastery_criteria": [
+   "Calculates z-scores",
+   "Converts back from z to x",
+   "Compares relative standing"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T3.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_013",
+  "name": "Features of the normal distribution",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T3 Continuous random variables and the normal distribution",
+  "type": "conceptual",
+  "description": "Describe the normal curve N(μ, σ²) and use the 68–95–99.7% rule for quick estimates.",
+  "mastery_criteria": [
+   "Reads μ and σ from N(μ, σ²)",
+   "Uses the 68–95–99.7% rule",
+   "Recognises symmetry about the mean"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T3.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_014",
+  "name": "Normal probabilities and quantiles",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T3 Continuous random variables and the normal distribution",
+  "type": "procedural",
+  "description": "Use technology to calculate normal probabilities and the value with a given probability below it.",
+  "mastery_criteria": [
+   "Calculates P(a < X < b) with technology",
+   "Finds quantiles (inverse normal)",
+   "Standardises to compare with the standard normal"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T3.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "active",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_015",
+  "name": "Random sampling and bias",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T4 Sampling and proportions",
+  "type": "conceptual",
+  "description": "Describe random samples, sources of bias, and procedures that make a sample random.",
+  "mastery_criteria": [
+   "Identifies simple random samples",
+   "Names sources of sampling bias",
+   "Explains why larger samples vary less"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T4.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_016",
+  "name": "The sample proportion",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T4 Sampling and proportions",
+  "type": "procedural",
+  "description": "Treat the sample proportion p̂ as a random variable with mean p and standard deviation √(p(1 − p)/n).",
+  "mastery_criteria": [
+   "Calculates p̂ from a sample",
+   "Calculates the mean and standard deviation of p̂",
+   "Explains how n affects the spread"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T4.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_017",
+  "name": "Approximate normality of the sample proportion",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T4 Sampling and proportions",
+  "type": "conceptual",
+  "description": "Use the approximately normal distribution of p̂ for large samples to estimate probabilities.",
+  "mastery_criteria": [
+   "Knows when the normal approximation is reasonable",
+   "Standardises p̂",
+   "Estimates probabilities for p̂"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T4.S2",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "either",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_018",
+  "name": "Confidence intervals for a proportion",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T5 Interval estimates for proportions",
+  "type": "procedural",
+  "description": "Calculate an approximate confidence interval p̂ ± z√(p̂(1 − p̂)/n) for a population proportion.",
+  "mastery_criteria": [
+   "Calculates p̂ and its standard error",
+   "Uses the right z for the confidence level",
+   "States the interval"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T5.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "either",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_019",
+  "name": "Margin of error, confidence level and sample size",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T5 Interval estimates for proportions",
+  "type": "reasoning",
+  "description": "Relate the margin of error to the confidence level and sample size, and find the sample size needed for a given margin.",
+  "mastery_criteria": [
+   "Calculates the margin of error",
+   "Explains the effect of confidence level and n",
+   "Finds a required sample size"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T5.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "either",
+  "status": "draft",
+  "unit": 4
+ },
+ {
+  "id": "qm_m4_020",
+  "name": "Interpreting confidence intervals",
+  "band": "methods",
+  "level": 12,
+  "chapter": "Methods U4 · T5 Interval estimates for proportions",
+  "type": "reasoning",
+  "description": "Interpret confidence intervals correctly, including that they vary between samples and that most, but not all, contain p.",
+  "mastery_criteria": [
+   "States the repeated-sampling meaning of 95% confidence",
+   "Uses an interval to judge a claim",
+   "Expects some intervals to miss p"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U4.T5.S1",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 4
  }
 ]

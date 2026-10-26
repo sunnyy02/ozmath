@@ -22,6 +22,11 @@ sys.path.insert(0, os.path.join(ROOT, "scripts", "content"))
 
 CONTENT = [
     "pilot_quadratics",
+    "methods_prereqs",
+    "methods_u1",
+    "methods_u2",
+    "methods_u3",
+    "methods_u4",
 ]
 
 

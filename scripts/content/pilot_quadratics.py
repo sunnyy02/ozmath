@@ -387,7 +387,7 @@ T.append(topic(
     "qm_m1_001", "Rationalising binomial surd denominators", "methods", MM1, "procedural",
     "Use the conjugate to rationalise denominators such as a + √b, and write results in the form p + q√r.",
     ["Identifies the conjugate", "Multiplies by conjugate over conjugate", "Simplifies to p + q√r"],
-    [("qcaa25:MM.U1.T1", "inferred")], unit=1,
+    [("qcaa25:MM.U1.T1.S1", "exact")], unit=1,
     pre=[("qm_10o_003", "hard", "Extends rationalising a single-surd denominator"),
          ("qm_10_002", "hard", "The conjugate product is a difference of two squares")], qs=[
         mc("What is the conjugate of 3 + √2?", ["3 − √2", "−3 + √2", "−3 − √2", "3 + √2"], 0, "3 - sqrt(2)",
@@ -404,7 +404,7 @@ T.append(topic(
     "qm_m1_002", "Solving quadratic equations: choosing a method", "methods", MM1, "procedural",
     "Choose between factorising, square roots, completing the square and the formula, and give exact solutions.",
     ["Selects an efficient method", "Gives exact answers in simplest surd form", "Solves equations reducible to quadratics"],
-    [("qcaa25:MM.U1.T1", "inferred")], unit=1,
+    [("qcaa25:MM.U1.T1.S2", "exact")], unit=1,
     pre=[("qm_10_004", "hard", "Factorising methods"),
          ("qm_10o_005", "hard", "Quadratic formula for equations that do not factorise")], qs=[
         num("Solve (2x − 1)² = 9.", "2, -1", "solve((2*x - 1)**2 - 9, x)", "basic",
@@ -422,7 +422,7 @@ T.append(topic(
     "qm_m1_003", "The discriminant with an unknown coefficient", "methods", MM1, "reasoning",
     "Find the values of a parameter that give a quadratic two, one or no real solutions.",
     ["Writes the discriminant in terms of the parameter", "Solves the resulting equation or inequality"],
-    [("qcaa25:MM.U1.T1", "inferred")], unit=1,
+    [("qcaa25:MM.U1.T1.S2", "exact")], unit=1,
     pre=[("qm_10o_006", "hard", "Uses the discriminant conditions"),
          ("qm_10_006", "hard", "The condition becomes an inequality to solve")], qs=[
         num("For x² + 6x + k = 0, find the value of k that gives exactly one real solution.", "9",
@@ -439,7 +439,7 @@ T.append(topic(
     "qm_m1_004", "Key features of a quadratic in general form", "methods", MM1, "procedural",
     "From y = ax² + bx + c, find intercepts, the axis of symmetry x = −b/(2a) and the turning point.",
     ["Finds the axis of symmetry", "Finds the turning point", "Finds all intercepts"],
-    [("qcaa25:MM.U1.T1", "inferred")], unit=1,
+    [("qcaa25:MM.U1.T1.S2", "exact")], unit=1,
     pre=[("qm_10o_007", "hard", "Connects the general form to turning point features"),
          ("qm_m1_002", "soft", "x-intercepts require solving the quadratic")], qs=[
         num("Find the axis of symmetry of y = x² − 10x + 7. Give the value of x.", "5", "Rational(10, 2)", "basic",
@@ -456,7 +456,7 @@ T.append(topic(
     "qm_m1_005", "Finding a quadratic rule from given features", "methods", MM1, "reasoning",
     "Determine a quadratic's rule from its turning point, intercepts or points on the graph.",
     ["Chooses turning point form or intercept form to suit the information", "Solves for unknown coefficients"],
-    [("qcaa25:MM.U1.T1", "inferred")], unit=1,
+    [("qcaa25:MM.U1.T1.S2", "exact")], unit=1,
     pre=[("qm_10o_007", "hard", "Uses turning point form"),
          ("qm_10_005", "soft", "Two unknown coefficients can lead to simultaneous equations")], qs=[
         mc("A parabola has turning point (2, −3) and passes through (0, 1). Its equation is:",
@@ -475,7 +475,7 @@ T.append(topic(
     "qm_m1_006", "Intersections of a line and a parabola", "methods", MM1, "procedural",
     "Find where a line meets a parabola by substitution, and use the discriminant to count intersections.",
     ["Substitutes to form a quadratic equation", "Solves for the intersection points", "Uses the discriminant to decide tangency"],
-    [("qcaa25:MM.U1.T1", "inferred")], unit=1,
+    [("qcaa25:MM.U1.T1.S2", "exact")], unit=1,
     pre=[("qm_m1_002", "hard", "The intersection condition is a quadratic equation"),
          ("qm_10_005", "soft", "Same substitution idea as simultaneous linear equations"),
          ("qm_m1_003", "soft", "Tangency is a discriminant condition")], qs=[
@@ -494,7 +494,7 @@ T.append(topic(
     "qm_m1_007", "Quadratic models: maximum and minimum problems", "methods", MM1, "application",
     "Build a quadratic model from a situation and use its turning point to find a maximum or minimum.",
     ["Writes a quadratic model from a description", "Finds and interprets the turning point in context"],
-    [("qcaa25:MM.U1.T1", "inferred")], unit=1,
+    [("qcaa25:MM.U1.T1.S2", "exact")], unit=1,
     pre=[("qm_m1_004", "hard", "The optimum is the turning point")], qs=[
         num("Find the maximum value of y = −x² + 6x − 5.", "4", "(lambda t: -t**2 + 6*t - 5)(3)", "basic",
             "Axis x = 3, so y = −9 + 18 − 5 = 4."),

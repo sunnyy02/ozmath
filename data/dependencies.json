@@ -238,5 +238,971 @@
   "prerequisiteId": "qm_m1_004",
   "strength": "hard",
   "reason": "The optimum is the turning point"
+ },
+ {
+  "topicId": "qm_9_012",
+  "prerequisiteId": "qm_9_011",
+  "strength": "soft",
+  "reason": "Right-angled triangle side names and relationships"
+ },
+ {
+  "topicId": "qm_9_013",
+  "prerequisiteId": "qm_9_003",
+  "strength": "hard",
+  "reason": "Small numbers need negative powers of 10"
+ },
+ {
+  "topicId": "qm_9_015",
+  "prerequisiteId": "qm_9_014",
+  "strength": "soft",
+  "reason": "Builds on basic probability of events"
+ },
+ {
+  "topicId": "qm_10_007",
+  "prerequisiteId": "qm_9_003",
+  "strength": "hard",
+  "reason": "Negative x gives negative exponents"
+ },
+ {
+  "topicId": "qm_10_008",
+  "prerequisiteId": "qm_10_007",
+  "strength": "hard",
+  "reason": "Models use exponential relations"
+ },
+ {
+  "topicId": "qm_10_009",
+  "prerequisiteId": "qm_9_012",
+  "strength": "hard",
+  "reason": "Uses the trigonometric ratios"
+ },
+ {
+  "topicId": "qm_10_010",
+  "prerequisiteId": "qm_9_015",
+  "strength": "hard",
+  "reason": "Builds on 'and' and 'or' events and relative frequency"
+ },
+ {
+  "topicId": "qm_10o_008",
+  "prerequisiteId": "qm_9_003",
+  "strength": "hard",
+  "reason": "Extends negative and zero exponents"
+ },
+ {
+  "topicId": "qm_10o_008",
+  "prerequisiteId": "qm_10o_001",
+  "strength": "soft",
+  "reason": "Roots and surds"
+ },
+ {
+  "topicId": "qm_10o_009",
+  "prerequisiteId": "qm_10_007",
+  "strength": "hard",
+  "reason": "A logarithm is an exponent"
+ },
+ {
+  "topicId": "qm_10o_009",
+  "prerequisiteId": "qm_10o_008",
+  "strength": "soft",
+  "reason": "Fractional answers such as log₄ 2 = 1/2"
+ },
+ {
+  "topicId": "qm_10o_010",
+  "prerequisiteId": "qm_10_003",
+  "strength": "hard",
+  "reason": "Factorising the quadratic that remains"
+ },
+ {
+  "topicId": "qm_10o_011",
+  "prerequisiteId": "qm_10o_004",
+  "strength": "hard",
+  "reason": "Completing the square puts a circle in standard form"
+ },
+ {
+  "topicId": "qm_10o_011",
+  "prerequisiteId": "qm_9_007",
+  "strength": "soft",
+  "reason": "Distance formula underlies the circle equation"
+ },
+ {
+  "topicId": "qm_10o_012",
+  "prerequisiteId": "qm_9_012",
+  "strength": "hard",
+  "reason": "Extends right-triangle ratios"
+ },
+ {
+  "topicId": "qm_10o_013",
+  "prerequisiteId": "qm_9_012",
+  "strength": "hard",
+  "reason": "Uses sine and cosine of angles"
+ },
+ {
+  "topicId": "qm_10o_013",
+  "prerequisiteId": "qm_10_009",
+  "strength": "soft",
+  "reason": "Practical triangle problems"
+ },
+ {
+  "topicId": "qm_10o_014",
+  "prerequisiteId": "qm_10_011",
+  "strength": "soft",
+  "reason": "Spread measured by the IQR first"
+ },
+ {
+  "topicId": "qm_m1_008",
+  "prerequisiteId": "qm_9_014",
+  "strength": "soft",
+  "reason": "Systematic listing of outcomes"
+ },
+ {
+  "topicId": "qm_m1_009",
+  "prerequisiteId": "qm_m1_008",
+  "strength": "hard",
+  "reason": "Coefficients are combinations"
+ },
+ {
+  "topicId": "qm_m1_009",
+  "prerequisiteId": "qm_9_004",
+  "strength": "hard",
+  "reason": "Expanding products"
+ },
+ {
+  "topicId": "qm_m1_010",
+  "prerequisiteId": "qm_9_004",
+  "strength": "hard",
+  "reason": "Expanding products of brackets"
+ },
+ {
+  "topicId": "qm_m1_011",
+  "prerequisiteId": "qm_m1_010",
+  "strength": "hard",
+  "reason": "Needs polynomial form and factors"
+ },
+ {
+  "topicId": "qm_m1_011",
+  "prerequisiteId": "qm_m1_004",
+  "strength": "soft",
+  "reason": "Same intercept reasoning as quadratics"
+ },
+ {
+  "topicId": "qm_m1_012",
+  "prerequisiteId": "qm_10o_010",
+  "strength": "hard",
+  "reason": "Factor theorem to find a first factor"
+ },
+ {
+  "topicId": "qm_m1_012",
+  "prerequisiteId": "qm_m1_002",
+  "strength": "hard",
+  "reason": "Solving the remaining quadratic"
+ },
+ {
+  "topicId": "qm_m1_013",
+  "prerequisiteId": "qm_m1_011",
+  "strength": "hard",
+  "reason": "Reading features of the cubic graph"
+ },
+ {
+  "topicId": "qm_m1_013",
+  "prerequisiteId": "qm_m1_012",
+  "strength": "soft",
+  "reason": "Solving model equations"
+ },
+ {
+  "topicId": "qm_m1_014",
+  "prerequisiteId": "qm_9_008",
+  "strength": "soft",
+  "reason": "Familiar graphs give examples of functions"
+ },
+ {
+  "topicId": "qm_m1_015",
+  "prerequisiteId": "qm_m1_014",
+  "strength": "hard",
+  "reason": "Domain and range describe a function's inputs and outputs"
+ },
+ {
+  "topicId": "qm_m1_016",
+  "prerequisiteId": "qm_m1_015",
+  "strength": "hard",
+  "reason": "Each piece has its own restricted domain"
+ },
+ {
+  "topicId": "qm_m1_017",
+  "prerequisiteId": "qm_10o_011",
+  "strength": "hard",
+  "reason": "Extends circles from Year 10 optional content"
+ },
+ {
+  "topicId": "qm_m1_017",
+  "prerequisiteId": "qm_m1_014",
+  "strength": "soft",
+  "reason": "A circle is a relation, not a function"
+ },
+ {
+  "topicId": "qm_m1_018",
+  "prerequisiteId": "qm_10o_011",
+  "strength": "hard",
+  "reason": "Builds on hyperbolas"
+ },
+ {
+  "topicId": "qm_m1_018",
+  "prerequisiteId": "qm_m1_015",
+  "strength": "soft",
+  "reason": "Excluded values from the domain"
+ },
+ {
+  "topicId": "qm_m1_019",
+  "prerequisiteId": "qm_10o_012",
+  "strength": "soft",
+  "reason": "Angles on the unit circle"
+ },
+ {
+  "topicId": "qm_m1_020",
+  "prerequisiteId": "qm_m1_019",
+  "strength": "hard",
+  "reason": "Angles are now in radians"
+ },
+ {
+  "topicId": "qm_m1_020",
+  "prerequisiteId": "qm_10o_012",
+  "strength": "hard",
+  "reason": "Exact values and quadrant signs"
+ },
+ {
+  "topicId": "qm_m1_021",
+  "prerequisiteId": "qm_m1_020",
+  "strength": "hard",
+  "reason": "Graph values come from the unit circle"
+ },
+ {
+  "topicId": "qm_m1_022",
+  "prerequisiteId": "qm_m1_021",
+  "strength": "hard",
+  "reason": "Transforms the basic graphs"
+ },
+ {
+  "topicId": "qm_m1_022",
+  "prerequisiteId": "qm_9_010",
+  "strength": "soft",
+  "reason": "Same transformation ideas as for parabolas"
+ },
+ {
+  "topicId": "qm_m1_023",
+  "prerequisiteId": "qm_m1_020",
+  "strength": "hard",
+  "reason": "Exact values and quadrant signs"
+ },
+ {
+  "topicId": "qm_m1_023",
+  "prerequisiteId": "qm_m1_021",
+  "strength": "soft",
+  "reason": "The graph shows how many solutions there are"
+ },
+ {
+  "topicId": "qm_m1_024",
+  "prerequisiteId": "qm_m1_022",
+  "strength": "hard",
+  "reason": "Parameters of transformed graphs"
+ },
+ {
+  "topicId": "qm_m1_024",
+  "prerequisiteId": "qm_m1_023",
+  "strength": "soft",
+  "reason": "Finding times means solving trig equations"
+ },
+ {
+  "topicId": "qm_m1_025",
+  "prerequisiteId": "qm_9_015",
+  "strength": "hard",
+  "reason": "Venn diagrams for 'and' and 'or'"
+ },
+ {
+  "topicId": "qm_m1_026",
+  "prerequisiteId": "qm_m1_025",
+  "strength": "hard",
+  "reason": "Rules are stated in set notation"
+ },
+ {
+  "topicId": "qm_m1_027",
+  "prerequisiteId": "qm_m1_026",
+  "strength": "hard",
+  "reason": "Uses the probability rules"
+ },
+ {
+  "topicId": "qm_m1_027",
+  "prerequisiteId": "qm_10_010",
+  "strength": "hard",
+  "reason": "Conditional language and two-way tables"
+ },
+ {
+  "topicId": "qm_m1_028",
+  "prerequisiteId": "qm_m1_027",
+  "strength": "hard",
+  "reason": "Independence means P(A | B) = P(A)"
+ },
+ {
+  "topicId": "qm_m1_029",
+  "prerequisiteId": "qm_m1_028",
+  "strength": "hard",
+  "reason": "Uses the independence test"
+ },
+ {
+  "topicId": "qm_m2_001",
+  "prerequisiteId": "qm_10o_008",
+  "strength": "hard",
+  "reason": "Builds on rational exponents"
+ },
+ {
+  "topicId": "qm_m2_002",
+  "prerequisiteId": "qm_9_013",
+  "strength": "hard",
+  "reason": "Scientific notation from Year 9"
+ },
+ {
+  "topicId": "qm_m2_002",
+  "prerequisiteId": "qm_m2_001",
+  "strength": "soft",
+  "reason": "Index laws for the powers of 10"
+ },
+ {
+  "topicId": "qm_m2_003",
+  "prerequisiteId": "qm_10_007",
+  "strength": "hard",
+  "reason": "Basic exponential graphs"
+ },
+ {
+  "topicId": "qm_m2_003",
+  "prerequisiteId": "qm_m2_001",
+  "strength": "soft",
+  "reason": "Evaluating fractional powers"
+ },
+ {
+  "topicId": "qm_m2_003",
+  "prerequisiteId": "qm_9_010",
+  "strength": "soft",
+  "reason": "Same transformation language as parabolas"
+ },
+ {
+  "topicId": "qm_m2_004",
+  "prerequisiteId": "qm_m2_001",
+  "strength": "hard",
+  "reason": "Rewriting with index laws"
+ },
+ {
+  "topicId": "qm_m2_005",
+  "prerequisiteId": "qm_m2_003",
+  "strength": "hard",
+  "reason": "Exponential graphs and transformations"
+ },
+ {
+  "topicId": "qm_m2_005",
+  "prerequisiteId": "qm_10_008",
+  "strength": "hard",
+  "reason": "Growth and decay from Year 10"
+ },
+ {
+  "topicId": "qm_m2_006",
+  "prerequisiteId": "qm_10o_009",
+  "strength": "hard",
+  "reason": "Builds on Year 10 logarithms"
+ },
+ {
+  "topicId": "qm_m2_006",
+  "prerequisiteId": "qm_m2_001",
+  "strength": "hard",
+  "reason": "Logs of fractional powers"
+ },
+ {
+  "topicId": "qm_m2_007",
+  "prerequisiteId": "qm_m2_006",
+  "strength": "hard",
+  "reason": "Uses the definition and laws"
+ },
+ {
+  "topicId": "qm_m2_007",
+  "prerequisiteId": "qm_m2_004",
+  "strength": "hard",
+  "reason": "Exponential equations"
+ },
+ {
+  "topicId": "qm_m2_008",
+  "prerequisiteId": "qm_m2_006",
+  "strength": "hard",
+  "reason": "Evaluating logarithms"
+ },
+ {
+  "topicId": "qm_m2_008",
+  "prerequisiteId": "qm_m2_003",
+  "strength": "hard",
+  "reason": "Inverse of the exponential graph"
+ },
+ {
+  "topicId": "qm_m2_009",
+  "prerequisiteId": "qm_m2_006",
+  "strength": "hard",
+  "reason": "Uses the definition and laws"
+ },
+ {
+  "topicId": "qm_m2_010",
+  "prerequisiteId": "qm_m2_007",
+  "strength": "hard",
+  "reason": "Solving with logarithms"
+ },
+ {
+  "topicId": "qm_m2_011",
+  "prerequisiteId": "qm_9_007",
+  "strength": "hard",
+  "reason": "The average rate is the gradient of a chord"
+ },
+ {
+  "topicId": "qm_m2_012",
+  "prerequisiteId": "qm_m2_011",
+  "strength": "hard",
+  "reason": "The derivative is the limit of average rates"
+ },
+ {
+  "topicId": "qm_m2_012",
+  "prerequisiteId": "qm_10_001",
+  "strength": "hard",
+  "reason": "Expanding and simplifying"
+ },
+ {
+  "topicId": "qm_m2_013",
+  "prerequisiteId": "qm_m2_012",
+  "strength": "hard",
+  "reason": "The derivative comes from the limit"
+ },
+ {
+  "topicId": "qm_m2_014",
+  "prerequisiteId": "qm_m2_013",
+  "strength": "hard",
+  "reason": "Knows what a derivative means"
+ },
+ {
+  "topicId": "qm_m2_015",
+  "prerequisiteId": "qm_m2_014",
+  "strength": "hard",
+  "reason": "Needs the derivative"
+ },
+ {
+  "topicId": "qm_m2_016",
+  "prerequisiteId": "qm_m2_014",
+  "strength": "hard",
+  "reason": "Velocity is a derivative"
+ },
+ {
+  "topicId": "qm_m2_017",
+  "prerequisiteId": "qm_m2_014",
+  "strength": "hard",
+  "reason": "Needs the derivative"
+ },
+ {
+  "topicId": "qm_m2_017",
+  "prerequisiteId": "qm_m1_002",
+  "strength": "hard",
+  "reason": "f′(x) = 0 is often quadratic"
+ },
+ {
+  "topicId": "qm_m2_018",
+  "prerequisiteId": "qm_m2_017",
+  "strength": "hard",
+  "reason": "Uses stationary points"
+ },
+ {
+  "topicId": "qm_m2_018",
+  "prerequisiteId": "qm_m1_011",
+  "strength": "soft",
+  "reason": "Shapes of cubic graphs"
+ },
+ {
+  "topicId": "qm_m2_019",
+  "prerequisiteId": "qm_m2_014",
+  "strength": "hard",
+  "reason": "Power rule for each layer"
+ },
+ {
+  "topicId": "qm_m2_019",
+  "prerequisiteId": "qm_m2_001",
+  "strength": "hard",
+  "reason": "Roots as fractional powers"
+ },
+ {
+  "topicId": "qm_m2_020",
+  "prerequisiteId": "qm_m2_014",
+  "strength": "hard",
+  "reason": "Differentiates each factor"
+ },
+ {
+  "topicId": "qm_m2_020",
+  "prerequisiteId": "qm_m2_019",
+  "strength": "soft",
+  "reason": "Factors are often composite"
+ },
+ {
+  "topicId": "qm_m2_021",
+  "prerequisiteId": "qm_m2_014",
+  "strength": "hard",
+  "reason": "Differentiates numerator and denominator"
+ },
+ {
+  "topicId": "qm_m2_022",
+  "prerequisiteId": "qm_m2_019",
+  "strength": "hard",
+  "reason": "Chain rule"
+ },
+ {
+  "topicId": "qm_m2_022",
+  "prerequisiteId": "qm_m2_020",
+  "strength": "hard",
+  "reason": "Product rule"
+ },
+ {
+  "topicId": "qm_m2_022",
+  "prerequisiteId": "qm_m2_021",
+  "strength": "hard",
+  "reason": "Quotient rule"
+ },
+ {
+  "topicId": "qm_m3_001",
+  "prerequisiteId": "qm_m2_019",
+  "strength": "hard",
+  "reason": "Chain rule for e^(f(x))"
+ },
+ {
+  "topicId": "qm_m3_001",
+  "prerequisiteId": "qm_m2_003",
+  "strength": "hard",
+  "reason": "Exponential graphs"
+ },
+ {
+  "topicId": "qm_m3_002",
+  "prerequisiteId": "qm_m2_006",
+  "strength": "hard",
+  "reason": "Logarithm laws"
+ },
+ {
+  "topicId": "qm_m3_002",
+  "prerequisiteId": "qm_m3_001",
+  "strength": "soft",
+  "reason": "The number e"
+ },
+ {
+  "topicId": "qm_m3_003",
+  "prerequisiteId": "qm_m3_002",
+  "strength": "hard",
+  "reason": "Natural logarithms"
+ },
+ {
+  "topicId": "qm_m3_003",
+  "prerequisiteId": "qm_m2_019",
+  "strength": "hard",
+  "reason": "Chain rule"
+ },
+ {
+  "topicId": "qm_m3_004",
+  "prerequisiteId": "qm_m3_001",
+  "strength": "hard",
+  "reason": "Derivatives of exponentials"
+ },
+ {
+  "topicId": "qm_m3_004",
+  "prerequisiteId": "qm_m3_003",
+  "strength": "soft",
+  "reason": "Derivatives of logs"
+ },
+ {
+  "topicId": "qm_m3_004",
+  "prerequisiteId": "qm_m2_005",
+  "strength": "soft",
+  "reason": "Exponential models"
+ },
+ {
+  "topicId": "qm_m3_005",
+  "prerequisiteId": "qm_m1_021",
+  "strength": "hard",
+  "reason": "Graphs of sin, cos and tan"
+ },
+ {
+  "topicId": "qm_m3_005",
+  "prerequisiteId": "qm_m2_014",
+  "strength": "soft",
+  "reason": "Term-by-term differentiation"
+ },
+ {
+  "topicId": "qm_m3_006",
+  "prerequisiteId": "qm_m3_005",
+  "strength": "hard",
+  "reason": "Trig derivatives"
+ },
+ {
+  "topicId": "qm_m3_006",
+  "prerequisiteId": "qm_m3_001",
+  "strength": "hard",
+  "reason": "Exponential derivatives"
+ },
+ {
+  "topicId": "qm_m3_006",
+  "prerequisiteId": "qm_m3_003",
+  "strength": "hard",
+  "reason": "Log derivatives"
+ },
+ {
+  "topicId": "qm_m3_006",
+  "prerequisiteId": "qm_m2_022",
+  "strength": "hard",
+  "reason": "Combining rules"
+ },
+ {
+  "topicId": "qm_m3_007",
+  "prerequisiteId": "qm_m3_005",
+  "strength": "hard",
+  "reason": "Trig derivatives"
+ },
+ {
+  "topicId": "qm_m3_007",
+  "prerequisiteId": "qm_m1_024",
+  "strength": "soft",
+  "reason": "Trigonometric models"
+ },
+ {
+  "topicId": "qm_m3_008",
+  "prerequisiteId": "qm_m2_016",
+  "strength": "hard",
+  "reason": "Velocity from displacement"
+ },
+ {
+  "topicId": "qm_m3_008",
+  "prerequisiteId": "qm_m3_006",
+  "strength": "soft",
+  "reason": "Differentiating a range of functions"
+ },
+ {
+  "topicId": "qm_m3_009",
+  "prerequisiteId": "qm_m3_008",
+  "strength": "hard",
+  "reason": "Needs the second derivative"
+ },
+ {
+  "topicId": "qm_m3_010",
+  "prerequisiteId": "qm_m3_009",
+  "strength": "hard",
+  "reason": "Concavity"
+ },
+ {
+  "topicId": "qm_m3_010",
+  "prerequisiteId": "qm_m2_018",
+  "strength": "hard",
+  "reason": "Curve sketching with stationary points"
+ },
+ {
+  "topicId": "qm_m3_011",
+  "prerequisiteId": "qm_m2_017",
+  "strength": "hard",
+  "reason": "Stationary points"
+ },
+ {
+  "topicId": "qm_m3_011",
+  "prerequisiteId": "qm_m3_010",
+  "strength": "soft",
+  "reason": "Justifying with the second derivative"
+ },
+ {
+  "topicId": "qm_m3_011",
+  "prerequisiteId": "qm_m1_007",
+  "strength": "soft",
+  "reason": "Quadratic max/min models"
+ },
+ {
+  "topicId": "qm_m3_012",
+  "prerequisiteId": "qm_m2_014",
+  "strength": "hard",
+  "reason": "Anti-differentiation reverses the power rule"
+ },
+ {
+  "topicId": "qm_m3_013",
+  "prerequisiteId": "qm_m3_012",
+  "strength": "hard",
+  "reason": "Indefinite integrals"
+ },
+ {
+  "topicId": "qm_m3_013",
+  "prerequisiteId": "qm_m3_001",
+  "strength": "hard",
+  "reason": "Derivative of eˣ"
+ },
+ {
+  "topicId": "qm_m3_013",
+  "prerequisiteId": "qm_m3_003",
+  "strength": "hard",
+  "reason": "Derivative of ln x"
+ },
+ {
+  "topicId": "qm_m3_013",
+  "prerequisiteId": "qm_m3_005",
+  "strength": "hard",
+  "reason": "Derivatives of sin and cos"
+ },
+ {
+  "topicId": "qm_m3_014",
+  "prerequisiteId": "qm_m3_013",
+  "strength": "hard",
+  "reason": "Standard integrals"
+ },
+ {
+  "topicId": "qm_m3_015",
+  "prerequisiteId": "qm_m3_012",
+  "strength": "hard",
+  "reason": "Indefinite integrals"
+ },
+ {
+  "topicId": "qm_m3_016",
+  "prerequisiteId": "qm_m3_015",
+  "strength": "hard",
+  "reason": "Uses initial conditions"
+ },
+ {
+  "topicId": "qm_m3_016",
+  "prerequisiteId": "qm_m3_008",
+  "strength": "hard",
+  "reason": "Links displacement, velocity and acceleration"
+ },
+ {
+  "topicId": "qm_m3_017",
+  "prerequisiteId": "qm_m1_026",
+  "strength": "hard",
+  "reason": "Probability rules"
+ },
+ {
+  "topicId": "qm_m3_018",
+  "prerequisiteId": "qm_m3_017",
+  "strength": "hard",
+  "reason": "Uses the probability function"
+ },
+ {
+  "topicId": "qm_m3_019",
+  "prerequisiteId": "qm_m3_018",
+  "strength": "hard",
+  "reason": "Variance is built from expected values"
+ },
+ {
+  "topicId": "qm_m3_019",
+  "prerequisiteId": "qm_10o_014",
+  "strength": "soft",
+  "reason": "Standard deviation of data"
+ },
+ {
+  "topicId": "qm_m3_020",
+  "prerequisiteId": "qm_m3_019",
+  "strength": "hard",
+  "reason": "Mean and variance of a discrete variable"
+ },
+ {
+  "topicId": "qm_m3_021",
+  "prerequisiteId": "qm_m3_020",
+  "strength": "hard",
+  "reason": "Each trial is Bernoulli"
+ },
+ {
+  "topicId": "qm_m3_021",
+  "prerequisiteId": "qm_m1_008",
+  "strength": "hard",
+  "reason": "Combinations count the orderings"
+ },
+ {
+  "topicId": "qm_m3_021",
+  "prerequisiteId": "qm_m1_028",
+  "strength": "hard",
+  "reason": "Trials are independent"
+ },
+ {
+  "topicId": "qm_m3_022",
+  "prerequisiteId": "qm_m3_021",
+  "strength": "hard",
+  "reason": "Single binomial probabilities"
+ },
+ {
+  "topicId": "qm_m4_001",
+  "prerequisiteId": "qm_m3_012",
+  "strength": "soft",
+  "reason": "Integration and area are linked later by the fundamental theorem"
+ },
+ {
+  "topicId": "qm_m4_002",
+  "prerequisiteId": "qm_m3_014",
+  "strength": "hard",
+  "reason": "Linear composites"
+ },
+ {
+  "topicId": "qm_m4_002",
+  "prerequisiteId": "qm_m4_001",
+  "strength": "soft",
+  "reason": "Area as a limit of sums"
+ },
+ {
+  "topicId": "qm_m4_003",
+  "prerequisiteId": "qm_m4_002",
+  "strength": "hard",
+  "reason": "Definite integrals"
+ },
+ {
+  "topicId": "qm_m4_003",
+  "prerequisiteId": "qm_m1_011",
+  "strength": "soft",
+  "reason": "Finding intercepts and sketching"
+ },
+ {
+  "topicId": "qm_m4_004",
+  "prerequisiteId": "qm_m4_003",
+  "strength": "hard",
+  "reason": "Area with definite integrals"
+ },
+ {
+  "topicId": "qm_m4_004",
+  "prerequisiteId": "qm_m1_006",
+  "strength": "soft",
+  "reason": "Finding where curves meet"
+ },
+ {
+  "topicId": "qm_m4_005",
+  "prerequisiteId": "qm_m4_001",
+  "strength": "hard",
+  "reason": "Area estimates with strips"
+ },
+ {
+  "topicId": "qm_m4_006",
+  "prerequisiteId": "qm_m4_002",
+  "strength": "hard",
+  "reason": "Definite integrals"
+ },
+ {
+  "topicId": "qm_m4_006",
+  "prerequisiteId": "qm_m3_016",
+  "strength": "hard",
+  "reason": "Motion with anti-derivatives"
+ },
+ {
+  "topicId": "qm_m4_007",
+  "prerequisiteId": "qm_10o_013",
+  "strength": "hard",
+  "reason": "Introduces the sine rule"
+ },
+ {
+  "topicId": "qm_m4_008",
+  "prerequisiteId": "qm_10o_013",
+  "strength": "hard",
+  "reason": "Introduces the cosine rule"
+ },
+ {
+  "topicId": "qm_m4_009",
+  "prerequisiteId": "qm_m4_007",
+  "strength": "hard",
+  "reason": "Sine rule"
+ },
+ {
+  "topicId": "qm_m4_009",
+  "prerequisiteId": "qm_m4_008",
+  "strength": "hard",
+  "reason": "Cosine rule"
+ },
+ {
+  "topicId": "qm_m4_009",
+  "prerequisiteId": "qm_10_009",
+  "strength": "hard",
+  "reason": "Bearings, elevation and depression"
+ },
+ {
+  "topicId": "qm_m4_010",
+  "prerequisiteId": "qm_m4_002",
+  "strength": "hard",
+  "reason": "Probabilities are definite integrals"
+ },
+ {
+  "topicId": "qm_m4_010",
+  "prerequisiteId": "qm_m3_017",
+  "strength": "soft",
+  "reason": "Discrete random variables"
+ },
+ {
+  "topicId": "qm_m4_011",
+  "prerequisiteId": "qm_m4_010",
+  "strength": "hard",
+  "reason": "Works with the pdf"
+ },
+ {
+  "topicId": "qm_m4_011",
+  "prerequisiteId": "qm_m3_019",
+  "strength": "soft",
+  "reason": "Same formulas as the discrete case"
+ },
+ {
+  "topicId": "qm_m4_012",
+  "prerequisiteId": "qm_10o_014",
+  "strength": "hard",
+  "reason": "Mean and standard deviation"
+ },
+ {
+  "topicId": "qm_m4_013",
+  "prerequisiteId": "qm_m4_012",
+  "strength": "hard",
+  "reason": "Distances from the mean in standard deviations"
+ },
+ {
+  "topicId": "qm_m4_013",
+  "prerequisiteId": "qm_m4_010",
+  "strength": "soft",
+  "reason": "Normal is a continuous distribution"
+ },
+ {
+  "topicId": "qm_m4_014",
+  "prerequisiteId": "qm_m4_013",
+  "strength": "hard",
+  "reason": "Understands the normal model"
+ },
+ {
+  "topicId": "qm_m4_015",
+  "prerequisiteId": "qm_10_011",
+  "strength": "soft",
+  "reason": "Describing and comparing data"
+ },
+ {
+  "topicId": "qm_m4_016",
+  "prerequisiteId": "qm_m3_020",
+  "strength": "hard",
+  "reason": "Each response is a Bernoulli trial"
+ },
+ {
+  "topicId": "qm_m4_016",
+  "prerequisiteId": "qm_m4_015",
+  "strength": "soft",
+  "reason": "Random samples"
+ },
+ {
+  "topicId": "qm_m4_017",
+  "prerequisiteId": "qm_m4_016",
+  "strength": "hard",
+  "reason": "Mean and standard deviation of p̂"
+ },
+ {
+  "topicId": "qm_m4_017",
+  "prerequisiteId": "qm_m4_014",
+  "strength": "hard",
+  "reason": "Normal probabilities"
+ },
+ {
+  "topicId": "qm_m4_018",
+  "prerequisiteId": "qm_m4_017",
+  "strength": "hard",
+  "reason": "Uses the normal approximation for p̂"
+ },
+ {
+  "topicId": "qm_m4_019",
+  "prerequisiteId": "qm_m4_018",
+  "strength": "hard",
+  "reason": "The margin is half the interval width"
+ },
+ {
+  "topicId": "qm_m4_020",
+  "prerequisiteId": "qm_m4_018",
+  "strength": "hard",
+  "reason": "Knows how intervals are built"
  }
 ]

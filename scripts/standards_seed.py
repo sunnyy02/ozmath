@@ -15,11 +15,11 @@ Sources and their status
   support DOCX without codes. The `acopt:` ids below are ours, the list is
   INFERRED from common 10A/pathway content and must be checked against that DOCX.
 
-* QCAA 2025 senior syllabuses (General, Methods, Specialist) at unit/topic level.
-  General and Specialist titles come from the official syllabus PDFs (General
-  v1.3, Specialist v1.4). Methods titles come from a third-party summary and
-  are flagged `title_status: "unverified"`. Sub-topic bullets are not yet
-  ingested; see docs/sources.md.
+* QCAA 2025 senior syllabuses (General, Methods, Specialist) at unit/topic level,
+  titles from the official syllabus PDFs. Methods also has sub-topics (kind
+  "subtopic", official titles, notional hours) with a one-line PARAPHRASE of
+  their subject matter (`verbatim: false`). General and Specialist sub-topics are
+  not yet ingested; see docs/sources.md.
 
 Run:  python3 scripts/standards_seed.py
 """
@@ -99,9 +99,48 @@ OPT = [
 
 QCAA_SOURCE = {
     "general": "QCAA General Mathematics 2025 v1.3 (Jan 2026)",
-    "methods": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)",
+    "methods": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)",
     "specialist": "QCAA Specialist Mathematics 2025 v1.4 (Mar 2026)",
 }
+# Methods sub-topics: (unit, topic) -> [(title, hours, paraphrase of subject matter)]
+MM_SUB = {
+    (1, 1): [("Surds", 4, "Surds as irrational roots; simplify, rationalise denominators, four operations."),
+             ("Quadratic functions", 7, "Features and sketches of parabolas; solve by factorising, formula, completing the square, technology; discriminant; models.")],
+    (1, 2): [("Binomial expansion", 3, "Combinations, Pascal's triangle and nCr; binomial theorem expansions."),
+             ("Cubic functions", 9, "Degree and coefficients; expand from factors; cubic graph features and end behaviour; solve cubics; models.")],
+    (1, 3): [("Introduction to functions and relations", 5, "Relations and functions, vertical line test, function notation, domain and range, piecewise functions."),
+             ("Graphs of relations", 4, "Circles (centre, radius), parabolas and other relations; sketch and model."),
+             ("Reciprocal functions", 2, "Hyperbolic graphs: intercepts, asymptotes, end behaviour; models.")],
+    (1, 4): [("Circular measure and radian measure", 2, "Radians and degrees; arc length and sector area."),
+             ("Introduction to trigonometric functions", 8, "Unit circle, periodicity, exact values, graphs and transformations of sin, cos, tan; solve equations incl. Pythagorean identity; models.")],
+    (1, 5): [("Language of events and sets", 4, "Outcomes, sample spaces, events; complement, intersection, union, mutually exclusive; Venn diagrams."),
+             ("Conditional probability and independence", 7, "Probability rules; conditional probability P(A|B); independence and the multiplication rule; relative frequencies; models.")],
+    (2, 1): [("Indices and index laws", 4, "Negative and fractional indices, index laws, radicals and indices, scientific notation."),
+             ("Introduction to exponential functions", 6, "Graphs of y = a^x and transformations; solve exponential equations; models.")],
+    (2, 2): [("Logarithms and logarithmic laws", 5, "Logarithms as indices; logarithm laws; solve index equations with logarithms."),
+             ("Logarithmic functions", 7, "Graphs and transformations of logarithmic functions; solve log equations; models such as decibels and the Richter scale.")],
+    (2, 3): [("Rates of change and the concept of derivatives", 10, "Average and instantaneous rates of change; first principles; derivative as gradient of tangent; power rule; derivatives of polynomials.")],
+    (2, 4): [("Graphical applications of derivatives", 12, "Tangents and normals; displacement and velocity; stationary points and their nature; sketch polynomials up to degree 4; local and global extrema.")],
+    (2, 5): [("Differentiation rules", 11, "Chain, product and quotient rules for power and polynomial functions, in simplest factorised form.")],
+    (3, 1): [("Calculus of exponential functions", 6, "The number e; derivative of e^x and related forms."),
+             ("Calculus of logarithmic functions", 8, "ln as the inverse of e^x; solve base-e equations; derivative of ln x; models.")],
+    (3, 2): [("Calculus of trigonometric functions", 5, "Derivatives of sin x, cos x and tan x; models."),
+             ("Differentiation rules", 5, "Chain, product and quotient rules with exponential, logarithmic and trigonometric functions.")],
+    (3, 3): [("The second derivative and applications of differentiation", 10, "Second derivative, acceleration, concavity and inflection points; second derivative test; sketching; optimisation.")],
+    (3, 4): [("Anti-differentiation", 9, "Anti-derivatives and indefinite integrals of powers, e^x, 1/x, sin, cos and linear composites; initial conditions; displacement from velocity or acceleration.")],
+    (3, 5): [("General discrete random variables", 5, "Discrete random variables and probability functions; mean, variance and standard deviation; models."),
+             ("Bernoulli distributions", 2, "Bernoulli random variables; mean p and variance p(1 - p)."),
+             ("Binomial distributions", 5, "Binomial probabilities, mean np and variance np(1 - p); at least / at most language; models.")],
+    (4, 1): [("Fundamental theorem of calculus and definite integrals", 3, "Rectangle sums; definite integral as a limit of sums; fundamental theorem; area under a non-negative curve."),
+             ("Applications of integration", 8, "Area between curve and axis and between curves; trapezoidal rule; total change; motion.")],
+    (4, 2): [("Cosine and sine rules", 10, "Sine rule incl. ambiguous case, cosine rule, area formula; 2D and 3D problems with bearings, elevation and depression.")],
+    (4, 3): [("General continuous random variables", 6, "Probability density and cumulative distribution functions; probabilities, mean and variance by integration; z-scores."),
+             ("Normal distributions", 6, "Normal curve features, N(mu, sigma^2), standard normal; probabilities and quantiles with technology.")],
+    (4, 4): [("Random sampling", 3, "Random samples, sources of bias, procedures that ensure randomness, simulated samples."),
+             ("Sample proportions", 8, "The sample proportion as a random variable with mean p and sd sqrt(p(1 - p)/n); approximate normality for large n.")],
+    (4, 5): [("Confidence intervals for proportions", 11, "Approximate confidence interval for p; margin of error; relation to confidence level and sample size; interpretation.")],
+}
+
 QCAA = {
     "general": ("GM", [
         ("Money, measurement, algebra and linear equations", ["Consumer arithmetic", "Shape and measurement", "Similarity and scale", "Algebra", "Linear equations and their graphs"]),
@@ -138,14 +177,19 @@ def main():
         for u, (utitle, topics) in enumerate(units, 1):
             items.append({"id": "qcaa25:%s.U%d" % (code, u), "framework": "qcaa2025", "band": band, "unit": u,
                           "kind": "unit", "text": "Unit %d: %s" % (u, utitle), "verbatim": True,
-                          "title_status": "unverified" if band == "methods" else "official",
+                          "title_status": "official",
                           "source": QCAA_SOURCE[band]})
             for t, title in enumerate(topics, 1):
                 items.append({"id": "qcaa25:%s.U%d.T%d" % (code, u, t), "framework": "qcaa2025", "band": band,
                               "unit": u, "topic": t, "kind": "topic", "text": "Topic %d: %s" % (t, title),
                               "verbatim": True,
-                              "title_status": "unverified" if band == "methods" else "official",
+                              "title_status": "official",
                               "source": QCAA_SOURCE[band]})
+                for k, (stitle, hours, para) in enumerate(MM_SUB.get((u, t), []) if band == "methods" else [], 1):
+                    items.append({"id": "qcaa25:%s.U%d.T%d.S%d" % (code, u, t, k), "framework": "qcaa2025", "band": band,
+                                  "unit": u, "topic": t, "subtopic": k, "kind": "subtopic", "hours": hours,
+                                  "text": "%s: %s" % (stitle, para), "verbatim": False, "title_status": "official",
+                                  "source": QCAA_SOURCE[band]})
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(items, f, ensure_ascii=False, indent=1)
         f.write("\n")

@@ -2257,5 +2257,6849 @@
   "verify": "(lambda w: w*(40 - 2*w))(10)",
   "id": "qm_m1_007_q4",
   "topicId": "qm_m1_007"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A right-angled triangle has shorter sides 6 and 8. Find the hypotenuse.",
+  "answer": "10",
+  "explanation": "√(36 + 64) = √100 = 10.",
+  "verify": "sqrt(6**2 + 8**2)",
+  "id": "qm_9_011_q1",
+  "topicId": "qm_9_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A right-angled triangle has hypotenuse 13 and one side 5. Find the other side.",
+  "answer": "12",
+  "explanation": "√(169 − 25) = √144 = 12.",
+  "verify": "sqrt(13**2 - 5**2)",
+  "id": "qm_9_011_q2",
+  "topicId": "qm_9_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Which side lengths form a right-angled triangle?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "4, 5, 6"
+   },
+   {
+    "key": "B",
+    "text": "5, 12, 13"
+   },
+   {
+    "key": "C",
+    "text": "6, 7, 9"
+   },
+   {
+    "key": "D",
+    "text": "3, 5, 7"
+   }
+  ],
+  "answer": "B",
+  "explanation": "5² + 12² = 25 + 144 = 169 = 13².",
+  "id": "qm_9_011_q3",
+  "topicId": "qm_9_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A 5 m ladder reaches 4 m up a vertical wall. How far is its foot from the wall, in metres?",
+  "answer": "3",
+  "explanation": "√(25 − 16) = 3 m.",
+  "verify": "sqrt(5**2 - 4**2)",
+  "id": "qm_9_011_q4",
+  "topicId": "qm_9_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "In a right-angled triangle the side opposite θ is 3 and the hypotenuse is 5. Find sin θ.",
+  "answer": "3/5",
+  "explanation": "sin θ = opposite/hypotenuse = 3/5.",
+  "verify": "Rational(3, 5)",
+  "id": "qm_9_012_q1",
+  "topicId": "qm_9_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "In a right-angled triangle, tan θ equals:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "opposite/adjacent"
+   },
+   {
+    "key": "B",
+    "text": "adjacent/opposite"
+   },
+   {
+    "key": "C",
+    "text": "opposite/hypotenuse"
+   },
+   {
+    "key": "D",
+    "text": "adjacent/hypotenuse"
+   }
+  ],
+  "answer": "A",
+  "explanation": "tan θ = opposite ÷ adjacent.",
+  "id": "qm_9_012_q2",
+  "topicId": "qm_9_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "The hypotenuse is 10 and the angle is 35°. Find the side opposite the angle, correct to 1 decimal place.",
+  "answer": "5.7",
+  "explanation": "10 sin 35° ≈ 5.74, so 5.7.",
+  "verify": "rnd(10*sin(35*pi/180), 1)",
+  "tech": "active",
+  "id": "qm_9_012_q3",
+  "topicId": "qm_9_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "tan θ = 0.75. Find θ to the nearest degree.",
+  "answer": "37",
+  "explanation": "θ = tan⁻¹(0.75) ≈ 36.9°, so 37°.",
+  "verify": "rnd(atan(Rational(3, 4))*180/pi, 0)",
+  "tech": "active",
+  "id": "qm_9_012_q4",
+  "topicId": "qm_9_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Write 0.00052 in scientific notation.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "5.2 × 10⁻⁴"
+   },
+   {
+    "key": "B",
+    "text": "5.2 × 10⁻³"
+   },
+   {
+    "key": "C",
+    "text": "5.2 × 10⁻⁵"
+   },
+   {
+    "key": "D",
+    "text": "5.2 × 10⁴"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Move the decimal point 4 places right: 5.2 × 10⁻⁴.",
+  "verify": "Rational(52, 100000)",
+  "id": "qm_9_013_q1",
+  "topicId": "qm_9_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Write 3.1 × 10⁵ as an ordinary number.",
+  "answer": "310000",
+  "explanation": "Move the decimal point 5 places right.",
+  "verify": "Rational(31, 10)*10**5",
+  "id": "qm_9_013_q2",
+  "topicId": "qm_9_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Calculate (4 × 10³) × (6 × 10⁵) in scientific notation.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "2.4 × 10⁸"
+   },
+   {
+    "key": "B",
+    "text": "2.4 × 10⁹"
+   },
+   {
+    "key": "C",
+    "text": "2.4 × 10¹⁵"
+   },
+   {
+    "key": "D",
+    "text": "1.0 × 10⁹"
+   }
+  ],
+  "answer": "B",
+  "explanation": "4 × 6 = 24 and 10³ × 10⁵ = 10⁸, so 24 × 10⁸ = 2.4 × 10⁹.",
+  "verify": "(4*10**3)*(6*10**5)",
+  "id": "qm_9_013_q3",
+  "topicId": "qm_9_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "(9 × 10⁻²) ÷ (3 × 10⁴) = a × 10ⁿ in scientific notation. Find n.",
+  "answer": "-6",
+  "explanation": "9 ÷ 3 = 3 and 10⁻² ÷ 10⁴ = 10⁻⁶, so 3 × 10⁻⁶.",
+  "verify": "floor(log(Rational(9, 100)/30000, 10))",
+  "id": "qm_9_013_q4",
+  "topicId": "qm_9_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Two fair coins are tossed. Find P(two heads).",
+  "answer": "1/4",
+  "explanation": "One outcome (HH) out of four equally likely.",
+  "verify": "Rational(1, 2)**2",
+  "id": "qm_9_014_q1",
+  "topicId": "qm_9_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A fair die is rolled twice. Find P(the sum is 7).",
+  "answer": "1/6",
+  "explanation": "6 of the 36 outcomes add to 7.",
+  "verify": "Rational(len([1 for i in range(1, 7) for j in range(1, 7) if i + j == 7]), 36)",
+  "id": "qm_9_014_q2",
+  "topicId": "qm_9_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A bag has 3 red and 2 blue balls. Two are drawn without replacement. Find P(both red).",
+  "answer": "3/10",
+  "explanation": "3/5 × 2/4 = 6/20 = 3/10.",
+  "verify": "Rational(3, 5)*Rational(2, 4)",
+  "id": "qm_9_014_q3",
+  "topicId": "qm_9_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A bag has 3 red and 2 blue balls. Two are drawn with replacement. Find P(both red).",
+  "answer": "9/25",
+  "explanation": "3/5 × 3/5 = 9/25.",
+  "verify": "Rational(3, 5)**2",
+  "id": "qm_9_014_q4",
+  "topicId": "qm_9_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "In a class of 30, 18 play sport, 12 play music and 5 do both. How many do neither?",
+  "answer": "5",
+  "explanation": "18 + 12 − 5 = 25 do at least one, so 5 do neither.",
+  "verify": "30 - (18 + 12 - 5)",
+  "id": "qm_9_015_q1",
+  "topicId": "qm_9_015"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A spinner landed on red 37 times in 200 spins. Estimate P(red) as a decimal.",
+  "answer": "0.185",
+  "explanation": "37 ÷ 200 = 0.185.",
+  "verify": "Rational(37, 200)",
+  "id": "qm_9_015_q2",
+  "topicId": "qm_9_015"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "In a class of 30, 18 play sport, 12 play music and 5 do both. A student is chosen at random. Find P(sport or music).",
+  "answer": "5/6",
+  "explanation": "25 of 30 students, so 25/30 = 5/6.",
+  "verify": "Rational(18 + 12 - 5, 30)",
+  "id": "qm_9_015_q3",
+  "topicId": "qm_9_015"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "In a class of 30, 18 play sport, 12 play music and 5 do both. Find P(music only).",
+  "answer": "7/30",
+  "explanation": "12 − 5 = 7 play only music.",
+  "verify": "Rational(12 - 5, 30)",
+  "id": "qm_9_015_q4",
+  "topicId": "qm_9_015"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "For y = 2ˣ, find y when x = −3.",
+  "answer": "1/8",
+  "explanation": "2⁻³ = 1/8.",
+  "verify": "Integer(2)**-3",
+  "id": "qm_10_007_q1",
+  "topicId": "qm_10_007"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Solve 3ˣ = 81.",
+  "answer": "4",
+  "explanation": "81 = 3⁴.",
+  "verify": "solve(3**x - 81, x)",
+  "id": "qm_10_007_q2",
+  "topicId": "qm_10_007"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Which describes the graph of y = 3ˣ?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "passes through (0, 1) and increases"
+   },
+   {
+    "key": "B",
+    "text": "passes through (0, 3) and increases"
+   },
+   {
+    "key": "C",
+    "text": "passes through (1, 0) and increases"
+   },
+   {
+    "key": "D",
+    "text": "passes through (0, 1) and decreases"
+   }
+  ],
+  "answer": "A",
+  "explanation": "3⁰ = 1, and 3ˣ grows as x increases.",
+  "id": "qm_10_007_q3",
+  "topicId": "qm_10_007"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Solve 2ˣ⁺¹ = 32.",
+  "answer": "4",
+  "explanation": "32 = 2⁵, so x + 1 = 5.",
+  "verify": "solve(2**(x + 1) - 32, x)",
+  "id": "qm_10_007_q4",
+  "topicId": "qm_10_007"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "$1000 is invested at 5% p.a. compounded annually. What is it worth after 2 years, in dollars?",
+  "answer": "1102.5",
+  "explanation": "1000 × 1.05² = 1102.50.",
+  "verify": "1000*Rational(105, 100)**2",
+  "id": "qm_10_008_q1",
+  "topicId": "qm_10_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "A $20 000 car loses 15% of its value each year. Which rule gives its value after n years?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "V = 20000(0.85)ⁿ"
+   },
+   {
+    "key": "B",
+    "text": "V = 20000(1.15)ⁿ"
+   },
+   {
+    "key": "C",
+    "text": "V = 20000 − 0.15n"
+   },
+   {
+    "key": "D",
+    "text": "V = 20000(0.15)ⁿ"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Keeping 85% each year means multiplying by 0.85.",
+  "id": "qm_10_008_q2",
+  "topicId": "qm_10_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A population of 500 doubles every 3 years. What is it after 12 years?",
+  "answer": "8000",
+  "explanation": "12 years is 4 doublings: 500 × 2⁴ = 8000.",
+  "verify": "500*2**(12//3)",
+  "id": "qm_10_008_q3",
+  "topicId": "qm_10_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "$5000 is invested at 6% p.a. compounded monthly for 3 years. Find its value to the nearest cent.",
+  "answer": "5983.40",
+  "explanation": "5000 × 1.005³⁶ ≈ 5983.40.",
+  "verify": "rnd(5000*(1 + Rational(6, 1200))**36, 2)",
+  "tech": "active",
+  "id": "qm_10_008_q4",
+  "topicId": "qm_10_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "From 50 m away on level ground, the angle of elevation to the top of a tree is 30°. Find the tree's height to 1 decimal place.",
+  "answer": "28.9",
+  "explanation": "h = 50 tan 30° ≈ 28.9 m.",
+  "verify": "rnd(50*tan(pi/6), 1)",
+  "tech": "active",
+  "id": "qm_10_009_q1",
+  "topicId": "qm_10_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "A true bearing of 090° points:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "east"
+   },
+   {
+    "key": "B",
+    "text": "north"
+   },
+   {
+    "key": "C",
+    "text": "south"
+   },
+   {
+    "key": "D",
+    "text": "west"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Bearings are measured clockwise from north; 90° is east.",
+  "id": "qm_10_009_q2",
+  "topicId": "qm_10_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A ship sails 20 km on a bearing of 060°T. How far east has it travelled, to 1 decimal place?",
+  "answer": "17.3",
+  "explanation": "East component = 20 sin 60° ≈ 17.3 km.",
+  "verify": "rnd(20*sin(pi/3), 1)",
+  "tech": "active",
+  "id": "qm_10_009_q3",
+  "topicId": "qm_10_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "From the top of a 40 m cliff, the angle of depression to a boat is 25°. How far is the boat from the base of the cliff, to 1 decimal place?",
+  "answer": "85.8",
+  "explanation": "d = 40 ÷ tan 25° ≈ 85.8 m.",
+  "verify": "rnd(40/tan(25*pi/180), 1)",
+  "tech": "active",
+  "id": "qm_10_009_q4",
+  "topicId": "qm_10_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Of 100 students, 40 are in Year 10 and play sport, 20 are in Year 10 and do not, 25 are in Year 11 and play sport, and 15 are in Year 11 and do not. Find P(plays sport | Year 10).",
+  "answer": "2/3",
+  "explanation": "40 of the 60 Year 10 students.",
+  "verify": "Rational(40, 40 + 20)",
+  "id": "qm_10_010_q1",
+  "topicId": "qm_10_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Of 100 students, 40 are in Year 10 and play sport, 20 are in Year 10 and do not, 25 are in Year 11 and play sport, and 15 are in Year 11 and do not. Find P(Year 10 | plays sport).",
+  "answer": "8/13",
+  "explanation": "40 of the 65 who play sport.",
+  "verify": "Rational(40, 40 + 25)",
+  "id": "qm_10_010_q2",
+  "topicId": "qm_10_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "'Given that it rains, the match is cancelled with probability 0.8.' In symbols:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "P(cancelled | rain) = 0.8"
+   },
+   {
+    "key": "B",
+    "text": "P(rain | cancelled) = 0.8"
+   },
+   {
+    "key": "C",
+    "text": "P(rain and cancelled) = 0.8"
+   },
+   {
+    "key": "D",
+    "text": "P(cancelled) = 0.8"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The condition (rain) goes after the bar.",
+  "id": "qm_10_010_q3",
+  "topicId": "qm_10_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Of 100 students, 40 are in Year 10 and play sport, 20 are in Year 10 and do not, 25 are in Year 11 and play sport, and 15 are in Year 11 and do not. Find P(Year 11 and does not play sport).",
+  "answer": "3/20",
+  "explanation": "15 of 100.",
+  "verify": "Rational(15, 100)",
+  "id": "qm_10_010_q4",
+  "topicId": "qm_10_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the median of 3, 5, 7, 8, 12, 15, 20.",
+  "answer": "8",
+  "explanation": "The middle (4th) value is 8.",
+  "verify": "median([3, 5, 7, 8, 12, 15, 20])",
+  "id": "qm_10_011_q1",
+  "topicId": "qm_10_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A data set has Q1 = 12 and Q3 = 20. Find the interquartile range.",
+  "answer": "8",
+  "explanation": "IQR = Q3 − Q1 = 8.",
+  "verify": "20 - 12",
+  "id": "qm_10_011_q2",
+  "topicId": "qm_10_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A data set has Q1 = 12 and Q3 = 20. Find the upper fence for outliers, Q3 + 1.5 × IQR.",
+  "answer": "32",
+  "explanation": "20 + 1.5 × 8 = 32.",
+  "verify": "20 + Rational(3, 2)*(20 - 12)",
+  "id": "qm_10_011_q3",
+  "topicId": "qm_10_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Box plot A has median 50 and IQR 10. Box plot B has median 50 and IQR 25. Which is true?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "B is more spread out"
+   },
+   {
+    "key": "B",
+    "text": "A is more spread out"
+   },
+   {
+    "key": "C",
+    "text": "B has a higher centre"
+   },
+   {
+    "key": "D",
+    "text": "They have the same spread"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Same median, but B's middle 50% covers a wider range.",
+  "id": "qm_10_011_q4",
+  "topicId": "qm_10_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Evaluate 8^(1/3).",
+  "answer": "2",
+  "explanation": "The cube root of 8 is 2.",
+  "verify": "Integer(8)**Rational(1, 3)",
+  "id": "qm_10o_008_q1",
+  "topicId": "qm_10o_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Evaluate 16^(3/4).",
+  "answer": "8",
+  "explanation": "Fourth root of 16 is 2, and 2³ = 8.",
+  "verify": "Integer(16)**Rational(3, 4)",
+  "id": "qm_10o_008_q2",
+  "topicId": "qm_10o_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Evaluate 27^(−2/3).",
+  "answer": "1/9",
+  "explanation": "27^(2/3) = 3² = 9, so the answer is 1/9.",
+  "verify": "Integer(27)**Rational(-2, 3)",
+  "id": "qm_10o_008_q3",
+  "topicId": "qm_10o_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Write √(x³) with a fractional exponent.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x^(2/3)"
+   },
+   {
+    "key": "B",
+    "text": "x^(3/2)"
+   },
+   {
+    "key": "C",
+    "text": "x^(1/6)"
+   },
+   {
+    "key": "D",
+    "text": "x^(−3/2)"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The square root is the power 1/2, so (x³)^(1/2) = x^(3/2).",
+  "verify": "x**Rational(3, 2)",
+  "id": "qm_10o_008_q4",
+  "topicId": "qm_10o_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Evaluate log₂ 32.",
+  "answer": "5",
+  "explanation": "2⁵ = 32.",
+  "verify": "log(32, 2)",
+  "id": "qm_10o_009_q1",
+  "topicId": "qm_10o_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Evaluate log₁₀ 0.001.",
+  "answer": "-3",
+  "explanation": "10⁻³ = 0.001.",
+  "verify": "log(Rational(1, 1000), 10)",
+  "id": "qm_10o_009_q2",
+  "topicId": "qm_10o_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Simplify log₃ 18 − log₃ 2.",
+  "answer": "2",
+  "explanation": "log₃(18/2) = log₃ 9 = 2.",
+  "verify": "log(18, 3) - log(2, 3)",
+  "id": "qm_10o_009_q3",
+  "topicId": "qm_10o_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Write logₐ 5 + 2 logₐ 3 as a single logarithm.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "logₐ 45"
+   },
+   {
+    "key": "B",
+    "text": "logₐ 30"
+   },
+   {
+    "key": "C",
+    "text": "logₐ 11"
+   },
+   {
+    "key": "D",
+    "text": "logₐ 15"
+   }
+  ],
+  "answer": "A",
+  "explanation": "2 logₐ 3 = logₐ 9, and logₐ 5 + logₐ 9 = logₐ 45.",
+  "id": "qm_10o_009_q4",
+  "topicId": "qm_10o_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the remainder when P(x) = x³ − 2x + 5 is divided by (x − 2).",
+  "answer": "9",
+  "explanation": "P(2) = 8 − 4 + 5 = 9.",
+  "verify": "(x**3 - 2*x + 5).subs(x, 2)",
+  "id": "qm_10o_010_q1",
+  "topicId": "qm_10o_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Which is a factor of x³ − 6x² + 11x − 6?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x + 1"
+   },
+   {
+    "key": "B",
+    "text": "x − 1"
+   },
+   {
+    "key": "C",
+    "text": "x + 2"
+   },
+   {
+    "key": "D",
+    "text": "x + 3"
+   }
+  ],
+  "answer": "B",
+  "explanation": "P(1) = 1 − 6 + 11 − 6 = 0, so x − 1 is a factor.",
+  "id": "qm_10o_010_q2",
+  "topicId": "qm_10o_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "x − 3 is a factor of x³ + kx − 6. Find k.",
+  "answer": "-7",
+  "explanation": "27 + 3k − 6 = 0, so k = −7.",
+  "verify": "solve(3**3 + 3*k - 6, k)",
+  "id": "qm_10o_010_q3",
+  "topicId": "qm_10o_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Fully factorise x³ − 4x² + x + 6.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "(x − 1)(x + 2)(x − 3)"
+   },
+   {
+    "key": "B",
+    "text": "(x + 1)(x − 2)(x − 3)"
+   },
+   {
+    "key": "C",
+    "text": "(x + 1)(x + 2)(x − 3)"
+   },
+   {
+    "key": "D",
+    "text": "(x − 1)(x − 2)(x + 3)"
+   }
+  ],
+  "answer": "B",
+  "explanation": "P(−1) = 0, and dividing by (x + 1) leaves x² − 5x + 6 = (x − 2)(x − 3).",
+  "verify": "x**3 - 4*x**2 + x + 6",
+  "id": "qm_10o_010_q4",
+  "topicId": "qm_10o_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Find the centre and radius of (x − 2)² + (y + 1)² = 9.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "centre (2, −1), radius 3"
+   },
+   {
+    "key": "B",
+    "text": "centre (−2, 1), radius 3"
+   },
+   {
+    "key": "C",
+    "text": "centre (2, −1), radius 9"
+   },
+   {
+    "key": "D",
+    "text": "centre (−2, 1), radius 9"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Compare with (x − h)² + (y − k)² = r²: h = 2, k = −1, r = 3.",
+  "id": "qm_10o_011_q1",
+  "topicId": "qm_10o_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "What are the asymptotes of y = 1/x + 2?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = 0 and y = 2"
+   },
+   {
+    "key": "B",
+    "text": "x = 2 and y = 0"
+   },
+   {
+    "key": "C",
+    "text": "x = 0 and y = 0"
+   },
+   {
+    "key": "D",
+    "text": "x = −2 and y = 2"
+   }
+  ],
+  "answer": "A",
+  "explanation": "1/x is undefined at x = 0, and y approaches 2 as x grows.",
+  "id": "qm_10o_011_q2",
+  "topicId": "qm_10o_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the radius of x² + y² − 6x + 4y − 3 = 0.",
+  "answer": "4",
+  "explanation": "(x − 3)² + (y + 2)² = 3 + 9 + 4 = 16.",
+  "verify": "sqrt(3 + 9 + 4)",
+  "id": "qm_10o_011_q3",
+  "topicId": "qm_10o_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the x-values where y = 6/x meets y = x + 1.",
+  "answer": "2, -3",
+  "explanation": "6 = x² + x, so x² + x − 6 = 0 and x = 2 or −3.",
+  "verify": "solve(6/x - x - 1, x)",
+  "unordered": true,
+  "id": "qm_10o_011_q4",
+  "topicId": "qm_10o_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "sin 30° =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "√3/2"
+   },
+   {
+    "key": "B",
+    "text": "1/2"
+   },
+   {
+    "key": "C",
+    "text": "√2/2"
+   },
+   {
+    "key": "D",
+    "text": "1"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Half of an equilateral triangle gives sin 30° = 1/2.",
+  "verify": "sin(pi/6)",
+  "id": "qm_10o_012_q1",
+  "topicId": "qm_10o_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "cos 150° =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "√3/2"
+   },
+   {
+    "key": "B",
+    "text": "−1/2"
+   },
+   {
+    "key": "C",
+    "text": "−√3/2"
+   },
+   {
+    "key": "D",
+    "text": "1/2"
+   }
+  ],
+  "answer": "C",
+  "explanation": "150° is in quadrant 2, where cosine is negative: −cos 30°.",
+  "verify": "cos(5*pi/6)",
+  "id": "qm_10o_012_q2",
+  "topicId": "qm_10o_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "tan 225° =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "1"
+   },
+   {
+    "key": "B",
+    "text": "−1"
+   },
+   {
+    "key": "C",
+    "text": "√3"
+   },
+   {
+    "key": "D",
+    "text": "−√3"
+   }
+  ],
+  "answer": "A",
+  "explanation": "225° is in quadrant 3, where tangent is positive: tan 45° = 1.",
+  "verify": "tan(5*pi/4)",
+  "id": "qm_10o_012_q3",
+  "topicId": "qm_10o_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "In which quadrant is sin θ positive and cos θ negative?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "first"
+   },
+   {
+    "key": "B",
+    "text": "second"
+   },
+   {
+    "key": "C",
+    "text": "third"
+   },
+   {
+    "key": "D",
+    "text": "fourth"
+   }
+  ],
+  "answer": "B",
+  "explanation": "In quadrant 2, y > 0 and x < 0.",
+  "id": "qm_10o_012_q4",
+  "topicId": "qm_10o_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "In triangle ABC, b = 5, c = 8 and A = 60°. Find a².",
+  "answer": "49",
+  "explanation": "a² = 25 + 64 − 80 × 0.5 = 49.",
+  "verify": "5**2 + 8**2 - 2*5*8*cos(pi/3)",
+  "tech": "free",
+  "id": "qm_10o_013_q1",
+  "topicId": "qm_10o_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the area of a triangle with sides 6 and 10 and an included angle of 30°.",
+  "answer": "15",
+  "explanation": "½ × 6 × 10 × ½ = 15.",
+  "verify": "Rational(1, 2)*6*10*sin(pi/6)",
+  "tech": "free",
+  "id": "qm_10o_013_q2",
+  "topicId": "qm_10o_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "In triangle ABC, A = 40°, B = 65° and a = 10. Find b to 1 decimal place.",
+  "answer": "14.1",
+  "explanation": "b = 10 sin 65° ÷ sin 40° ≈ 14.1.",
+  "verify": "rnd(10*sin(65*pi/180)/sin(40*pi/180), 1)",
+  "tech": "active",
+  "id": "qm_10o_013_q3",
+  "topicId": "qm_10o_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A triangle has sides 7, 8 and 9. Find its largest angle to the nearest degree.",
+  "answer": "73",
+  "explanation": "The largest angle is opposite 9: cos C = (49 + 64 − 81)/112, so C ≈ 73°.",
+  "verify": "rnd(acos(Rational(49 + 64 - 81, 2*7*8))*180/pi, 0)",
+  "tech": "active",
+  "id": "qm_10o_013_q4",
+  "topicId": "qm_10o_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the mean of 2, 4, 4, 4, 5, 5, 7, 9.",
+  "answer": "5",
+  "explanation": "Sum 40, divided by 8.",
+  "verify": "mean([2, 4, 4, 4, 5, 5, 7, 9])",
+  "id": "qm_10o_014_q1",
+  "topicId": "qm_10o_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the population standard deviation of 2, 4, 4, 4, 5, 5, 7, 9.",
+  "answer": "2",
+  "explanation": "Squared deviations from 5 sum to 32; 32/8 = 4 and √4 = 2.",
+  "verify": "sqrt(pvariance([2, 4, 4, 4, 5, 5, 7, 9]))",
+  "id": "qm_10o_014_q2",
+  "topicId": "qm_10o_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Every value in a data set is increased by 10. The standard deviation:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "stays the same"
+   },
+   {
+    "key": "B",
+    "text": "increases by 10"
+   },
+   {
+    "key": "C",
+    "text": "is multiplied by 10"
+   },
+   {
+    "key": "D",
+    "text": "increases by 100"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Shifting every value moves the mean too, so the deviations do not change.",
+  "id": "qm_10o_014_q3",
+  "topicId": "qm_10o_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Data sets A and B have the same mean. A has standard deviation 2 and B has 8. Which is true?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "B's values are more spread out from the mean"
+   },
+   {
+    "key": "B",
+    "text": "A's values are more spread out"
+   },
+   {
+    "key": "C",
+    "text": "B has larger values"
+   },
+   {
+    "key": "D",
+    "text": "A has more values"
+   }
+  ],
+  "answer": "A",
+  "explanation": "A larger standard deviation means values are typically further from the mean.",
+  "id": "qm_10o_014_q4",
+  "topicId": "qm_10o_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Evaluate ⁵C₂.",
+  "answer": "10",
+  "explanation": "5 × 4 ÷ 2 = 10.",
+  "verify": "binomial(5, 2)",
+  "id": "qm_m1_008_q1",
+  "topicId": "qm_m1_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "How many ways can 3 students be chosen from 7?",
+  "answer": "35",
+  "explanation": "⁷C₃ = 35.",
+  "verify": "binomial(7, 3)",
+  "id": "qm_m1_008_q2",
+  "topicId": "qm_m1_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Evaluate ¹⁰C₇.",
+  "answer": "120",
+  "explanation": "¹⁰C₇ = ¹⁰C₃ = 120.",
+  "verify": "binomial(10, 7)",
+  "id": "qm_m1_008_q3",
+  "topicId": "qm_m1_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A committee of 2 boys and 2 girls is chosen from 5 boys and 4 girls. How many committees are possible?",
+  "answer": "60",
+  "explanation": "⁵C₂ × ⁴C₂ = 10 × 6 = 60.",
+  "verify": "binomial(5, 2)*binomial(4, 2)",
+  "id": "qm_m1_008_q4",
+  "topicId": "qm_m1_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Expand (x + 1)³.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x³ + 1"
+   },
+   {
+    "key": "B",
+    "text": "x³ + 3x² + 3x + 1"
+   },
+   {
+    "key": "C",
+    "text": "x³ + 3x + 1"
+   },
+   {
+    "key": "D",
+    "text": "x³ + 2x² + 2x + 1"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Coefficients 1, 3, 3, 1 from row 3 of Pascal's triangle.",
+  "verify": "expand((x + 1)**3)",
+  "id": "qm_m1_009_q1",
+  "topicId": "qm_m1_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the coefficient of x² in (x + 2)⁴.",
+  "answer": "24",
+  "explanation": "⁴C₂ × 2² = 6 × 4 = 24.",
+  "verify": "expand((x + 2)**4).coeff(x, 2)",
+  "id": "qm_m1_009_q2",
+  "topicId": "qm_m1_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the coefficient of x³ in (2x − 1)⁵.",
+  "answer": "80",
+  "explanation": "⁵C₃ × 2³ × (−1)² = 10 × 8 = 80.",
+  "verify": "expand((2*x - 1)**5).coeff(x, 3)",
+  "id": "qm_m1_009_q3",
+  "topicId": "qm_m1_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the term independent of x in (x + 3/x)⁴.",
+  "answer": "54",
+  "explanation": "Need x² × (3/x)²: ⁴C₂ × 9 = 54.",
+  "verify": "expand((x + 3/x)**4).coeff(x, 0)",
+  "id": "qm_m1_009_q4",
+  "topicId": "qm_m1_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "What is the degree of 4x³ − x⁵ + 2?",
+  "answer": "5",
+  "explanation": "The highest power is x⁵.",
+  "verify": "degree(4*x**3 - x**5 + 2, x)",
+  "id": "qm_m1_010_q1",
+  "topicId": "qm_m1_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Expand (x − 1)(x + 2)(x − 3).",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x³ − 2x² − 5x + 6"
+   },
+   {
+    "key": "B",
+    "text": "x³ − 2x² + 5x + 6"
+   },
+   {
+    "key": "C",
+    "text": "x³ + 2x² − 5x − 6"
+   },
+   {
+    "key": "D",
+    "text": "x³ − 2x² − 5x − 6"
+   }
+  ],
+  "answer": "A",
+  "explanation": "(x − 1)(x + 2) = x² + x − 2, then multiply by (x − 3).",
+  "verify": "expand((x - 1)*(x + 2)*(x - 3))",
+  "id": "qm_m1_010_q2",
+  "topicId": "qm_m1_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "What is the leading coefficient of (2x + 1)²(3 − x)?",
+  "answer": "-4",
+  "explanation": "The x³ term is 4x² × (−x) = −4x³.",
+  "verify": "LC(expand((2*x + 1)**2*(3 - x)), x)",
+  "id": "qm_m1_010_q3",
+  "topicId": "qm_m1_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Expand (x + 2)³. What is the coefficient of x?",
+  "answer": "12",
+  "explanation": "(x + 2)³ = x³ + 6x² + 12x + 8.",
+  "verify": "expand((x + 2)**3).coeff(x, 1)",
+  "id": "qm_m1_010_q4",
+  "topicId": "qm_m1_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Describe the end behaviour of y = −x³ + 4x.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "as x → ∞, y → −∞; as x → −∞, y → ∞"
+   },
+   {
+    "key": "B",
+    "text": "as x → ∞, y → ∞; as x → −∞, y → −∞"
+   },
+   {
+    "key": "C",
+    "text": "as x → ±∞, y → ∞"
+   },
+   {
+    "key": "D",
+    "text": "as x → ±∞, y → −∞"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The leading term −x³ dominates.",
+  "id": "qm_m1_011_q1",
+  "topicId": "qm_m1_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the x-intercepts of y = (x + 2)(x − 1)(x − 4).",
+  "answer": "-2, 1, 4",
+  "explanation": "Each factor gives an intercept.",
+  "verify": "solve((x + 2)*(x - 1)*(x - 4), x)",
+  "unordered": true,
+  "id": "qm_m1_011_q2",
+  "topicId": "qm_m1_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "At which x-intercept does y = (x − 3)²(x + 1) touch the x-axis without crossing?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = −1"
+   },
+   {
+    "key": "B",
+    "text": "x = 3"
+   },
+   {
+    "key": "C",
+    "text": "x = 1"
+   },
+   {
+    "key": "D",
+    "text": "x = −3"
+   }
+  ],
+  "answer": "B",
+  "explanation": "A squared factor gives a repeated root, where the graph touches the axis.",
+  "id": "qm_m1_011_q3",
+  "topicId": "qm_m1_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the y-intercept of y = (x − 2)(x + 3)(2x − 1).",
+  "answer": "6",
+  "explanation": "(−2)(3)(−1) = 6.",
+  "verify": "((x - 2)*(x + 3)*(2*x - 1)).subs(x, 0)",
+  "id": "qm_m1_011_q4",
+  "topicId": "qm_m1_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Solve x(x − 2)(x + 5) = 0.",
+  "answer": "0, 2, -5",
+  "explanation": "Each factor equals zero.",
+  "verify": "solve(x*(x - 2)*(x + 5), x)",
+  "unordered": true,
+  "id": "qm_m1_012_q1",
+  "topicId": "qm_m1_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Solve x³ − 9x = 0.",
+  "answer": "0, 3, -3",
+  "explanation": "x(x − 3)(x + 3) = 0.",
+  "verify": "solve(x**3 - 9*x, x)",
+  "unordered": true,
+  "id": "qm_m1_012_q2",
+  "topicId": "qm_m1_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Solve x³ − 2x² − 5x + 6 = 0.",
+  "answer": "1, -2, 3",
+  "explanation": "x = 1 is a root; dividing gives (x − 1)(x² − x − 6) = (x − 1)(x − 3)(x + 2).",
+  "verify": "solve(x**3 - 2*x**2 - 5*x + 6, x)",
+  "unordered": true,
+  "id": "qm_m1_012_q3",
+  "topicId": "qm_m1_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Solve x³ = 8 for real x.",
+  "answer": "2",
+  "explanation": "The only real cube root of 8 is 2.",
+  "verify": "[r for r in solve(x**3 - 8, x) if r.is_real]",
+  "id": "qm_m1_012_q4",
+  "topicId": "qm_m1_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "An open box is made from a 10 cm × 10 cm sheet by cutting x cm squares from each corner, so V = x(10 − 2x)². Find V when x = 2.",
+  "answer": "72",
+  "explanation": "2 × 6² = 72 cm³.",
+  "verify": "(x*(10 - 2*x)**2).subs(x, 2)",
+  "id": "qm_m1_013_q1",
+  "topicId": "qm_m1_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "An open box is made from a 10 cm × 10 cm sheet by cutting x cm squares from each corner, so V = x(10 − 2x)². What is a sensible domain for x?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "0 < x < 5"
+   },
+   {
+    "key": "B",
+    "text": "0 < x < 10"
+   },
+   {
+    "key": "C",
+    "text": "x > 0"
+   },
+   {
+    "key": "D",
+    "text": "−5 < x < 5"
+   }
+  ],
+  "answer": "A",
+  "explanation": "x must be positive and 10 − 2x must be positive.",
+  "id": "qm_m1_013_q2",
+  "topicId": "qm_m1_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "An open box is made from a 10 cm × 10 cm sheet by cutting x cm squares from each corner, so V = x(10 − 2x)². Using technology, find the exact x that gives the largest volume.",
+  "answer": "5/3",
+  "explanation": "V′ = (10 − 2x)(10 − 6x) = 0 gives x = 5/3 in the domain.",
+  "verify": "[r for r in solve(diff(x*(10 - 2*x)**2, x), x) if 0 < r < 5][0]",
+  "tech": "active",
+  "id": "qm_m1_013_q3",
+  "topicId": "qm_m1_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A model is P(t) = t³ − 6t² + 9t + 2. Find all t where P(t) = 2.",
+  "answer": "0, 3",
+  "explanation": "t(t − 3)² = 0, so t = 0 or t = 3.",
+  "verify": "solve(t**3 - 6*t**2 + 9*t, t)",
+  "unordered": true,
+  "id": "qm_m1_013_q4",
+  "topicId": "qm_m1_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Which of these is NOT a function?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "y = x²"
+   },
+   {
+    "key": "B",
+    "text": "x² + y² = 4"
+   },
+   {
+    "key": "C",
+    "text": "y = 2x + 1"
+   },
+   {
+    "key": "D",
+    "text": "y = 1/x"
+   }
+  ],
+  "answer": "B",
+  "explanation": "A circle gives two y-values for most x-values.",
+  "id": "qm_m1_014_q1",
+  "topicId": "qm_m1_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f(x) = 3x² − 2. Find f(−2).",
+  "answer": "10",
+  "explanation": "3 × 4 − 2 = 10.",
+  "verify": "(3*x**2 - 2).subs(x, -2)",
+  "id": "qm_m1_014_q2",
+  "topicId": "qm_m1_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f(x) = 2x − 1. Solve f(a) = 9.",
+  "answer": "5",
+  "explanation": "2a − 1 = 9, so a = 5.",
+  "verify": "solve(2*a - 1 - 9, a)",
+  "id": "qm_m1_014_q3",
+  "topicId": "qm_m1_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "The vertical line test checks whether:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "each x-value has at most one y-value"
+   },
+   {
+    "key": "B",
+    "text": "each y-value has one x-value"
+   },
+   {
+    "key": "C",
+    "text": "the graph passes through the origin"
+   },
+   {
+    "key": "D",
+    "text": "the graph is continuous"
+   }
+  ],
+  "answer": "A",
+  "explanation": "A function gives exactly one output for each input.",
+  "id": "qm_m1_014_q4",
+  "topicId": "qm_m1_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "What is the natural domain of f(x) = √(x − 3)?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x > 3"
+   },
+   {
+    "key": "B",
+    "text": "x ≥ 3"
+   },
+   {
+    "key": "C",
+    "text": "x ≥ 0"
+   },
+   {
+    "key": "D",
+    "text": "all real x"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The expression under the root must be non-negative.",
+  "id": "qm_m1_015_q1",
+  "topicId": "qm_m1_015"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "What is the range of y = x² + 1?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "y ≥ 0"
+   },
+   {
+    "key": "B",
+    "text": "all real y"
+   },
+   {
+    "key": "C",
+    "text": "y ≥ 1"
+   },
+   {
+    "key": "D",
+    "text": "y > 1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "x² ≥ 0, so x² + 1 ≥ 1.",
+  "id": "qm_m1_015_q2",
+  "topicId": "qm_m1_015"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "What is the natural domain of f(x) = 1/(x + 2)?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x ≠ −2"
+   },
+   {
+    "key": "B",
+    "text": "x ≠ 2"
+   },
+   {
+    "key": "C",
+    "text": "x > −2"
+   },
+   {
+    "key": "D",
+    "text": "x ≥ −2"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The denominator cannot be 0.",
+  "id": "qm_m1_015_q3",
+  "topicId": "qm_m1_015"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f(x) = 2x + 1 has domain 0 ≤ x ≤ 4. What is the largest value in its range?",
+  "answer": "9",
+  "explanation": "f is increasing, so the maximum is f(4) = 9.",
+  "verify": "(2*x + 1).subs(x, 4)",
+  "id": "qm_m1_015_q4",
+  "topicId": "qm_m1_015"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f(x) = x + 1 when x < 0, and f(x) = x² when x ≥ 0. Find f(−3).",
+  "answer": "-2",
+  "explanation": "−3 < 0, so use x + 1.",
+  "verify": "-3 + 1",
+  "id": "qm_m1_016_q1",
+  "topicId": "qm_m1_016"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f(x) = x + 1 when x < 0, and f(x) = x² when x ≥ 0. Find f(3).",
+  "answer": "9",
+  "explanation": "3 ≥ 0, so use x².",
+  "verify": "3**2",
+  "id": "qm_m1_016_q2",
+  "topicId": "qm_m1_016"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f(x) = x + 1 when x < 0, and f(x) = x² when x ≥ 0. Solve f(x) = 4.",
+  "answer": "2",
+  "explanation": "x + 1 = 4 gives x = 3, which is not < 0. x² = 4 with x ≥ 0 gives x = 2.",
+  "verify": "[r for r in solve(x**2 - 4, x) if r >= 0] + [r for r in solve(x + 1 - 4, x) if r < 0]",
+  "id": "qm_m1_016_q3",
+  "topicId": "qm_m1_016"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A phone plan costs $20 for up to 2 GB, then $10 per extra GB. What does 3.5 GB cost, in dollars?",
+  "answer": "35",
+  "explanation": "20 + 10 × 1.5 = 35.",
+  "verify": "20 + 10*(Rational(7, 2) - 2)",
+  "id": "qm_m1_016_q4",
+  "topicId": "qm_m1_016"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Which is the equation of the circle with centre (0, 0) and radius 5?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x² + y² = 5"
+   },
+   {
+    "key": "B",
+    "text": "x² + y² = 25"
+   },
+   {
+    "key": "C",
+    "text": "(x − 5)² + y² = 25"
+   },
+   {
+    "key": "D",
+    "text": "x² − y² = 25"
+   }
+  ],
+  "answer": "B",
+  "explanation": "r² = 25.",
+  "id": "qm_m1_017_q1",
+  "topicId": "qm_m1_017"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Find the centre of (x + 3)² + (y − 4)² = 16.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "(−3, 4)"
+   },
+   {
+    "key": "B",
+    "text": "(3, −4)"
+   },
+   {
+    "key": "C",
+    "text": "(−3, −4)"
+   },
+   {
+    "key": "D",
+    "text": "(3, 4)"
+   }
+  ],
+  "answer": "A",
+  "explanation": "h = −3 and k = 4.",
+  "id": "qm_m1_017_q2",
+  "topicId": "qm_m1_017"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the radius of x² + y² + 8x − 2y + 8 = 0.",
+  "answer": "3",
+  "explanation": "(x + 4)² + (y − 1)² = 16 + 1 − 8 = 9.",
+  "verify": "sqrt(16 + 1 - 8)",
+  "id": "qm_m1_017_q3",
+  "topicId": "qm_m1_017"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Does the point (1, 2) lie inside, on or outside the circle x² + y² = 4?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "inside"
+   },
+   {
+    "key": "B",
+    "text": "on"
+   },
+   {
+    "key": "C",
+    "text": "outside"
+   }
+  ],
+  "answer": "C",
+  "explanation": "1² + 2² = 5 > 4, so it is outside.",
+  "id": "qm_m1_017_q4",
+  "topicId": "qm_m1_017"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "What are the asymptotes of y = 2/(x − 3) + 1?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = 3 and y = 1"
+   },
+   {
+    "key": "B",
+    "text": "x = −3 and y = 1"
+   },
+   {
+    "key": "C",
+    "text": "x = 3 and y = 2"
+   },
+   {
+    "key": "D",
+    "text": "x = 1 and y = 3"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Vertical at x − 3 = 0; horizontal at y = 1.",
+  "id": "qm_m1_018_q1",
+  "topicId": "qm_m1_018"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the y-intercept of y = 2/(x − 3) + 1.",
+  "answer": "1/3",
+  "explanation": "2/(−3) + 1 = 1/3.",
+  "verify": "(2/(x - 3) + 1).subs(x, 0)",
+  "id": "qm_m1_018_q2",
+  "topicId": "qm_m1_018"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the x-intercept of y = 2/(x − 3) + 1.",
+  "answer": "1",
+  "explanation": "2/(x − 3) = −1, so x − 3 = −2.",
+  "verify": "solve(2/(x - 3) + 1, x)",
+  "id": "qm_m1_018_q3",
+  "topicId": "qm_m1_018"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "The graph of y = −1/x lies in which quadrants?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "1 and 3"
+   },
+   {
+    "key": "B",
+    "text": "2 and 4"
+   },
+   {
+    "key": "C",
+    "text": "1 and 2"
+   },
+   {
+    "key": "D",
+    "text": "3 and 4"
+   }
+  ],
+  "answer": "B",
+  "explanation": "For x > 0, y < 0 (quadrant 4); for x < 0, y > 0 (quadrant 2).",
+  "id": "qm_m1_018_q4",
+  "topicId": "qm_m1_018"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Write 120° in radians.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "3π/2"
+   },
+   {
+    "key": "B",
+    "text": "2π/3"
+   },
+   {
+    "key": "C",
+    "text": "π/3"
+   },
+   {
+    "key": "D",
+    "text": "4π/3"
+   }
+  ],
+  "answer": "B",
+  "explanation": "120 × π/180 = 2π/3.",
+  "verify": "120*pi/180",
+  "id": "qm_m1_019_q1",
+  "topicId": "qm_m1_019"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Convert π/4 radians to degrees.",
+  "answer": "45",
+  "explanation": "π/4 × 180/π = 45.",
+  "verify": "(pi/4)*180/pi",
+  "id": "qm_m1_019_q2",
+  "topicId": "qm_m1_019"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Find the arc length of a sector with radius 6 and angle π/3.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "π"
+   },
+   {
+    "key": "B",
+    "text": "2π"
+   },
+   {
+    "key": "C",
+    "text": "6π"
+   },
+   {
+    "key": "D",
+    "text": "π/3"
+   }
+  ],
+  "answer": "B",
+  "explanation": "l = rθ = 6 × π/3 = 2π.",
+  "verify": "6*pi/3",
+  "id": "qm_m1_019_q3",
+  "topicId": "qm_m1_019"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Find the area of a sector with radius 4 and angle π/2.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "8π"
+   },
+   {
+    "key": "B",
+    "text": "2π"
+   },
+   {
+    "key": "C",
+    "text": "4π"
+   },
+   {
+    "key": "D",
+    "text": "16π"
+   }
+  ],
+  "answer": "C",
+  "explanation": "A = ½ × 16 × π/2 = 4π.",
+  "verify": "Rational(1, 2)*4**2*pi/2",
+  "id": "qm_m1_019_q4",
+  "topicId": "qm_m1_019"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "cos(π/3) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "√3/2"
+   },
+   {
+    "key": "B",
+    "text": "1/2"
+   },
+   {
+    "key": "C",
+    "text": "√2/2"
+   },
+   {
+    "key": "D",
+    "text": "0"
+   }
+  ],
+  "answer": "B",
+  "explanation": "π/3 = 60°, and cos 60° = 1/2.",
+  "verify": "cos(pi/3)",
+  "id": "qm_m1_020_q1",
+  "topicId": "qm_m1_020"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "sin(5π/6) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "−1/2"
+   },
+   {
+    "key": "B",
+    "text": "√3/2"
+   },
+   {
+    "key": "C",
+    "text": "1/2"
+   },
+   {
+    "key": "D",
+    "text": "−√3/2"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Quadrant 2, related angle π/6, sine positive.",
+  "verify": "sin(5*pi/6)",
+  "id": "qm_m1_020_q2",
+  "topicId": "qm_m1_020"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "tan(4π/3) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "−√3"
+   },
+   {
+    "key": "B",
+    "text": "√3"
+   },
+   {
+    "key": "C",
+    "text": "1/√3"
+   },
+   {
+    "key": "D",
+    "text": "−1/√3"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Quadrant 3, related angle π/3, tangent positive.",
+  "verify": "tan(4*pi/3)",
+  "id": "qm_m1_020_q3",
+  "topicId": "qm_m1_020"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "cos(7π/4) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "−√2/2"
+   },
+   {
+    "key": "B",
+    "text": "1/2"
+   },
+   {
+    "key": "C",
+    "text": "√2/2"
+   },
+   {
+    "key": "D",
+    "text": "−1/2"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Quadrant 4, related angle π/4, cosine positive.",
+  "verify": "cos(7*pi/4)",
+  "id": "qm_m1_020_q4",
+  "topicId": "qm_m1_020"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "What is the period of y = sin x?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "π"
+   },
+   {
+    "key": "B",
+    "text": "2π"
+   },
+   {
+    "key": "C",
+    "text": "π/2"
+   },
+   {
+    "key": "D",
+    "text": "4π"
+   }
+  ],
+  "answer": "B",
+  "explanation": "sin x repeats every 2π.",
+  "verify": "periodicity(sin(x), x)",
+  "id": "qm_m1_021_q1",
+  "topicId": "qm_m1_021"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "What is the amplitude of y = 3 cos x?",
+  "answer": "3",
+  "explanation": "The graph goes from −3 to 3.",
+  "verify": "maximum(3*cos(x), x)",
+  "id": "qm_m1_021_q2",
+  "topicId": "qm_m1_021"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "What is the period of y = tan x?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "2π"
+   },
+   {
+    "key": "B",
+    "text": "π/2"
+   },
+   {
+    "key": "C",
+    "text": "π"
+   },
+   {
+    "key": "D",
+    "text": "4π"
+   }
+  ],
+  "answer": "C",
+  "explanation": "tan x repeats every π.",
+  "verify": "periodicity(tan(x), x)",
+  "id": "qm_m1_021_q3",
+  "topicId": "qm_m1_021"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Where is y = tan x undefined for 0 ≤ x ≤ 2π?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = 0, π, 2π"
+   },
+   {
+    "key": "B",
+    "text": "x = π/2 and x = 3π/2"
+   },
+   {
+    "key": "C",
+    "text": "x = π"
+   },
+   {
+    "key": "D",
+    "text": "x = π/4"
+   }
+  ],
+  "answer": "B",
+  "explanation": "tan x = sin x / cos x is undefined where cos x = 0.",
+  "id": "qm_m1_021_q4",
+  "topicId": "qm_m1_021"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "What is the amplitude of y = 4 sin(2x) − 1?",
+  "answer": "4",
+  "explanation": "The amplitude is |a| = 4.",
+  "verify": "(maximum(4*sin(2*x) - 1, x) - minimum(4*sin(2*x) - 1, x))/2",
+  "id": "qm_m1_022_q1",
+  "topicId": "qm_m1_022"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "What is the period of y = sin(3x)?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "3π"
+   },
+   {
+    "key": "B",
+    "text": "2π/3"
+   },
+   {
+    "key": "C",
+    "text": "6π"
+   },
+   {
+    "key": "D",
+    "text": "π/3"
+   }
+  ],
+  "answer": "B",
+  "explanation": "2π ÷ 3.",
+  "verify": "periodicity(sin(3*x), x)",
+  "id": "qm_m1_022_q2",
+  "topicId": "qm_m1_022"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "What is the maximum value of y = 2 cos(x − π/4) + 5?",
+  "answer": "7",
+  "explanation": "5 + 2 = 7.",
+  "verify": "maximum(2*cos(x - pi/4) + 5, x)",
+  "id": "qm_m1_022_q3",
+  "topicId": "qm_m1_022"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Which equation has amplitude 2, period π and is shifted up 1?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "y = 2 sin(x/2) + 1"
+   },
+   {
+    "key": "B",
+    "text": "y = sin(2x) + 2"
+   },
+   {
+    "key": "C",
+    "text": "y = 2 sin(2x) + 1"
+   },
+   {
+    "key": "D",
+    "text": "y = 2 sin(πx) + 1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Period π needs b = 2; amplitude 2; shift up 1.",
+  "verify": "2*sin(2*x) + 1",
+  "id": "qm_m1_022_q4",
+  "topicId": "qm_m1_022"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Solve sin x = 1/2 for 0 ≤ x ≤ 2π.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = π/6, 7π/6"
+   },
+   {
+    "key": "B",
+    "text": "x = π/6, 5π/6"
+   },
+   {
+    "key": "C",
+    "text": "x = π/3, 2π/3"
+   },
+   {
+    "key": "D",
+    "text": "x = π/6, 11π/6"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Sine is positive in quadrants 1 and 2.",
+  "verify": "solveset(sin(x) - Rational(1, 2), x, Interval(0, 2*pi))",
+  "id": "qm_m1_023_q1",
+  "topicId": "qm_m1_023"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Solve cos x = 0 for 0 ≤ x ≤ 2π.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = 0, π"
+   },
+   {
+    "key": "B",
+    "text": "x = π/2, 3π/2"
+   },
+   {
+    "key": "C",
+    "text": "x = π"
+   },
+   {
+    "key": "D",
+    "text": "x = π/2"
+   }
+  ],
+  "answer": "B",
+  "explanation": "cos x = 0 at the top and bottom of the unit circle.",
+  "verify": "solveset(cos(x), x, Interval(0, 2*pi))",
+  "id": "qm_m1_023_q2",
+  "topicId": "qm_m1_023"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Solve 2 cos x + √3 = 0 for 0 ≤ x ≤ 2π.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = π/6, 11π/6"
+   },
+   {
+    "key": "B",
+    "text": "x = 5π/6, 7π/6"
+   },
+   {
+    "key": "C",
+    "text": "x = 2π/3, 4π/3"
+   },
+   {
+    "key": "D",
+    "text": "x = 5π/6, 11π/6"
+   }
+  ],
+  "answer": "B",
+  "explanation": "cos x = −√3/2: related angle π/6 in quadrants 2 and 3.",
+  "verify": "solveset(2*cos(x) + sqrt(3), x, Interval(0, 2*pi))",
+  "id": "qm_m1_023_q3",
+  "topicId": "qm_m1_023"
+ },
+ {
+  "difficulty": "advanced",
+  "type": "choice",
+  "prompt": "Solve sin²x + cos x = 1 for 0 ≤ x ≤ 2π.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = π/2, 3π/2"
+   },
+   {
+    "key": "B",
+    "text": "x = 0, π, 2π"
+   },
+   {
+    "key": "C",
+    "text": "x = 0, 2π"
+   },
+   {
+    "key": "D",
+    "text": "x = 0, π/2, 3π/2, 2π"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Use sin²x = 1 − cos²x: cos x(1 − cos x) = 0, so cos x = 0 or cos x = 1.",
+  "verify": "solveset(sin(x)**2 + cos(x) - 1, x, Interval(0, 2*pi))",
+  "id": "qm_m1_023_q4",
+  "topicId": "qm_m1_023"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "The water depth at a jetty is d(t) = 3 sin(πt/6) + 5 metres, t hours after midnight. What is the maximum depth, in metres?",
+  "answer": "8",
+  "explanation": "5 + 3 = 8 m.",
+  "verify": "maximum(3*sin(pi*t/6) + 5, t)",
+  "id": "qm_m1_024_q1",
+  "topicId": "qm_m1_024"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "The water depth at a jetty is d(t) = 3 sin(πt/6) + 5 metres, t hours after midnight. What is the period, in hours?",
+  "answer": "12",
+  "explanation": "2π ÷ (π/6) = 12 hours.",
+  "verify": "periodicity(3*sin(pi*t/6) + 5, t)",
+  "id": "qm_m1_024_q2",
+  "topicId": "qm_m1_024"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "The water depth at a jetty is d(t) = 3 sin(πt/6) + 5 metres, t hours after midnight. Find the depth at 1 am, in metres.",
+  "answer": "13/2",
+  "explanation": "3 × sin(π/6) + 5 = 1.5 + 5 = 6.5 m.",
+  "verify": "(3*sin(pi*t/6) + 5).subs(t, 1)",
+  "id": "qm_m1_024_q3",
+  "topicId": "qm_m1_024"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "The water depth at a jetty is d(t) = 3 sin(πt/6) + 5 metres, t hours after midnight. How many hours after midnight is the depth first 8 m?",
+  "answer": "3",
+  "explanation": "sin(πt/6) = 1 when πt/6 = π/2, so t = 3.",
+  "verify": "min([s for s in solve(3*sin(pi*t/6) + 5 - 8, t) if s > 0])",
+  "id": "qm_m1_024_q4",
+  "topicId": "qm_m1_024"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A fair die is rolled. A = {even number} and B = {number greater than 3}. How many outcomes are in A ∩ B?",
+  "answer": "2",
+  "explanation": "A ∩ B = {4, 6}.",
+  "verify": "len({2, 4, 6} & {4, 5, 6})",
+  "id": "qm_m1_025_q1",
+  "topicId": "qm_m1_025"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "A′ means:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "the complement of A"
+   },
+   {
+    "key": "B",
+    "text": "A and B"
+   },
+   {
+    "key": "C",
+    "text": "A or B"
+   },
+   {
+    "key": "D",
+    "text": "A given B"
+   }
+  ],
+  "answer": "A",
+  "explanation": "A′ is every outcome not in A.",
+  "id": "qm_m1_025_q2",
+  "topicId": "qm_m1_025"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A fair die is rolled. A = {even number} and B = {number greater than 3}. How many outcomes are in A ∪ B?",
+  "answer": "4",
+  "explanation": "A ∪ B = {2, 4, 5, 6}.",
+  "verify": "len({2, 4, 6} | {4, 5, 6})",
+  "id": "qm_m1_025_q3",
+  "topicId": "qm_m1_025"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Events A and B are mutually exclusive when:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "A ∩ B = ∅"
+   },
+   {
+    "key": "B",
+    "text": "A ∪ B is the whole sample space"
+   },
+   {
+    "key": "C",
+    "text": "P(A) = P(B)"
+   },
+   {
+    "key": "D",
+    "text": "P(A ∩ B) = P(A)P(B)"
+   }
+  ],
+  "answer": "A",
+  "explanation": "They cannot both happen, so they share no outcomes.",
+  "id": "qm_m1_025_q4",
+  "topicId": "qm_m1_025"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "P(A) = 0.3. Find P(A′).",
+  "answer": "0.7",
+  "explanation": "1 − 0.3 = 0.7.",
+  "verify": "1 - Rational(3, 10)",
+  "id": "qm_m1_026_q1",
+  "topicId": "qm_m1_026"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "P(A) = 0.5, P(B) = 0.4 and P(A ∩ B) = 0.2. Find P(A ∪ B).",
+  "answer": "0.7",
+  "explanation": "0.5 + 0.4 − 0.2 = 0.7.",
+  "verify": "Rational(5, 10) + Rational(4, 10) - Rational(2, 10)",
+  "id": "qm_m1_026_q2",
+  "topicId": "qm_m1_026"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A and B are mutually exclusive with P(A) = 0.25 and P(B) = 0.35. Find P(A ∪ B).",
+  "answer": "0.6",
+  "explanation": "P(A ∩ B) = 0, so 0.25 + 0.35.",
+  "verify": "Rational(25, 100) + Rational(35, 100)",
+  "id": "qm_m1_026_q3",
+  "topicId": "qm_m1_026"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "P(A ∪ B) = 0.8, P(A) = 0.5 and P(B) = 0.6. Find P(A ∩ B).",
+  "answer": "0.3",
+  "explanation": "0.5 + 0.6 − 0.8 = 0.3.",
+  "verify": "Rational(5, 10) + Rational(6, 10) - Rational(8, 10)",
+  "id": "qm_m1_026_q4",
+  "topicId": "qm_m1_026"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "P(A ∩ B) = 0.12 and P(B) = 0.4. Find P(A | B).",
+  "answer": "0.3",
+  "explanation": "0.12 ÷ 0.4 = 0.3.",
+  "verify": "Rational(12, 100)/Rational(4, 10)",
+  "id": "qm_m1_027_q1",
+  "topicId": "qm_m1_027"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Two fair dice are rolled. Given that the sum is 8, find P(both dice are even).",
+  "answer": "3/5",
+  "explanation": "Sum 8: (2,6), (3,5), (4,4), (5,3), (6,2); three are both even.",
+  "verify": "Rational(len([1 for i in range(1, 7) for j in range(1, 7) if i + j == 8 and i % 2 == 0 and j % 2 == 0]), len([1 for i in range(1, 7) for j in range(1, 7) if i + j == 8]))",
+  "id": "qm_m1_027_q2",
+  "topicId": "qm_m1_027"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "P(A) = 0.6 and P(B | A) = 0.5. Find P(A ∩ B).",
+  "answer": "0.3",
+  "explanation": "0.6 × 0.5 = 0.3.",
+  "verify": "Rational(6, 10)*Rational(5, 10)",
+  "id": "qm_m1_027_q3",
+  "topicId": "qm_m1_027"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A test is positive for 90% of people with a condition and for 5% of people without it. 2% of people have the condition. Find P(positive).",
+  "answer": "0.067",
+  "explanation": "0.02 × 0.9 + 0.98 × 0.05 = 0.067.",
+  "verify": "Rational(2, 100)*Rational(9, 10) + Rational(98, 100)*Rational(5, 100)",
+  "id": "qm_m1_027_q4",
+  "topicId": "qm_m1_027"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A and B are independent with P(A) = 0.4 and P(B) = 0.5. Find P(A ∩ B).",
+  "answer": "0.2",
+  "explanation": "0.4 × 0.5.",
+  "verify": "Rational(4, 10)*Rational(5, 10)",
+  "id": "qm_m1_028_q1",
+  "topicId": "qm_m1_028"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "P(A) = 0.3, P(B) = 0.6 and P(A ∩ B) = 0.18. Are A and B independent?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "Yes, because P(A ∩ B) = P(A)P(B)"
+   },
+   {
+    "key": "B",
+    "text": "No, because P(A ∩ B) ≠ 0"
+   },
+   {
+    "key": "C",
+    "text": "No, because P(A) + P(B) ≠ 1"
+   },
+   {
+    "key": "D",
+    "text": "Yes, because they are mutually exclusive"
+   }
+  ],
+  "answer": "A",
+  "explanation": "0.3 × 0.6 = 0.18.",
+  "id": "qm_m1_028_q2",
+  "topicId": "qm_m1_028"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A and B are independent with P(A) = 0.3 and P(B) = 0.6. Find P(A ∪ B).",
+  "answer": "0.72",
+  "explanation": "0.3 + 0.6 − 0.18 = 0.72.",
+  "verify": "Rational(3, 10) + Rational(6, 10) - Rational(18, 100)",
+  "id": "qm_m1_028_q3",
+  "topicId": "qm_m1_028"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A fair coin is tossed 4 times. Find P(at least one head).",
+  "answer": "15/16",
+  "explanation": "1 − P(no heads) = 1 − 1/16.",
+  "verify": "1 - Rational(1, 2)**4",
+  "id": "qm_m1_028_q4",
+  "topicId": "qm_m1_028"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "In a survey of 200 people, 60 like tea and coffee, 40 like tea only, 50 like coffee only and 50 like neither. Estimate P(likes tea).",
+  "answer": "1/2",
+  "explanation": "100 of 200.",
+  "verify": "Rational(60 + 40, 200)",
+  "id": "qm_m1_029_q1",
+  "topicId": "qm_m1_029"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "In a survey of 200 people, 60 like tea and coffee, 40 like tea only, 50 like coffee only and 50 like neither. Estimate P(likes coffee | likes tea).",
+  "answer": "3/5",
+  "explanation": "60 of the 100 tea drinkers.",
+  "verify": "Rational(60, 60 + 40)",
+  "id": "qm_m1_029_q2",
+  "topicId": "qm_m1_029"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "In a survey of 200 people, 60 like tea and coffee, 40 like tea only, 50 like coffee only and 50 like neither. Estimate P(likes coffee).",
+  "answer": "11/20",
+  "explanation": "110 of 200.",
+  "verify": "Rational(60 + 50, 200)",
+  "id": "qm_m1_029_q3",
+  "topicId": "qm_m1_029"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "In a survey of 200 people, 60 like tea and coffee, 40 like tea only, 50 like coffee only and 50 like neither. Do liking tea and liking coffee appear independent?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "No: P(coffee | tea) = 0.6 differs from P(coffee) = 0.55"
+   },
+   {
+    "key": "B",
+    "text": "Yes: P(coffee | tea) = P(coffee)"
+   },
+   {
+    "key": "C",
+    "text": "Yes: some people like both"
+   },
+   {
+    "key": "D",
+    "text": "No: the events are mutually exclusive"
+   }
+  ],
+  "answer": "A",
+  "explanation": "If independent, P(coffee | tea) would equal P(coffee). 0.6 ≠ 0.55, though the difference is small for a survey.",
+  "id": "qm_m1_029_q4",
+  "topicId": "qm_m1_029"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Evaluate 32^(2/5).",
+  "answer": "4",
+  "explanation": "Fifth root of 32 is 2, and 2² = 4.",
+  "verify": "Integer(32)**Rational(2, 5)",
+  "id": "qm_m2_001_q1",
+  "topicId": "qm_m2_001"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Simplify (a²b⁻³)⁻², with positive indices.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "a⁴/b⁶"
+   },
+   {
+    "key": "B",
+    "text": "b⁶/a⁴"
+   },
+   {
+    "key": "C",
+    "text": "b⁵/a⁴"
+   },
+   {
+    "key": "D",
+    "text": "1/(a⁴b⁶)"
+   }
+  ],
+  "answer": "B",
+  "explanation": "(a²)⁻² = a⁻⁴ and (b⁻³)⁻² = b⁶, giving b⁶/a⁴.",
+  "verify": "(a**2*b**-3)**-2",
+  "id": "qm_m2_001_q2",
+  "topicId": "qm_m2_001"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Write 1/√x as a power of x.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x^(1/2)"
+   },
+   {
+    "key": "B",
+    "text": "x^(−2)"
+   },
+   {
+    "key": "C",
+    "text": "x^(−1/2)"
+   },
+   {
+    "key": "D",
+    "text": "−x^(1/2)"
+   }
+  ],
+  "answer": "C",
+  "explanation": "√x = x^(1/2), and the reciprocal gives a negative index.",
+  "verify": "x**Rational(-1, 2)",
+  "id": "qm_m2_001_q3",
+  "topicId": "qm_m2_001"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Solve x^(3/2) = 27.",
+  "answer": "9",
+  "explanation": "Raise both sides to the power 2/3: x = 27^(2/3) = 9.",
+  "verify": "solve(x**Rational(3, 2) - 27, x)",
+  "id": "qm_m2_001_q4",
+  "topicId": "qm_m2_001"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Calculate (3 × 10⁻⁴) × (2 × 10⁷).",
+  "choices": [
+   {
+    "key": "A",
+    "text": "6 × 10³"
+   },
+   {
+    "key": "B",
+    "text": "6 × 10⁻²⁸"
+   },
+   {
+    "key": "C",
+    "text": "5 × 10³"
+   },
+   {
+    "key": "D",
+    "text": "6 × 10¹¹"
+   }
+  ],
+  "answer": "A",
+  "explanation": "3 × 2 = 6 and 10⁻⁴ × 10⁷ = 10³.",
+  "verify": "(3*Rational(1, 10**4))*(2*10**7)",
+  "id": "qm_m2_002_q1",
+  "topicId": "qm_m2_002"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Write 4.7 × 10⁻³ as a decimal.",
+  "answer": "0.0047",
+  "explanation": "Move the decimal point 3 places left.",
+  "verify": "Rational(47, 10)/1000",
+  "id": "qm_m2_002_q2",
+  "topicId": "qm_m2_002"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Calculate (8 × 10⁵) ÷ (4 × 10⁻²).",
+  "choices": [
+   {
+    "key": "A",
+    "text": "2 × 10³"
+   },
+   {
+    "key": "B",
+    "text": "4 × 10⁷"
+   },
+   {
+    "key": "C",
+    "text": "2 × 10⁷"
+   },
+   {
+    "key": "D",
+    "text": "2 × 10⁻⁷"
+   }
+  ],
+  "answer": "C",
+  "explanation": "8 ÷ 4 = 2 and 10⁵ ÷ 10⁻² = 10⁷.",
+  "verify": "(8*10**5)/(4*Rational(1, 100))",
+  "id": "qm_m2_002_q3",
+  "topicId": "qm_m2_002"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Light travels at 3.0 × 10⁸ m/s. How many seconds does it take to travel 1.5 × 10¹¹ m?",
+  "answer": "500",
+  "explanation": "1.5 × 10¹¹ ÷ 3 × 10⁸ = 0.5 × 10³ = 500 s.",
+  "verify": "(Rational(15, 10)*10**11)/(3*10**8)",
+  "id": "qm_m2_002_q4",
+  "topicId": "qm_m2_002"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "What is the horizontal asymptote of y = 2ˣ − 3? Give the value of y.",
+  "answer": "-3",
+  "explanation": "2ˣ → 0 as x → −∞, so y → −3.",
+  "verify": "limit(2**x - 3, x, -oo)",
+  "id": "qm_m2_003_q1",
+  "topicId": "qm_m2_003"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the y-intercept of y = 3 × 2ˣ + 1.",
+  "answer": "4",
+  "explanation": "3 × 1 + 1 = 4.",
+  "verify": "(3*2**x + 1).subs(x, 0)",
+  "id": "qm_m2_003_q2",
+  "topicId": "qm_m2_003"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Compared with y = 2ˣ, the graph of y = 2^(x − 1) is:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "translated 1 unit right"
+   },
+   {
+    "key": "B",
+    "text": "translated 1 unit left"
+   },
+   {
+    "key": "C",
+    "text": "translated 1 unit down"
+   },
+   {
+    "key": "D",
+    "text": "reflected in the y-axis"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Replacing x by x − 1 shifts the graph right.",
+  "id": "qm_m2_003_q3",
+  "topicId": "qm_m2_003"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Which rule gives a decreasing graph?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "y = 2^x"
+   },
+   {
+    "key": "B",
+    "text": "y = 0.5^x"
+   },
+   {
+    "key": "C",
+    "text": "y = 3^x + 1"
+   },
+   {
+    "key": "D",
+    "text": "y = 2^(x+1)"
+   }
+  ],
+  "answer": "B",
+  "explanation": "A base between 0 and 1 gives decay.",
+  "id": "qm_m2_003_q4",
+  "topicId": "qm_m2_003"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Solve 2ˣ = 1/8.",
+  "answer": "-3",
+  "explanation": "1/8 = 2⁻³.",
+  "verify": "solve(2**x - Rational(1, 8), x)",
+  "id": "qm_m2_004_q1",
+  "topicId": "qm_m2_004"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Solve 9ˣ = 27.",
+  "answer": "3/2",
+  "explanation": "3^(2x) = 3³, so 2x = 3.",
+  "verify": "[r for r in solve(9**x - 27, x) if r.is_real]",
+  "id": "qm_m2_004_q2",
+  "topicId": "qm_m2_004"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Solve 4^(x + 1) = 8ˣ.",
+  "answer": "2",
+  "explanation": "2^(2x + 2) = 2^(3x), so 2x + 2 = 3x.",
+  "verify": "solve(4**(x + 1) - 8**x, x)",
+  "id": "qm_m2_004_q3",
+  "topicId": "qm_m2_004"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Solve 2^(2x) − 6 × 2ˣ + 8 = 0.",
+  "answer": "1, 2",
+  "explanation": "Let u = 2ˣ: u² − 6u + 8 = 0, so u = 2 or 4.",
+  "verify": "[r for r in solve(2**(2*x) - 6*2**x + 8, x) if r.is_real]",
+  "unordered": true,
+  "id": "qm_m2_004_q4",
+  "topicId": "qm_m2_004"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A culture of 200 bacteria triples every hour: N = 200 × 3ᵗ. Find N after 2 hours.",
+  "answer": "1800",
+  "explanation": "200 × 9 = 1800.",
+  "verify": "200*3**2",
+  "id": "qm_m2_005_q1",
+  "topicId": "qm_m2_005"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "The amount of a drug is A = 80(0.5)^(t/4) mg after t hours. Find A when t = 8.",
+  "answer": "20",
+  "explanation": "80 × 0.5² = 20 mg.",
+  "verify": "80*Rational(1, 2)**(8//4)",
+  "id": "qm_m2_005_q2",
+  "topicId": "qm_m2_005"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A car worth $30 000 depreciates by 12% each year. Find its value after 5 years, to the nearest dollar.",
+  "answer": "15832",
+  "explanation": "30 000 × 0.88⁵ ≈ 15 832.",
+  "verify": "rnd(30000*Rational(88, 100)**5, 0)",
+  "tech": "active",
+  "id": "qm_m2_005_q3",
+  "topicId": "qm_m2_005"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "The amount of a drug is A = 80(0.5)^(t/4) mg. After how many hours is A = 10 mg?",
+  "answer": "12",
+  "explanation": "0.5^(t/4) = 1/8 = 0.5³, so t/4 = 3.",
+  "verify": "solve(80*Rational(1, 2)**(t/4) - 10, t)",
+  "id": "qm_m2_005_q4",
+  "topicId": "qm_m2_005"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Evaluate log₅ 125.",
+  "answer": "3",
+  "explanation": "5³ = 125.",
+  "verify": "log(125, 5)",
+  "id": "qm_m2_006_q1",
+  "topicId": "qm_m2_006"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Evaluate log₄ 2.",
+  "answer": "1/2",
+  "explanation": "4^(1/2) = 2.",
+  "verify": "log(2, 4)",
+  "id": "qm_m2_006_q2",
+  "topicId": "qm_m2_006"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Evaluate log₂ 40 − log₂ 5.",
+  "answer": "3",
+  "explanation": "log₂ 8 = 3.",
+  "verify": "log(40, 2) - log(5, 2)",
+  "id": "qm_m2_006_q3",
+  "topicId": "qm_m2_006"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Evaluate 2 log₃ 6 − log₃ 4.",
+  "answer": "2",
+  "explanation": "log₃(36/4) = log₃ 9 = 2.",
+  "verify": "2*log(6, 3) - log(4, 3)",
+  "id": "qm_m2_006_q4",
+  "topicId": "qm_m2_006"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Solve 3ˣ = 10 exactly.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = log₃ 10"
+   },
+   {
+    "key": "B",
+    "text": "x = log₁₀ 3"
+   },
+   {
+    "key": "C",
+    "text": "x = 10/3"
+   },
+   {
+    "key": "D",
+    "text": "x = 3¹⁰"
+   }
+  ],
+  "answer": "A",
+  "explanation": "By definition, x = log₃ 10.",
+  "id": "qm_m2_007_q1",
+  "topicId": "qm_m2_007"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Solve 2ˣ = 20, correct to 2 decimal places.",
+  "answer": "4.32",
+  "explanation": "x = log 20 ÷ log 2 ≈ 4.32.",
+  "verify": "rnd(log(20)/log(2), 2)",
+  "tech": "active",
+  "id": "qm_m2_007_q2",
+  "topicId": "qm_m2_007"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Solve 5^(x − 1) = 30, correct to 2 decimal places.",
+  "answer": "3.11",
+  "explanation": "x − 1 = log₅ 30 ≈ 2.11.",
+  "verify": "rnd(1 + log(30)/log(5), 2)",
+  "tech": "active",
+  "id": "qm_m2_007_q3",
+  "topicId": "qm_m2_007"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "$2000 grows at 4% p.a. compounded annually. After how many whole years does it first exceed $3000?",
+  "answer": "11",
+  "explanation": "1.04ⁿ > 1.5 gives n > 10.3, so 11 years.",
+  "verify": "ceiling(log(Rational(3, 2))/log(Rational(104, 100)))",
+  "tech": "active",
+  "id": "qm_m2_007_q4",
+  "topicId": "qm_m2_007"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "What is the vertical asymptote of y = log₂(x − 3)?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = 3"
+   },
+   {
+    "key": "B",
+    "text": "x = −3"
+   },
+   {
+    "key": "C",
+    "text": "y = 3"
+   },
+   {
+    "key": "D",
+    "text": "x = 0"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The log is defined only for x − 3 > 0.",
+  "id": "qm_m2_008_q1",
+  "topicId": "qm_m2_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the x-intercept of y = log₂ x.",
+  "answer": "1",
+  "explanation": "log₂ 1 = 0.",
+  "verify": "solve(log(x, 2), x)",
+  "id": "qm_m2_008_q2",
+  "topicId": "qm_m2_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the x-intercept of y = log₂(x − 3).",
+  "answer": "4",
+  "explanation": "x − 3 = 1.",
+  "verify": "solve(log(x - 3, 2), x)",
+  "id": "qm_m2_008_q3",
+  "topicId": "qm_m2_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "The graphs of y = log₂ x and y = 2ˣ are reflections of each other in:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "the x-axis"
+   },
+   {
+    "key": "B",
+    "text": "the y-axis"
+   },
+   {
+    "key": "C",
+    "text": "the line y = x"
+   },
+   {
+    "key": "D",
+    "text": "the origin"
+   }
+  ],
+  "answer": "C",
+  "explanation": "They are inverse functions.",
+  "id": "qm_m2_008_q4",
+  "topicId": "qm_m2_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Solve log₃ x = 4.",
+  "answer": "81",
+  "explanation": "x = 3⁴.",
+  "verify": "solve(log(x, 3) - 4, x)",
+  "id": "qm_m2_009_q1",
+  "topicId": "qm_m2_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Solve log₂(x + 1) = 3.",
+  "answer": "7",
+  "explanation": "x + 1 = 8.",
+  "verify": "solve(log(x + 1, 2) - 3, x)",
+  "id": "qm_m2_009_q2",
+  "topicId": "qm_m2_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Solve log₁₀ x + log₁₀(x − 3) = 1.",
+  "answer": "5",
+  "explanation": "x(x − 3) = 10 gives x = 5 or −2; only 5 is in the domain.",
+  "verify": "[r for r in solve(x*(x - 3) - 10, x) if r > 3]",
+  "id": "qm_m2_009_q3",
+  "topicId": "qm_m2_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Solve log₂(3x − 1) = log₂(x + 5).",
+  "answer": "3",
+  "explanation": "3x − 1 = x + 5.",
+  "verify": "solve(3*x - 1 - (x + 5), x)",
+  "id": "qm_m2_009_q4",
+  "topicId": "qm_m2_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Sound level is L = 10 log₁₀(I/I₀) dB. Find L when I = 10⁶ I₀.",
+  "answer": "60",
+  "explanation": "10 × 6 = 60 dB.",
+  "verify": "10*log(10**6, 10)",
+  "id": "qm_m2_010_q1",
+  "topicId": "qm_m2_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "pH = −log₁₀[H⁺]. Find the pH when [H⁺] = 10⁻³.",
+  "answer": "3",
+  "explanation": "−(−3) = 3.",
+  "verify": "-log(Rational(1, 1000), 10)",
+  "id": "qm_m2_010_q2",
+  "topicId": "qm_m2_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "On the Richter scale M = log₁₀(A/A₀). How many times larger is the amplitude of a magnitude 7 earthquake than a magnitude 5?",
+  "answer": "100",
+  "explanation": "Each unit is a factor of 10, so 10².",
+  "verify": "10**(7 - 5)",
+  "id": "qm_m2_010_q3",
+  "topicId": "qm_m2_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Using L = 10 log₁₀(I/I₀), how many decibels are added when the intensity is multiplied by 1000?",
+  "answer": "30",
+  "explanation": "10 log₁₀ 1000 = 30.",
+  "verify": "10*log(1000, 10)",
+  "id": "qm_m2_010_q4",
+  "topicId": "qm_m2_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the average rate of change of f(x) = x² from x = 1 to x = 3.",
+  "answer": "4",
+  "explanation": "(9 − 1)/2 = 4.",
+  "verify": "((x**2).subs(x, 3) - (x**2).subs(x, 1))/(3 - 1)",
+  "id": "qm_m2_011_q1",
+  "topicId": "qm_m2_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A car travels 150 km in 2.5 hours. What is its average speed in km/h?",
+  "answer": "60",
+  "explanation": "150 ÷ 2.5 = 60.",
+  "verify": "150/Rational(5, 2)",
+  "id": "qm_m2_011_q2",
+  "topicId": "qm_m2_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the average rate of change of f(x) = x³ − x from x = −1 to x = 2.",
+  "answer": "2",
+  "explanation": "(6 − 0)/3 = 2.",
+  "verify": "((x**3 - x).subs(x, 2) - (x**3 - x).subs(x, -1))/(2 - (-1))",
+  "id": "qm_m2_011_q3",
+  "topicId": "qm_m2_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A town had 1200 people in 2020 and 1500 in 2026. Find the average rate of change in people per year.",
+  "answer": "50",
+  "explanation": "300 ÷ 6 = 50.",
+  "verify": "(1500 - 1200)/Integer(6)",
+  "id": "qm_m2_011_q4",
+  "topicId": "qm_m2_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "The derivative of f at x is defined as:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "lim (h → 0) [f(x + h) − f(x)]/h"
+   },
+   {
+    "key": "B",
+    "text": "[f(x + h) − f(x)]/h"
+   },
+   {
+    "key": "C",
+    "text": "lim (h → 0) [f(x) − f(h)]/x"
+   },
+   {
+    "key": "D",
+    "text": "f(x + h) − f(x)"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The gradient of a chord as its width h shrinks to 0.",
+  "id": "qm_m2_012_q1",
+  "topicId": "qm_m2_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "For f(x) = x², the difference quotient [f(x + h) − f(x)]/h simplifies to:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "2x"
+   },
+   {
+    "key": "B",
+    "text": "2x + h"
+   },
+   {
+    "key": "C",
+    "text": "x + h"
+   },
+   {
+    "key": "D",
+    "text": "2xh + h²"
+   }
+  ],
+  "answer": "B",
+  "explanation": "(x² + 2xh + h² − x²)/h = 2x + h.",
+  "verify": "simplify(((x + h)**2 - x**2)/h)",
+  "id": "qm_m2_012_q2",
+  "topicId": "qm_m2_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Using first principles, the derivative of f(x) = 3x² − x is:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "6x"
+   },
+   {
+    "key": "B",
+    "text": "3x − 1"
+   },
+   {
+    "key": "C",
+    "text": "6x − 1"
+   },
+   {
+    "key": "D",
+    "text": "6x² − 1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The difference quotient is 6x + 3h − 1, which tends to 6x − 1.",
+  "verify": "limit((3*(x + h)**2 - (x + h) - (3*x**2 - x))/h, h, 0)",
+  "id": "qm_m2_012_q3",
+  "topicId": "qm_m2_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "For f(x) = x³, [f(2 + h) − f(2)]/h = 12 + 6h + h². What is f′(2)?",
+  "answer": "12",
+  "explanation": "Let h → 0.",
+  "verify": "limit(((2 + h)**3 - 8)/h, h, 0)",
+  "id": "qm_m2_012_q4",
+  "topicId": "qm_m2_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f′(x) = 2x. What is the gradient of the tangent at x = 3?",
+  "answer": "6",
+  "explanation": "f′(3) = 6.",
+  "verify": "(2*x).subs(x, 3)",
+  "id": "qm_m2_013_q1",
+  "topicId": "qm_m2_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "If f′(2) = 0, then at x = 2 the tangent is:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "horizontal"
+   },
+   {
+    "key": "B",
+    "text": "vertical"
+   },
+   {
+    "key": "C",
+    "text": "undefined"
+   },
+   {
+    "key": "D",
+    "text": "steepest"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Gradient 0 means horizontal.",
+  "id": "qm_m2_013_q2",
+  "topicId": "qm_m2_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A ball's height is h(t) = 20t − 5t² metres, so h′(t) = 20 − 10t. Find the rate of change of height at t = 1, in m/s.",
+  "answer": "10",
+  "explanation": "20 − 10 = 10 m/s upwards.",
+  "verify": "diff(20*t - 5*t**2, t).subs(t, 1)",
+  "id": "qm_m2_013_q3",
+  "topicId": "qm_m2_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "If f′(x) < 0 on an interval, then on that interval f is:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "decreasing"
+   },
+   {
+    "key": "B",
+    "text": "increasing"
+   },
+   {
+    "key": "C",
+    "text": "concave up"
+   },
+   {
+    "key": "D",
+    "text": "zero"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Negative gradient means the function is going down.",
+  "id": "qm_m2_013_q4",
+  "topicId": "qm_m2_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx (x⁵) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x⁴"
+   },
+   {
+    "key": "B",
+    "text": "5x⁴"
+   },
+   {
+    "key": "C",
+    "text": "5x⁵"
+   },
+   {
+    "key": "D",
+    "text": "4x⁵"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Bring down the power and subtract 1.",
+  "verify": "diff(x**5, x)",
+  "id": "qm_m2_014_q1",
+  "topicId": "qm_m2_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Differentiate y = 3x⁴ − 2x² + 7.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "12x³ − 4x"
+   },
+   {
+    "key": "B",
+    "text": "12x³ − 4x + 7"
+   },
+   {
+    "key": "C",
+    "text": "3x³ − 2x"
+   },
+   {
+    "key": "D",
+    "text": "12x⁴ − 4x²"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The constant 7 has derivative 0.",
+  "verify": "diff(3*x**4 - 2*x**2 + 7, x)",
+  "id": "qm_m2_014_q2",
+  "topicId": "qm_m2_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f(x) = 2x³ − 5x + 1. Find f′(2).",
+  "answer": "19",
+  "explanation": "f′(x) = 6x² − 5, so 24 − 5 = 19.",
+  "verify": "diff(2*x**3 - 5*x + 1, x).subs(x, 2)",
+  "id": "qm_m2_014_q3",
+  "topicId": "qm_m2_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Differentiate y = (x + 3)(2x − 1) by expanding first.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "2"
+   },
+   {
+    "key": "B",
+    "text": "4x − 5"
+   },
+   {
+    "key": "C",
+    "text": "2x + 5"
+   },
+   {
+    "key": "D",
+    "text": "4x + 5"
+   }
+  ],
+  "answer": "D",
+  "explanation": "y = 2x² + 5x − 3, so dy/dx = 4x + 5.",
+  "verify": "diff((x + 3)*(2*x - 1), x)",
+  "id": "qm_m2_014_q4",
+  "topicId": "qm_m2_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the gradient of the tangent to y = x² − 3x at x = 4.",
+  "answer": "5",
+  "explanation": "2(4) − 3 = 5.",
+  "verify": "diff(x**2 - 3*x, x).subs(x, 4)",
+  "id": "qm_m2_015_q1",
+  "topicId": "qm_m2_015"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Find the equation of the tangent to y = x² at (1, 1).",
+  "choices": [
+   {
+    "key": "A",
+    "text": "y = 2x + 1"
+   },
+   {
+    "key": "B",
+    "text": "y = x"
+   },
+   {
+    "key": "C",
+    "text": "y = 2x − 1"
+   },
+   {
+    "key": "D",
+    "text": "y = 2x"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Gradient 2, so y − 1 = 2(x − 1).",
+  "verify": "2*(x - 1) + 1",
+  "id": "qm_m2_015_q2",
+  "topicId": "qm_m2_015"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Find the equation of the normal to y = x² at (1, 1).",
+  "choices": [
+   {
+    "key": "A",
+    "text": "y = −2x + 3"
+   },
+   {
+    "key": "B",
+    "text": "y = −x/2 + 3/2"
+   },
+   {
+    "key": "C",
+    "text": "y = x/2 + 1/2"
+   },
+   {
+    "key": "D",
+    "text": "y = −x/2 + 1"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The normal gradient is −1/2: y − 1 = −½(x − 1).",
+  "verify": "-(x - 1)/2 + 1",
+  "id": "qm_m2_015_q3",
+  "topicId": "qm_m2_015"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "At what x-value does y = x² − 6x + 2 have a tangent with gradient 4?",
+  "answer": "5",
+  "explanation": "2x − 6 = 4.",
+  "verify": "solve(diff(x**2 - 6*x + 2, x) - 4, x)",
+  "id": "qm_m2_015_q4",
+  "topicId": "qm_m2_015"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "A particle moves so that its displacement is x(t) = t³ − 6t² + 9t metres after t seconds. Find the velocity function.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "t² − 6t + 9"
+   },
+   {
+    "key": "B",
+    "text": "3t² − 12t + 9"
+   },
+   {
+    "key": "C",
+    "text": "3t² − 12t"
+   },
+   {
+    "key": "D",
+    "text": "6t − 12"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Differentiate each term.",
+  "verify": "diff(t**3 - 6*t**2 + 9*t, t)",
+  "id": "qm_m2_016_q1",
+  "topicId": "qm_m2_016"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A particle moves so that its displacement is x(t) = t³ − 6t² + 9t metres after t seconds. Find the velocity at t = 2, in m/s.",
+  "answer": "-3",
+  "explanation": "12 − 24 + 9 = −3.",
+  "verify": "diff(t**3 - 6*t**2 + 9*t, t).subs(t, 2)",
+  "id": "qm_m2_016_q2",
+  "topicId": "qm_m2_016"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A particle moves so that its displacement is x(t) = t³ − 6t² + 9t metres after t seconds. At what times is the particle at rest?",
+  "answer": "1, 3",
+  "explanation": "3t² − 12t + 9 = 3(t − 1)(t − 3) = 0.",
+  "verify": "solve(diff(t**3 - 6*t**2 + 9*t, t), t)",
+  "unordered": true,
+  "id": "qm_m2_016_q3",
+  "topicId": "qm_m2_016"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A particle moves so that its displacement is x(t) = t³ − 6t² + 9t metres after t seconds. Find the displacement at t = 3.",
+  "answer": "0",
+  "explanation": "27 − 54 + 27 = 0.",
+  "verify": "(t**3 - 6*t**2 + 9*t).subs(t, 3)",
+  "id": "qm_m2_016_q4",
+  "topicId": "qm_m2_016"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the x-coordinate of the stationary point of y = x² − 8x + 3.",
+  "answer": "4",
+  "explanation": "2x − 8 = 0.",
+  "verify": "solve(diff(x**2 - 8*x + 3, x), x)",
+  "id": "qm_m2_017_q1",
+  "topicId": "qm_m2_017"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the x-coordinates of the stationary points of y = x³ − 3x.",
+  "answer": "1, -1",
+  "explanation": "3x² − 3 = 0.",
+  "verify": "solve(diff(x**3 - 3*x, x), x)",
+  "unordered": true,
+  "id": "qm_m2_017_q2",
+  "topicId": "qm_m2_017"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "For y = x³ − 3x, the stationary point at x = −1 is a:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "local minimum"
+   },
+   {
+    "key": "B",
+    "text": "local maximum"
+   },
+   {
+    "key": "C",
+    "text": "stationary point of inflection"
+   },
+   {
+    "key": "D",
+    "text": "not stationary"
+   }
+  ],
+  "answer": "B",
+  "explanation": "f′ changes from positive to negative at x = −1.",
+  "id": "qm_m2_017_q3",
+  "topicId": "qm_m2_017"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "At x = 0, the curve y = x³ has:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "a local minimum"
+   },
+   {
+    "key": "B",
+    "text": "a local maximum"
+   },
+   {
+    "key": "C",
+    "text": "a stationary point of inflection"
+   },
+   {
+    "key": "D",
+    "text": "no stationary point"
+   }
+  ],
+  "answer": "C",
+  "explanation": "f′(0) = 0 but f′ is positive on both sides.",
+  "id": "qm_m2_017_q4",
+  "topicId": "qm_m2_017"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the local maximum value of y = −x² + 4x.",
+  "answer": "4",
+  "explanation": "At x = 2, y = −4 + 8 = 4.",
+  "verify": "(-x**2 + 4*x).subs(x, 2)",
+  "id": "qm_m2_018_q1",
+  "topicId": "qm_m2_018"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the x-coordinates of the stationary points of y = x⁴ − 2x².",
+  "answer": "0, 1, -1",
+  "explanation": "4x³ − 4x = 4x(x − 1)(x + 1) = 0.",
+  "verify": "solve(diff(x**4 - 2*x**2, x), x)",
+  "unordered": true,
+  "id": "qm_m2_018_q2",
+  "topicId": "qm_m2_018"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the global maximum of f(x) = x³ − 3x on −2 ≤ x ≤ 3.",
+  "answer": "18",
+  "explanation": "Compare f(−2) = −2, f(−1) = 2, f(1) = −2 and f(3) = 18.",
+  "verify": "maximum(x**3 - 3*x, x, Interval(-2, 3))",
+  "id": "qm_m2_018_q3",
+  "topicId": "qm_m2_018"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the global minimum of f(x) = x³ − 3x on −2 ≤ x ≤ 3.",
+  "answer": "-2",
+  "explanation": "f(−2) = f(1) = −2 is the lowest value.",
+  "verify": "minimum(x**3 - 3*x, x, Interval(-2, 3))",
+  "id": "qm_m2_018_q4",
+  "topicId": "qm_m2_018"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx (2x + 1)⁵ =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "5(2x + 1)⁴"
+   },
+   {
+    "key": "B",
+    "text": "10(2x + 1)⁴"
+   },
+   {
+    "key": "C",
+    "text": "10(2x + 1)⁵"
+   },
+   {
+    "key": "D",
+    "text": "2(2x + 1)⁴"
+   }
+  ],
+  "answer": "B",
+  "explanation": "5(2x + 1)⁴ × 2.",
+  "verify": "diff((2*x + 1)**5, x)",
+  "id": "qm_m2_019_q1",
+  "topicId": "qm_m2_019"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx (x² + 1)³ =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "3(x² + 1)²"
+   },
+   {
+    "key": "B",
+    "text": "6x(x² + 1)³"
+   },
+   {
+    "key": "C",
+    "text": "2x(x² + 1)²"
+   },
+   {
+    "key": "D",
+    "text": "6x(x² + 1)²"
+   }
+  ],
+  "answer": "D",
+  "explanation": "3(x² + 1)² × 2x.",
+  "verify": "diff((x**2 + 1)**3, x)",
+  "id": "qm_m2_019_q2",
+  "topicId": "qm_m2_019"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "d/dx √(x² + 9) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x/√(x² + 9)"
+   },
+   {
+    "key": "B",
+    "text": "1/(2√(x² + 9))"
+   },
+   {
+    "key": "C",
+    "text": "2x/√(x² + 9)"
+   },
+   {
+    "key": "D",
+    "text": "x√(x² + 9)"
+   }
+  ],
+  "answer": "A",
+  "explanation": "½(x² + 9)^(−1/2) × 2x.",
+  "verify": "diff(sqrt(x**2 + 9), x)",
+  "id": "qm_m2_019_q3",
+  "topicId": "qm_m2_019"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f(x) = (3x − 5)⁴. Find f′(2).",
+  "answer": "12",
+  "explanation": "f′(x) = 12(3x − 5)³, and 12 × 1³ = 12.",
+  "verify": "diff((3*x - 5)**4, x).subs(x, 2)",
+  "id": "qm_m2_019_q4",
+  "topicId": "qm_m2_019"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx [x²(x + 1)³] =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "6x(x + 1)²"
+   },
+   {
+    "key": "B",
+    "text": "x(x + 1)²(5x + 2)"
+   },
+   {
+    "key": "C",
+    "text": "2x(x + 1)³"
+   },
+   {
+    "key": "D",
+    "text": "x(x + 1)²(5x + 3)"
+   }
+  ],
+  "answer": "B",
+  "explanation": "2x(x + 1)³ + 3x²(x + 1)² = x(x + 1)²(2x + 2 + 3x).",
+  "verify": "diff(x**2*(x + 1)**3, x)",
+  "id": "qm_m2_020_q1",
+  "topicId": "qm_m2_020"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f(x) = x(x − 2)². Find f′(1).",
+  "answer": "-1",
+  "explanation": "f′(x) = (x − 2)² + 2x(x − 2), so 1 − 2 = −1.",
+  "verify": "diff(x*(x - 2)**2, x).subs(x, 1)",
+  "id": "qm_m2_020_q2",
+  "topicId": "qm_m2_020"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "d/dx [x√(x + 1)] =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "1/(2√(x + 1))"
+   },
+   {
+    "key": "B",
+    "text": "(x + 2)/(2√(x + 1))"
+   },
+   {
+    "key": "C",
+    "text": "(3x + 2)/(2√(x + 1))"
+   },
+   {
+    "key": "D",
+    "text": "(3x + 1)/(2√(x + 1))"
+   }
+  ],
+  "answer": "C",
+  "explanation": "√(x + 1) + x/(2√(x + 1)) = (2(x + 1) + x)/(2√(x + 1)).",
+  "verify": "diff(x*sqrt(x + 1), x)",
+  "id": "qm_m2_020_q3",
+  "topicId": "qm_m2_020"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "y = (2x + 1)(x² − 3). Find dy/dx at x = 1.",
+  "answer": "2",
+  "explanation": "2(x² − 3) + (2x + 1)(2x) = 2(−2) + 3(2) = 2.",
+  "verify": "diff((2*x + 1)*(x**2 - 3), x).subs(x, 1)",
+  "id": "qm_m2_020_q4",
+  "topicId": "qm_m2_020"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx [x/(x + 1)] =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "−1/(x + 1)²"
+   },
+   {
+    "key": "B",
+    "text": "1/(x + 1)²"
+   },
+   {
+    "key": "C",
+    "text": "x/(x + 1)²"
+   },
+   {
+    "key": "D",
+    "text": "1/(x + 1)"
+   }
+  ],
+  "answer": "B",
+  "explanation": "(1(x + 1) − x(1))/(x + 1)² = 1/(x + 1)².",
+  "verify": "diff(x/(x + 1), x)",
+  "id": "qm_m2_021_q1",
+  "topicId": "qm_m2_021"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f(x) = (x + 2)/(x − 1). Find f′(2).",
+  "answer": "-3",
+  "explanation": "f′(x) = −3/(x − 1)², so −3.",
+  "verify": "diff((x + 2)/(x - 1), x).subs(x, 2)",
+  "id": "qm_m2_021_q2",
+  "topicId": "qm_m2_021"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "d/dx [(2x − 1)/(x² + 1)] =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "(2x² − 2x + 2)/(x² + 1)²"
+   },
+   {
+    "key": "B",
+    "text": "(−2x² + 2x + 2)/(x² + 1)²"
+   },
+   {
+    "key": "C",
+    "text": "(−2x² + 2x − 2)/(x² + 1)²"
+   },
+   {
+    "key": "D",
+    "text": "1/x"
+   }
+  ],
+  "answer": "B",
+  "explanation": "(2(x² + 1) − (2x − 1)(2x))/(x² + 1)² = (−2x² + 2x + 2)/(x² + 1)².",
+  "verify": "diff((2*x - 1)/(x**2 + 1), x)",
+  "id": "qm_m2_021_q3",
+  "topicId": "qm_m2_021"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "y = x²/(x + 3). Find dy/dx at x = 1.",
+  "answer": "7/16",
+  "explanation": "(2x(x + 3) − x²)/(x + 3)² = (8 − 1)/16.",
+  "verify": "diff(x**2/(x + 3), x).subs(x, 1)",
+  "id": "qm_m2_021_q4",
+  "topicId": "qm_m2_021"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx [x(2x + 1)³] =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "(2x + 1)²(6x + 1)"
+   },
+   {
+    "key": "B",
+    "text": "3(2x + 1)²"
+   },
+   {
+    "key": "C",
+    "text": "(2x + 1)²(8x + 1)"
+   },
+   {
+    "key": "D",
+    "text": "(2x + 1)³(8x + 1)"
+   }
+  ],
+  "answer": "C",
+  "explanation": "(2x + 1)³ + 6x(2x + 1)² = (2x + 1)²(2x + 1 + 6x).",
+  "verify": "diff(x*(2*x + 1)**3, x)",
+  "id": "qm_m2_022_q1",
+  "topicId": "qm_m2_022"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx [(x + 1)²/x] =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "(x² − 1)/x²"
+   },
+   {
+    "key": "B",
+    "text": "(x + 1)²/x²"
+   },
+   {
+    "key": "C",
+    "text": "2(x + 1)/x"
+   },
+   {
+    "key": "D",
+    "text": "(x² + 1)/x²"
+   }
+  ],
+  "answer": "A",
+  "explanation": "(2(x + 1)x − (x + 1)²)/x² = (x + 1)(x − 1)/x².",
+  "verify": "diff((x + 1)**2/x, x)",
+  "id": "qm_m2_022_q2",
+  "topicId": "qm_m2_022"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f(x) = x²(1 − x)⁴. Find f′(2).",
+  "answer": "20",
+  "explanation": "f′(x) = 2x(1 − x)⁴ − 4x²(1 − x)³, so 4(1) − 16(−1) = 20.",
+  "verify": "diff(x**2*(1 - x)**4, x).subs(x, 2)",
+  "id": "qm_m2_022_q3",
+  "topicId": "qm_m2_022"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "d/dx [x²/(x + 1)²] =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "2x/(x + 1)²"
+   },
+   {
+    "key": "B",
+    "text": "x/(x + 1)³"
+   },
+   {
+    "key": "C",
+    "text": "2x/(x + 1)³"
+   },
+   {
+    "key": "D",
+    "text": "2/(x + 1)³"
+   }
+  ],
+  "answer": "C",
+  "explanation": "(2x(x + 1)² − 2x²(x + 1))/(x + 1)⁴ = 2x(x + 1)/(x + 1)⁴.",
+  "verify": "diff(x**2/(x + 1)**2, x)",
+  "id": "qm_m2_022_q4",
+  "topicId": "qm_m2_022"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx e^(3x) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "e^(3x)"
+   },
+   {
+    "key": "B",
+    "text": "3e^(3x)"
+   },
+   {
+    "key": "C",
+    "text": "3xe^(3x − 1)"
+   },
+   {
+    "key": "D",
+    "text": "e^(3x)/3"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Chain rule: e^(3x) × 3.",
+  "verify": "diff(exp(3*x), x)",
+  "id": "qm_m3_001_q1",
+  "topicId": "qm_m3_001"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx (5eˣ − x²) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "5e^x − 2x"
+   },
+   {
+    "key": "B",
+    "text": "5e^x − x"
+   },
+   {
+    "key": "C",
+    "text": "e^x − 2x"
+   },
+   {
+    "key": "D",
+    "text": "5xe^(x − 1) − 2x"
+   }
+  ],
+  "answer": "A",
+  "explanation": "d/dx eˣ = eˣ, so 5eˣ − 2x.",
+  "verify": "diff(5*exp(x) - x**2, x)",
+  "id": "qm_m3_001_q2",
+  "topicId": "qm_m3_001"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f(x) = e^(2x). Find f′(0).",
+  "answer": "2",
+  "explanation": "f′(x) = 2e^(2x), and e⁰ = 1.",
+  "verify": "diff(exp(2*x), x).subs(x, 0)",
+  "id": "qm_m3_001_q3",
+  "topicId": "qm_m3_001"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "d/dx e^(x²) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "e^(2x)"
+   },
+   {
+    "key": "B",
+    "text": "x²e^(x² − 1)"
+   },
+   {
+    "key": "C",
+    "text": "2xe^(x²)"
+   },
+   {
+    "key": "D",
+    "text": "2e^(x²)"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Chain rule: e^(x²) × 2x.",
+  "verify": "diff(exp(x**2), x)",
+  "id": "qm_m3_001_q4",
+  "topicId": "qm_m3_001"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Simplify ln(e⁵).",
+  "answer": "5",
+  "explanation": "ln and e cancel.",
+  "verify": "log(exp(5))",
+  "id": "qm_m3_002_q1",
+  "topicId": "qm_m3_002"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Solve eˣ = 7.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = 7/e"
+   },
+   {
+    "key": "B",
+    "text": "x = ln 7"
+   },
+   {
+    "key": "C",
+    "text": "x = e^7"
+   },
+   {
+    "key": "D",
+    "text": "x = log₇ e"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Take ln of both sides.",
+  "verify": "solve(exp(x) - 7, x)",
+  "id": "qm_m3_002_q2",
+  "topicId": "qm_m3_002"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Solve ln(2x − 1) = 0.",
+  "answer": "1",
+  "explanation": "2x − 1 = e⁰ = 1.",
+  "verify": "solve(log(2*x - 1), x)",
+  "id": "qm_m3_002_q3",
+  "topicId": "qm_m3_002"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Solve e^(2x) − 5eˣ + 6 = 0.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = 2, 3"
+   },
+   {
+    "key": "B",
+    "text": "x = ln 2, ln 3"
+   },
+   {
+    "key": "C",
+    "text": "x = ln 5, ln 6"
+   },
+   {
+    "key": "D",
+    "text": "x = e^2, e^3"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Let u = eˣ: (u − 2)(u − 3) = 0.",
+  "verify": "[r for r in solve(exp(2*x) - 5*exp(x) + 6, x) if r.is_real]",
+  "id": "qm_m3_002_q4",
+  "topicId": "qm_m3_002"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx ln(x) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "ln(x)/x"
+   },
+   {
+    "key": "B",
+    "text": "1/x"
+   },
+   {
+    "key": "C",
+    "text": "e^x"
+   },
+   {
+    "key": "D",
+    "text": "x"
+   }
+  ],
+  "answer": "B",
+  "explanation": "A standard result.",
+  "verify": "diff(log(x), x)",
+  "id": "qm_m3_003_q1",
+  "topicId": "qm_m3_003"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx ln(3x + 2) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "1/(3x + 2)"
+   },
+   {
+    "key": "B",
+    "text": "3/x"
+   },
+   {
+    "key": "C",
+    "text": "3/(3x + 2)"
+   },
+   {
+    "key": "D",
+    "text": "ln(3)/(3x + 2)"
+   }
+  ],
+  "answer": "C",
+  "explanation": "f′/f = 3/(3x + 2).",
+  "verify": "diff(log(3*x + 2), x)",
+  "id": "qm_m3_003_q2",
+  "topicId": "qm_m3_003"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "d/dx ln(x² + 1) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "1/(x² + 1)"
+   },
+   {
+    "key": "B",
+    "text": "2x/(x² + 1)"
+   },
+   {
+    "key": "C",
+    "text": "2x ln(x² + 1)"
+   },
+   {
+    "key": "D",
+    "text": "2/x"
+   }
+  ],
+  "answer": "B",
+  "explanation": "f′/f = 2x/(x² + 1).",
+  "verify": "diff(log(x**2 + 1), x)",
+  "id": "qm_m3_003_q3",
+  "topicId": "qm_m3_003"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f(x) = ln(5x). Find f′(2).",
+  "answer": "1/2",
+  "explanation": "ln(5x) = ln 5 + ln x, so f′(x) = 1/x.",
+  "verify": "diff(log(5*x), x).subs(x, 2)",
+  "id": "qm_m3_003_q4",
+  "topicId": "qm_m3_003"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "P(t) = 100e^(0.2t). Find the rate of growth at t = 0.",
+  "answer": "20",
+  "explanation": "P′(t) = 20e^(0.2t), so 20.",
+  "verify": "diff(100*exp(t/5), t).subs(t, 0)",
+  "id": "qm_m3_004_q1",
+  "topicId": "qm_m3_004"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "P(t) = 100e^(0.2t). Find the rate of growth at t = 5, to 1 decimal place.",
+  "answer": "54.4",
+  "explanation": "20e ≈ 54.4.",
+  "verify": "rnd(diff(100*exp(t/5), t).subs(t, 5), 1)",
+  "tech": "active",
+  "id": "qm_m3_004_q2",
+  "topicId": "qm_m3_004"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the x-coordinate of the stationary point of y = x − ln x, x > 0.",
+  "answer": "1",
+  "explanation": "1 − 1/x = 0.",
+  "verify": "solve(diff(x - log(x), x), x)",
+  "id": "qm_m3_004_q3",
+  "topicId": "qm_m3_004"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the x-coordinate of the stationary point of y = xe^(−x).",
+  "answer": "1",
+  "explanation": "e^(−x)(1 − x) = 0.",
+  "verify": "solve(diff(x*exp(-x), x), x)",
+  "id": "qm_m3_004_q4",
+  "topicId": "qm_m3_004"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx sin(x) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "−cos(x)"
+   },
+   {
+    "key": "B",
+    "text": "cos(x)"
+   },
+   {
+    "key": "C",
+    "text": "sin(x)"
+   },
+   {
+    "key": "D",
+    "text": "−sin(x)"
+   }
+  ],
+  "answer": "B",
+  "explanation": "A standard result.",
+  "verify": "diff(sin(x), x)",
+  "id": "qm_m3_005_q1",
+  "topicId": "qm_m3_005"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx cos(x) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "sin(x)"
+   },
+   {
+    "key": "B",
+    "text": "cos(x)"
+   },
+   {
+    "key": "C",
+    "text": "−sin(x)"
+   },
+   {
+    "key": "D",
+    "text": "−cos(x)"
+   }
+  ],
+  "answer": "C",
+  "explanation": "A standard result; note the minus sign.",
+  "verify": "diff(cos(x), x)",
+  "id": "qm_m3_005_q2",
+  "topicId": "qm_m3_005"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "d/dx tan(x) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "1/sin(x)^2"
+   },
+   {
+    "key": "B",
+    "text": "1/cos(x)^2"
+   },
+   {
+    "key": "C",
+    "text": "−1/cos(x)^2"
+   },
+   {
+    "key": "D",
+    "text": "cos(x)^2"
+   }
+  ],
+  "answer": "B",
+  "explanation": "d/dx tan x = sec²x = 1/cos²x.",
+  "verify": "diff(tan(x), x)",
+  "id": "qm_m3_005_q3",
+  "topicId": "qm_m3_005"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f(x) = 3 sin x + 2 cos x. Find f′(0).",
+  "answer": "3",
+  "explanation": "f′(x) = 3 cos x − 2 sin x.",
+  "verify": "diff(3*sin(x) + 2*cos(x), x).subs(x, 0)",
+  "id": "qm_m3_005_q4",
+  "topicId": "qm_m3_005"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx sin(3x) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "cos(3x)"
+   },
+   {
+    "key": "B",
+    "text": "−3cos(3x)"
+   },
+   {
+    "key": "C",
+    "text": "3cos(3x)"
+   },
+   {
+    "key": "D",
+    "text": "3sin(3x)"
+   }
+  ],
+  "answer": "C",
+  "explanation": "cos(3x) × 3.",
+  "verify": "diff(sin(3*x), x)",
+  "id": "qm_m3_006_q1",
+  "topicId": "qm_m3_006"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "d/dx (xeˣ) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "e^x"
+   },
+   {
+    "key": "B",
+    "text": "(x + 1)e^x"
+   },
+   {
+    "key": "C",
+    "text": "xe^x"
+   },
+   {
+    "key": "D",
+    "text": "(x − 1)e^x"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Product rule: eˣ + xeˣ.",
+  "verify": "diff(x*exp(x), x)",
+  "id": "qm_m3_006_q2",
+  "topicId": "qm_m3_006"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "d/dx (ln(x)/x) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "(ln(x) − 1)/x^2"
+   },
+   {
+    "key": "B",
+    "text": "1/x^2"
+   },
+   {
+    "key": "C",
+    "text": "(1 − ln(x))/x^2"
+   },
+   {
+    "key": "D",
+    "text": "−ln(x)/x^2"
+   }
+  ],
+  "answer": "C",
+  "explanation": "((1/x)x − ln x)/x² = (1 − ln x)/x².",
+  "verify": "diff(log(x)/x, x)",
+  "id": "qm_m3_006_q3",
+  "topicId": "qm_m3_006"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "d/dx (e^(2x) cos(x)) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "e^(2x)(2cos(x) + sin(x))"
+   },
+   {
+    "key": "B",
+    "text": "e^(2x)(2cos(x) − sin(x))"
+   },
+   {
+    "key": "C",
+    "text": "−2e^(2x)sin(x)"
+   },
+   {
+    "key": "D",
+    "text": "2e^(2x)cos(x)"
+   }
+  ],
+  "answer": "B",
+  "explanation": "2e^(2x) cos x − e^(2x) sin x.",
+  "verify": "diff(exp(2*x)*cos(x), x)",
+  "id": "qm_m3_006_q4",
+  "topicId": "qm_m3_006"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the gradient of y = sin x at x = 0.",
+  "answer": "1",
+  "explanation": "cos 0 = 1.",
+  "verify": "diff(sin(x), x).subs(x, 0)",
+  "id": "qm_m3_007_q1",
+  "topicId": "qm_m3_007"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "The water depth is d(t) = 3 sin(πt/6) + 5 m. At what rate is it changing at t = 0, in metres per hour?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "3"
+   },
+   {
+    "key": "B",
+    "text": "π/2"
+   },
+   {
+    "key": "C",
+    "text": "π/6"
+   },
+   {
+    "key": "D",
+    "text": "3π"
+   }
+  ],
+  "answer": "B",
+  "explanation": "d′(t) = 3 × (π/6) cos(πt/6) = (π/2) cos(πt/6).",
+  "verify": "diff(3*sin(pi*t/6) + 5, t).subs(t, 0)",
+  "id": "qm_m3_007_q2",
+  "topicId": "qm_m3_007"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Find the equation of the tangent to y = cos x at x = π/2.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "y = x − π/2"
+   },
+   {
+    "key": "B",
+    "text": "y = −x + π/2"
+   },
+   {
+    "key": "C",
+    "text": "y = −x"
+   },
+   {
+    "key": "D",
+    "text": "y = −x + π"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Gradient −sin(π/2) = −1 through (π/2, 0).",
+  "verify": "-(x - pi/2)",
+  "id": "qm_m3_007_q3",
+  "topicId": "qm_m3_007"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Find the x-values of the stationary points of y = x + 2 cos x for 0 < x < π.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x = π/3, 2π/3"
+   },
+   {
+    "key": "B",
+    "text": "x = π/6"
+   },
+   {
+    "key": "C",
+    "text": "x = π/6, 5π/6"
+   },
+   {
+    "key": "D",
+    "text": "x = π/2"
+   }
+  ],
+  "answer": "C",
+  "explanation": "1 − 2 sin x = 0, so sin x = 1/2.",
+  "verify": "solveset(1 - 2*sin(x), x, Interval.open(0, pi))",
+  "id": "qm_m3_007_q4",
+  "topicId": "qm_m3_007"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "f(x) = x⁴ − 3x². Find f″(x).",
+  "choices": [
+   {
+    "key": "A",
+    "text": "4x³ − 6x"
+   },
+   {
+    "key": "B",
+    "text": "12x² − 6"
+   },
+   {
+    "key": "C",
+    "text": "12x²"
+   },
+   {
+    "key": "D",
+    "text": "12x − 6"
+   }
+  ],
+  "answer": "B",
+  "explanation": "f′ = 4x³ − 6x, then f″ = 12x² − 6.",
+  "verify": "diff(x**4 - 3*x**2, x, 2)",
+  "id": "qm_m3_008_q1",
+  "topicId": "qm_m3_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "x(t) = t³ − 6t² + 9t metres. Find the acceleration at t = 1, in m/s².",
+  "answer": "-6",
+  "explanation": "x″(t) = 6t − 12.",
+  "verify": "diff(t**3 - 6*t**2 + 9*t, t, 2).subs(t, 1)",
+  "id": "qm_m3_008_q2",
+  "topicId": "qm_m3_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "y = e^(2x). Find y″.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "2e^(2x)"
+   },
+   {
+    "key": "B",
+    "text": "4e^(2x)"
+   },
+   {
+    "key": "C",
+    "text": "e^(2x)"
+   },
+   {
+    "key": "D",
+    "text": "4xe^(2x)"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Each derivative brings down a 2.",
+  "verify": "diff(exp(2*x), x, 2)",
+  "id": "qm_m3_008_q3",
+  "topicId": "qm_m3_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "x(t) = t³ − 6t² + 9t metres. When is the acceleration zero?",
+  "answer": "2",
+  "explanation": "6t − 12 = 0.",
+  "verify": "solve(diff(t**3 - 6*t**2 + 9*t, t, 2), t)",
+  "id": "qm_m3_008_q4",
+  "topicId": "qm_m3_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the x-coordinate of the point of inflection of y = x³ − 6x².",
+  "answer": "2",
+  "explanation": "6x − 12 = 0.",
+  "verify": "solve(diff(x**3 - 6*x**2, x, 2), x)",
+  "id": "qm_m3_009_q1",
+  "topicId": "qm_m3_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "If f″(x) > 0 on an interval, then f is:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "concave down"
+   },
+   {
+    "key": "B",
+    "text": "concave up"
+   },
+   {
+    "key": "C",
+    "text": "increasing"
+   },
+   {
+    "key": "D",
+    "text": "decreasing"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Gradient is increasing.",
+  "id": "qm_m3_009_q2",
+  "topicId": "qm_m3_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "On which interval is y = x³ − 6x² concave down?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "x > 2"
+   },
+   {
+    "key": "B",
+    "text": "x < 2"
+   },
+   {
+    "key": "C",
+    "text": "x < 0"
+   },
+   {
+    "key": "D",
+    "text": "0 < x < 4"
+   }
+  ],
+  "answer": "B",
+  "explanation": "f″ = 6x − 12 < 0 when x < 2.",
+  "id": "qm_m3_009_q3",
+  "topicId": "qm_m3_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the x-coordinates of the points of inflection of y = x⁴ − 6x².",
+  "answer": "1, -1",
+  "explanation": "12x² − 12 = 0, and f″ changes sign at each.",
+  "verify": "solve(diff(x**4 - 6*x**2, x, 2), x)",
+  "unordered": true,
+  "id": "qm_m3_009_q4",
+  "topicId": "qm_m3_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "At a stationary point x = a, f″(a) = −4. The point is a:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "local minimum"
+   },
+   {
+    "key": "B",
+    "text": "local maximum"
+   },
+   {
+    "key": "C",
+    "text": "point of inflection"
+   },
+   {
+    "key": "D",
+    "text": "cannot tell"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Concave down at a stationary point gives a maximum.",
+  "id": "qm_m3_010_q1",
+  "topicId": "qm_m3_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the x-coordinate of the local minimum of y = x³ − 12x.",
+  "answer": "2",
+  "explanation": "x = ±2; f″(2) = 12 > 0.",
+  "verify": "[r for r in solve(diff(x**3 - 12*x, x), x) if diff(x**3 - 12*x, x, 2).subs(x, r) > 0]",
+  "id": "qm_m3_010_q2",
+  "topicId": "qm_m3_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the local maximum value of y = x³ − 12x.",
+  "answer": "16",
+  "explanation": "At x = −2: −8 + 24 = 16.",
+  "verify": "(x**3 - 12*x).subs(x, -2)",
+  "id": "qm_m3_010_q3",
+  "topicId": "qm_m3_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "For f(x) = x⁴, f′(0) = 0 and f″(0) = 0. At x = 0 there is:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "a local minimum (the test is inconclusive, so check the sign of f′)"
+   },
+   {
+    "key": "B",
+    "text": "a point of inflection"
+   },
+   {
+    "key": "C",
+    "text": "a local maximum"
+   },
+   {
+    "key": "D",
+    "text": "no stationary point"
+   }
+  ],
+  "answer": "A",
+  "explanation": "f′ changes from negative to positive, so it is a minimum.",
+  "id": "qm_m3_010_q4",
+  "topicId": "qm_m3_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Profit is P(x) = −2x² + 80x − 300. What value of x gives maximum profit?",
+  "answer": "20",
+  "explanation": "P′ = −4x + 80 = 0.",
+  "verify": "solve(diff(-2*x**2 + 80*x - 300, x), x)",
+  "id": "qm_m3_011_q1",
+  "topicId": "qm_m3_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A rectangle has a perimeter of 40 cm. What is its largest possible area, in cm²?",
+  "answer": "100",
+  "explanation": "A = x(20 − x) is greatest at x = 10.",
+  "verify": "maximum(x*(20 - x), x, Interval(0, 20))",
+  "id": "qm_m3_011_q2",
+  "topicId": "qm_m3_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "What is the maximum value of y = xe^(−x) for x ≥ 0?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "e"
+   },
+   {
+    "key": "B",
+    "text": "1/e"
+   },
+   {
+    "key": "C",
+    "text": "1"
+   },
+   {
+    "key": "D",
+    "text": "0"
+   }
+  ],
+  "answer": "B",
+  "explanation": "At x = 1, y = e⁻¹.",
+  "verify": "maximum(x*exp(-x), x, Interval(0, oo))",
+  "id": "qm_m3_011_q3",
+  "topicId": "qm_m3_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "An open box is made from a 12 cm × 12 cm sheet by cutting x cm squares from the corners: V = x(12 − 2x)². Find x for maximum volume.",
+  "answer": "2",
+  "explanation": "V′ = (12 − 2x)(12 − 6x) = 0 gives x = 2 in the domain.",
+  "verify": "[r for r in solve(diff(x*(12 - 2*x)**2, x), x) if 0 < r < 6]",
+  "id": "qm_m3_011_q4",
+  "topicId": "qm_m3_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "∫ x³ dx =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "3x² + c"
+   },
+   {
+    "key": "B",
+    "text": "x⁴/4 + c"
+   },
+   {
+    "key": "C",
+    "text": "x⁴ + c"
+   },
+   {
+    "key": "D",
+    "text": "4x⁴ + c"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add 1 to the power and divide by it.",
+  "verify": "integrate(x**3, x) + c",
+  "id": "qm_m3_012_q1",
+  "topicId": "qm_m3_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "∫ (6x² − 4x + 1) dx =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "2x³ − 2x² + x + c"
+   },
+   {
+    "key": "B",
+    "text": "12x − 4 + c"
+   },
+   {
+    "key": "C",
+    "text": "6x³ − 4x² + x + c"
+   },
+   {
+    "key": "D",
+    "text": "2x³ − 4x² + x + c"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Integrate term by term.",
+  "verify": "integrate(6*x**2 - 4*x + 1, x) + c",
+  "id": "qm_m3_012_q2",
+  "topicId": "qm_m3_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "∫ √x dx =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "(1/2)x^(−1/2) + c"
+   },
+   {
+    "key": "B",
+    "text": "(2/3)x^(3/2) + c"
+   },
+   {
+    "key": "C",
+    "text": "(3/2)x^(3/2) + c"
+   },
+   {
+    "key": "D",
+    "text": "x^(3/2) + c"
+   }
+  ],
+  "answer": "B",
+  "explanation": "x^(1/2) integrates to x^(3/2) ÷ 3/2.",
+  "verify": "integrate(sqrt(x), x) + c",
+  "id": "qm_m3_012_q3",
+  "topicId": "qm_m3_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "∫ 1/x³ dx =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "−3/x⁴ + c"
+   },
+   {
+    "key": "B",
+    "text": "1/(2x²) + c"
+   },
+   {
+    "key": "C",
+    "text": "−1/(2x²) + c"
+   },
+   {
+    "key": "D",
+    "text": "ln(x³) + c"
+   }
+  ],
+  "answer": "C",
+  "explanation": "x⁻³ integrates to x⁻²/(−2).",
+  "verify": "integrate(x**-3, x) + c",
+  "id": "qm_m3_012_q4",
+  "topicId": "qm_m3_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "∫ eˣ dx =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "xe^(x − 1) + c"
+   },
+   {
+    "key": "B",
+    "text": "e^x + c"
+   },
+   {
+    "key": "C",
+    "text": "e^(x + 1)/(x + 1) + c"
+   },
+   {
+    "key": "D",
+    "text": "ln(x) + c"
+   }
+  ],
+  "answer": "B",
+  "explanation": "eˣ is its own derivative.",
+  "verify": "integrate(exp(x), x) + c",
+  "id": "qm_m3_013_q1",
+  "topicId": "qm_m3_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "∫ cos(x) dx =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "−sin(x) + c"
+   },
+   {
+    "key": "B",
+    "text": "cos(x) + c"
+   },
+   {
+    "key": "C",
+    "text": "sin(x) + c"
+   },
+   {
+    "key": "D",
+    "text": "−cos(x) + c"
+   }
+  ],
+  "answer": "C",
+  "explanation": "d/dx sin x = cos x.",
+  "verify": "integrate(cos(x), x) + c",
+  "id": "qm_m3_013_q2",
+  "topicId": "qm_m3_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "∫ (2/x + sin(x)) dx, for x > 0, =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "2ln(x) + cos(x) + c"
+   },
+   {
+    "key": "B",
+    "text": "2ln(x) − cos(x) + c"
+   },
+   {
+    "key": "C",
+    "text": "−2/x² − cos(x) + c"
+   },
+   {
+    "key": "D",
+    "text": "2ln(x) + sin(x) + c"
+   }
+  ],
+  "answer": "B",
+  "explanation": "∫ 1/x dx = ln x and ∫ sin x dx = −cos x.",
+  "verify": "integrate(2/x + sin(x), x) + c",
+  "id": "qm_m3_013_q3",
+  "topicId": "qm_m3_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "∫ (3eˣ − 4cos(x)) dx =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "3e^x + 4sin(x) + c"
+   },
+   {
+    "key": "B",
+    "text": "3e^x − 4cos(x) + c"
+   },
+   {
+    "key": "C",
+    "text": "3xe^x − 4sin(x) + c"
+   },
+   {
+    "key": "D",
+    "text": "3e^x − 4sin(x) + c"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Term by term.",
+  "verify": "integrate(3*exp(x) - 4*cos(x), x) + c",
+  "id": "qm_m3_013_q4",
+  "topicId": "qm_m3_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "∫ e^(2x) dx =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "2e^(2x) + c"
+   },
+   {
+    "key": "B",
+    "text": "e^(2x)/2 + c"
+   },
+   {
+    "key": "C",
+    "text": "e^(2x) + c"
+   },
+   {
+    "key": "D",
+    "text": "e^(2x + 1)/(2x + 1) + c"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Divide by the coefficient 2.",
+  "verify": "integrate(exp(2*x), x) + c",
+  "id": "qm_m3_014_q1",
+  "topicId": "qm_m3_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "∫ (3x + 1)⁴ dx =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "(3x + 1)⁵/5 + c"
+   },
+   {
+    "key": "B",
+    "text": "12(3x + 1)³ + c"
+   },
+   {
+    "key": "C",
+    "text": "(3x + 1)⁵/15 + c"
+   },
+   {
+    "key": "D",
+    "text": "(3x + 1)⁵/3 + c"
+   }
+  ],
+  "answer": "C",
+  "explanation": "(3x + 1)⁵/5, divided by 3.",
+  "verify": "integrate((3*x + 1)**4, x) + c",
+  "id": "qm_m3_014_q2",
+  "topicId": "qm_m3_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "∫ cos(3x) dx =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "3sin(3x) + c"
+   },
+   {
+    "key": "B",
+    "text": "sin(3x)/3 + c"
+   },
+   {
+    "key": "C",
+    "text": "−sin(3x)/3 + c"
+   },
+   {
+    "key": "D",
+    "text": "sin(3x) + c"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Divide by 3.",
+  "verify": "integrate(cos(3*x), x) + c",
+  "id": "qm_m3_014_q3",
+  "topicId": "qm_m3_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "∫ 1/(2x + 1) dx, for x > −1/2, =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "ln(2x + 1) + c"
+   },
+   {
+    "key": "B",
+    "text": "2ln(2x + 1) + c"
+   },
+   {
+    "key": "C",
+    "text": "ln(2x + 1)/2 + c"
+   },
+   {
+    "key": "D",
+    "text": "−1/(2x + 1)² + c"
+   }
+  ],
+  "answer": "C",
+  "explanation": "ln(2x + 1), divided by 2.",
+  "verify": "integrate(1/(2*x + 1), x) + c",
+  "id": "qm_m3_014_q4",
+  "topicId": "qm_m3_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f′(x) = 2x and f(0) = 3. Find f(2).",
+  "answer": "7",
+  "explanation": "f(x) = x² + 3, so f(2) = 7.",
+  "verify": "(lambda F: (F + 3 - F.subs(x, 0)).subs(x, 2))(integrate(2*x, x))",
+  "id": "qm_m3_015_q1",
+  "topicId": "qm_m3_015"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f′(x) = 3x² − 1 and f(1) = 4. Find f(2).",
+  "answer": "10",
+  "explanation": "f(x) = x³ − x + 4.",
+  "verify": "(lambda F: (F + 4 - F.subs(x, 1)).subs(x, 2))(integrate(3*x**2 - 1, x))",
+  "id": "qm_m3_015_q2",
+  "topicId": "qm_m3_015"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "f′(x) = eˣ and f(0) = 5. Then f(x) =",
+  "choices": [
+   {
+    "key": "A",
+    "text": "e^x + 5"
+   },
+   {
+    "key": "B",
+    "text": "e^x + 4"
+   },
+   {
+    "key": "C",
+    "text": "e^x"
+   },
+   {
+    "key": "D",
+    "text": "5e^x"
+   }
+  ],
+  "answer": "B",
+  "explanation": "f(x) = eˣ + c and 1 + c = 5.",
+  "verify": "(lambda F: F + 5 - F.subs(x, 0))(integrate(exp(x), x))",
+  "id": "qm_m3_015_q3",
+  "topicId": "qm_m3_015"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f′(x) = 6x − 4 and f(2) = 1. Find f(0).",
+  "answer": "-3",
+  "explanation": "f(x) = 3x² − 4x + c with 12 − 8 + c = 1, so c = −3.",
+  "verify": "(lambda F: (F + 1 - F.subs(x, 2)).subs(x, 0))(integrate(6*x - 4, x))",
+  "id": "qm_m3_015_q4",
+  "topicId": "qm_m3_015"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "v(t) = 4t + 1 m/s and x(0) = 2 m. Find x(3), in metres.",
+  "answer": "23",
+  "explanation": "x(t) = 2t² + t + 2.",
+  "verify": "(lambda X: (X + 2 - X.subs(t, 0)).subs(t, 3))(integrate(4*t + 1, t))",
+  "id": "qm_m3_016_q1",
+  "topicId": "qm_m3_016"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "a(t) = 6 m/s² and v(0) = 2 m/s. Find v(4), in m/s.",
+  "answer": "26",
+  "explanation": "v(t) = 6t + 2.",
+  "verify": "2 + integrate(6, (t, 0, 4))",
+  "id": "qm_m3_016_q2",
+  "topicId": "qm_m3_016"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "a(t) = 6t, v(0) = 0 and x(0) = 1. Find x(2).",
+  "answer": "9",
+  "explanation": "v = 3t², x = t³ + 1.",
+  "verify": "1 + integrate(integrate(6*t, (t, 0, t)), (t, 0, 2))",
+  "id": "qm_m3_016_q3",
+  "topicId": "qm_m3_016"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "v(t) = 3t² − 12 m/s and x(0) = 0. Find x(2).",
+  "answer": "-16",
+  "explanation": "x(t) = t³ − 12t, so 8 − 24.",
+  "verify": "integrate(3*t**2 - 12, (t, 0, 2))",
+  "id": "qm_m3_016_q4",
+  "topicId": "qm_m3_016"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X takes the values 0, 1, 2 and 3 with probabilities 0.1, 0.3, k and 0.2. Find k.",
+  "answer": "0.4",
+  "explanation": "1 − 0.6 = 0.4.",
+  "verify": "1 - Rational(1, 10) - Rational(3, 10) - Rational(2, 10)",
+  "id": "qm_m3_017_q1",
+  "topicId": "qm_m3_017"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X takes the values 0, 1, 2 and 3 with probabilities 0.1, 0.3, k and 0.2. Using k = 0.4, find P(X ≥ 2).",
+  "answer": "0.6",
+  "explanation": "0.4 + 0.2.",
+  "verify": "Rational(4, 10) + Rational(2, 10)",
+  "id": "qm_m3_017_q2",
+  "topicId": "qm_m3_017"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Which list could be the probabilities of a discrete random variable?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "0.2, 0.5, 0.3"
+   },
+   {
+    "key": "B",
+    "text": "0.4, 0.4, 0.4"
+   },
+   {
+    "key": "C",
+    "text": "0.6, −0.1, 0.5"
+   },
+   {
+    "key": "D",
+    "text": "0.5, 0.6"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each must be between 0 and 1, and they must sum to 1.",
+  "id": "qm_m3_017_q3",
+  "topicId": "qm_m3_017"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Two fair coins are tossed and X is the number of heads. Find P(X = 1).",
+  "answer": "1/2",
+  "explanation": "HT or TH: 2/4.",
+  "verify": "binom_pmf(2, 1, Rational(1, 2))",
+  "id": "qm_m3_017_q4",
+  "topicId": "qm_m3_017"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X takes 0, 1, 2, 3 with probabilities 0.1, 0.3, 0.4, 0.2. Find E(X).",
+  "answer": "1.7",
+  "explanation": "0 + 0.3 + 0.8 + 0.6 = 1.7.",
+  "verify": "sum([v*Rational(p, 10) for v, p in [(0, 1), (1, 3), (2, 4), (3, 2)]])",
+  "id": "qm_m3_018_q1",
+  "topicId": "qm_m3_018"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find E(X) for the score on a fair six-sided die.",
+  "answer": "3.5",
+  "explanation": "21/6 = 3.5.",
+  "verify": "Rational(sum(range(1, 7)), 6)",
+  "id": "qm_m3_018_q2",
+  "topicId": "qm_m3_018"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A game costs $2 to play. You win $10 with probability 0.1, otherwise nothing. Find the expected profit in dollars.",
+  "answer": "-1",
+  "explanation": "Expected winnings $1, minus the $2 cost.",
+  "verify": "10*Rational(1, 10) - 2",
+  "id": "qm_m3_018_q3",
+  "topicId": "qm_m3_018"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "E(X) = 3. Find E(2X + 1).",
+  "answer": "7",
+  "explanation": "2 × 3 + 1.",
+  "verify": "2*3 + 1",
+  "id": "qm_m3_018_q4",
+  "topicId": "qm_m3_018"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X takes 0, 1, 2 with probabilities 0.25, 0.5, 0.25. Find Var(X).",
+  "answer": "0.5",
+  "explanation": "E(X) = 1, E(X²) = 1.5, so Var = 0.5.",
+  "verify": "(lambda ps: sum(v**2*p for v, p in ps) - sum(v*p for v, p in ps)**2)([(0, Rational(1, 4)), (1, Rational(1, 2)), (2, Rational(1, 4))])",
+  "id": "qm_m3_019_q1",
+  "topicId": "qm_m3_019"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Var(X) = 4. Find the standard deviation of X.",
+  "answer": "2",
+  "explanation": "√4 = 2.",
+  "verify": "sqrt(4)",
+  "id": "qm_m3_019_q2",
+  "topicId": "qm_m3_019"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Var(X) = 2. Find Var(3X − 1).",
+  "answer": "18",
+  "explanation": "3² × 2; the −1 does not change the spread.",
+  "verify": "3**2*2",
+  "id": "qm_m3_019_q3",
+  "topicId": "qm_m3_019"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "X takes the values 1 and 3 with probability 0.5 each. Find the standard deviation of X.",
+  "answer": "1",
+  "explanation": "Mean 2, each value is 1 away.",
+  "verify": "sqrt(Rational(1, 2)*(1 - 2)**2 + Rational(1, 2)*(3 - 2)**2)",
+  "id": "qm_m3_019_q4",
+  "topicId": "qm_m3_019"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X ~ Bernoulli(0.3). Find E(X).",
+  "answer": "0.3",
+  "explanation": "E(X) = p.",
+  "verify": "Rational(3, 10)",
+  "id": "qm_m3_020_q1",
+  "topicId": "qm_m3_020"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X ~ Bernoulli(0.3). Find Var(X).",
+  "answer": "0.21",
+  "explanation": "0.3 × 0.7.",
+  "verify": "Rational(3, 10)*(1 - Rational(3, 10))",
+  "id": "qm_m3_020_q2",
+  "topicId": "qm_m3_020"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Which can be modelled as a Bernoulli random variable?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "Whether a single free throw goes in"
+   },
+   {
+    "key": "B",
+    "text": "The number of heads in 10 tosses"
+   },
+   {
+    "key": "C",
+    "text": "A student's height"
+   },
+   {
+    "key": "D",
+    "text": "The time until a bus arrives"
+   }
+  ],
+  "answer": "A",
+  "explanation": "One trial with two outcomes.",
+  "id": "qm_m3_020_q3",
+  "topicId": "qm_m3_020"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A Bernoulli variable has Var(X) = 0.25. Find p.",
+  "answer": "0.5",
+  "explanation": "p(1 − p) = 0.25 gives p = 0.5.",
+  "verify": "solve(p*(1 - p) - Rational(1, 4), p)",
+  "id": "qm_m3_020_q4",
+  "topicId": "qm_m3_020"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X ~ Bin(4, 0.5). Find P(X = 2).",
+  "answer": "3/8",
+  "explanation": "⁴C₂ × 0.5⁴ = 6/16.",
+  "verify": "binom_pmf(4, 2, Rational(1, 2))",
+  "id": "qm_m3_021_q1",
+  "topicId": "qm_m3_021"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X ~ Bin(3, 0.2). Find P(X = 0).",
+  "answer": "0.512",
+  "explanation": "0.8³.",
+  "verify": "binom_pmf(3, 0, Rational(2, 10))",
+  "id": "qm_m3_021_q2",
+  "topicId": "qm_m3_021"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "X ~ Bin(5, 0.1). Find the exact value of P(X = 1).",
+  "answer": "0.32805",
+  "explanation": "5 × 0.1 × 0.9⁴.",
+  "verify": "binom_pmf(5, 1, Rational(1, 10))",
+  "id": "qm_m3_021_q3",
+  "topicId": "qm_m3_021"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A quiz has 4 questions, each with 4 options. A student guesses every answer. Find P(exactly 3 correct).",
+  "answer": "3/64",
+  "explanation": "⁴C₃ × (1/4)³ × 3/4 = 12/256.",
+  "verify": "binom_pmf(4, 3, Rational(1, 4))",
+  "id": "qm_m3_021_q4",
+  "topicId": "qm_m3_021"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X ~ Bin(20, 0.3). Find E(X).",
+  "answer": "6",
+  "explanation": "np = 6.",
+  "verify": "20*Rational(3, 10)",
+  "id": "qm_m3_022_q1",
+  "topicId": "qm_m3_022"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X ~ Bin(20, 0.3). Find Var(X).",
+  "answer": "4.2",
+  "explanation": "np(1 − p) = 6 × 0.7.",
+  "verify": "20*Rational(3, 10)*Rational(7, 10)",
+  "id": "qm_m3_022_q2",
+  "topicId": "qm_m3_022"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "X ~ Bin(3, 0.4). Find P(X ≥ 1).",
+  "answer": "0.784",
+  "explanation": "1 − 0.6³.",
+  "verify": "1 - binom_pmf(3, 0, Rational(4, 10))",
+  "id": "qm_m3_022_q3",
+  "topicId": "qm_m3_022"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "X ~ Bin(10, 0.5). Find P(X ≤ 2) as a fraction.",
+  "answer": "7/128",
+  "explanation": "(1 + 10 + 45)/1024 = 56/1024.",
+  "verify": "sum(binom_pmf(10, r, Rational(1, 2)) for r in range(3))",
+  "id": "qm_m3_022_q4",
+  "topicId": "qm_m3_022"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Estimate the area under y = x² from x = 0 to x = 2 using 2 rectangles of width 1 and left endpoints.",
+  "answer": "1",
+  "explanation": "Heights f(0) = 0 and f(1) = 1.",
+  "verify": "0**2 + 1**2",
+  "id": "qm_m4_001_q1",
+  "topicId": "qm_m4_001"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Estimate the area under y = x² from x = 0 to x = 2 using 2 rectangles of width 1 and right endpoints.",
+  "answer": "5",
+  "explanation": "Heights f(1) = 1 and f(2) = 4.",
+  "verify": "1**2 + 2**2",
+  "id": "qm_m4_001_q2",
+  "topicId": "qm_m4_001"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "As the number of rectangles increases (and their width shrinks), the sum:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "approaches the exact area"
+   },
+   {
+    "key": "B",
+    "text": "always increases"
+   },
+   {
+    "key": "C",
+    "text": "always decreases"
+   },
+   {
+    "key": "D",
+    "text": "stays the same"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The definite integral is the limit of these sums.",
+  "id": "qm_m4_001_q3",
+  "topicId": "qm_m4_001"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Estimate the area under y = 1/x from x = 1 to x = 3 with 4 rectangles of width 0.5 using right endpoints.",
+  "answer": "0.95",
+  "explanation": "0.5 × (1/1.5 + 1/2 + 1/2.5 + 1/3) = 0.95.",
+  "verify": "Rational(1, 2)*sum(1/(1 + Rational(k, 2)) for k in range(1, 5))",
+  "id": "qm_m4_001_q4",
+  "topicId": "qm_m4_001"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Evaluate ∫₀² 3x² dx.",
+  "answer": "8",
+  "explanation": "[x³] from 0 to 2 = 8.",
+  "verify": "integrate(3*x**2, (x, 0, 2))",
+  "id": "qm_m4_002_q1",
+  "topicId": "qm_m4_002"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Evaluate ∫₁³ (2x + 1) dx.",
+  "answer": "10",
+  "explanation": "[x² + x] = 12 − 2.",
+  "verify": "integrate(2*x + 1, (x, 1, 3))",
+  "id": "qm_m4_002_q2",
+  "topicId": "qm_m4_002"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Evaluate ∫₀^π sin x dx.",
+  "answer": "2",
+  "explanation": "[−cos x] = 1 − (−1).",
+  "verify": "integrate(sin(x), (x, 0, pi))",
+  "id": "qm_m4_002_q3",
+  "topicId": "qm_m4_002"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Evaluate ∫₀¹ e^(2x) dx.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "e² − 1"
+   },
+   {
+    "key": "B",
+    "text": "(e² − 1)/2"
+   },
+   {
+    "key": "C",
+    "text": "2e²"
+   },
+   {
+    "key": "D",
+    "text": "(e² + 1)/2"
+   }
+  ],
+  "answer": "B",
+  "explanation": "[e^(2x)/2] from 0 to 1.",
+  "verify": "integrate(exp(2*x), (x, 0, 1))",
+  "id": "qm_m4_002_q4",
+  "topicId": "qm_m4_002"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the area between y = x² and the x-axis from x = 0 to x = 3.",
+  "answer": "9",
+  "explanation": "[x³/3] = 9.",
+  "verify": "integrate(x**2, (x, 0, 3))",
+  "id": "qm_m4_003_q1",
+  "topicId": "qm_m4_003"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the area enclosed by y = 4 − x² and the x-axis.",
+  "answer": "32/3",
+  "explanation": "Intercepts ±2; [4x − x³/3] from −2 to 2.",
+  "verify": "integrate(4 - x**2, (x, -2, 2))",
+  "id": "qm_m4_003_q2",
+  "topicId": "qm_m4_003"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the area enclosed by y = x(x − 2) and the x-axis.",
+  "answer": "4/3",
+  "explanation": "The curve is below the axis between 0 and 2; the integral is −4/3.",
+  "verify": "-integrate(x*(x - 2), (x, 0, 2))",
+  "id": "qm_m4_003_q3",
+  "topicId": "qm_m4_003"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the total area between y = x³ and the x-axis from x = −1 to x = 2.",
+  "answer": "17/4",
+  "explanation": "1/4 below the axis plus 4 above.",
+  "verify": "-integrate(x**3, (x, -1, 0)) + integrate(x**3, (x, 0, 2))",
+  "id": "qm_m4_003_q4",
+  "topicId": "qm_m4_003"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the area between y = x and y = x² from x = 0 to x = 1.",
+  "answer": "1/6",
+  "explanation": "∫(x − x²) = 1/2 − 1/3.",
+  "verify": "integrate(x - x**2, (x, 0, 1))",
+  "id": "qm_m4_004_q1",
+  "topicId": "qm_m4_004"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the area enclosed by y = 4 and y = x².",
+  "answer": "32/3",
+  "explanation": "They meet at x = ±2.",
+  "verify": "integrate(4 - x**2, (x, -2, 2))",
+  "id": "qm_m4_004_q2",
+  "topicId": "qm_m4_004"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Find the area enclosed by y = x² and y = x + 2.",
+  "answer": "9/2",
+  "explanation": "They meet at x = −1 and 2; integrate (x + 2 − x²).",
+  "verify": "integrate(x + 2 - x**2, (x, -1, 2))",
+  "id": "qm_m4_004_q3",
+  "topicId": "qm_m4_004"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "Find the area between y = cos x and y = sin x from x = 0 to x = π/4.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "√2"
+   },
+   {
+    "key": "B",
+    "text": "√2 − 1"
+   },
+   {
+    "key": "C",
+    "text": "1"
+   },
+   {
+    "key": "D",
+    "text": "2 − √2"
+   }
+  ],
+  "answer": "B",
+  "explanation": "[sin x + cos x] from 0 to π/4 = √2 − 1.",
+  "verify": "integrate(cos(x) - sin(x), (x, 0, pi/4))",
+  "id": "qm_m4_004_q4",
+  "topicId": "qm_m4_004"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Use the trapezoidal rule with 2 strips to estimate ∫₀² x² dx.",
+  "answer": "3",
+  "explanation": "h/2 × (f₀ + 2f₁ + f₂) = ½(0 + 2 + 4).",
+  "verify": "Rational(1, 2)*(0 + 2*1 + 4)",
+  "id": "qm_m4_005_q1",
+  "topicId": "qm_m4_005"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A trapezium has parallel sides 3 and 5 and width 2. Find its area.",
+  "answer": "8",
+  "explanation": "½ × (3 + 5) × 2.",
+  "verify": "Rational(1, 2)*(3 + 5)*2",
+  "id": "qm_m4_005_q2",
+  "topicId": "qm_m4_005"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Use the trapezoidal rule with 4 strips to estimate ∫₀⁴ √x dx, correct to 2 decimal places.",
+  "answer": "5.15",
+  "explanation": "½(0 + 2(1 + 1.414 + 1.732) + 2) ≈ 5.15.",
+  "verify": "rnd(Rational(1, 2)*(sqrt(0) + 2*(sqrt(1) + sqrt(2) + sqrt(3)) + sqrt(4)), 2)",
+  "tech": "active",
+  "id": "qm_m4_005_q3",
+  "topicId": "qm_m4_005"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "For a curve that is concave up over the interval, the trapezoidal rule:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "underestimates the integral"
+   },
+   {
+    "key": "B",
+    "text": "overestimates the integral"
+   },
+   {
+    "key": "C",
+    "text": "is exact"
+   },
+   {
+    "key": "D",
+    "text": "could over- or underestimate"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The straight tops of the trapezia lie above a concave-up curve.",
+  "id": "qm_m4_005_q4",
+  "topicId": "qm_m4_005"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Water flows into a tank at r(t) = 2t + 3 L/min. How many litres flow in from t = 0 to t = 4?",
+  "answer": "28",
+  "explanation": "[t² + 3t] = 16 + 12.",
+  "verify": "integrate(2*t + 3, (t, 0, 4))",
+  "id": "qm_m4_006_q1",
+  "topicId": "qm_m4_006"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "v(t) = 3t² m/s. Find the displacement from t = 0 to t = 2.",
+  "answer": "8",
+  "explanation": "[t³] = 8 m.",
+  "verify": "integrate(3*t**2, (t, 0, 2))",
+  "id": "qm_m4_006_q2",
+  "topicId": "qm_m4_006"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "v(t) = t − 2 m/s for 0 ≤ t ≤ 4. Find the total distance travelled.",
+  "answer": "4",
+  "explanation": "2 m backwards then 2 m forwards.",
+  "verify": "integrate(Abs(t - 2), (t, 0, 4))",
+  "id": "qm_m4_006_q3",
+  "topicId": "qm_m4_006"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "v(t) = t − 2 m/s. Find the displacement from t = 0 to t = 4.",
+  "answer": "0",
+  "explanation": "The two parts cancel.",
+  "verify": "integrate(t - 2, (t, 0, 4))",
+  "id": "qm_m4_006_q4",
+  "topicId": "qm_m4_006"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "In triangle ABC, A = 30°, B = 45° and a = 5. Find b to 2 decimal places.",
+  "answer": "7.07",
+  "explanation": "b = 5 sin 45° ÷ sin 30°.",
+  "verify": "rnd(5*sin(pi/4)/sin(pi/6), 2)",
+  "tech": "active",
+  "id": "qm_m4_007_q1",
+  "topicId": "qm_m4_007"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "The sine rule states:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "a/sin A = b/sin B"
+   },
+   {
+    "key": "B",
+    "text": "a sin A = b sin B"
+   },
+   {
+    "key": "C",
+    "text": "a/sin B = b/sin A"
+   },
+   {
+    "key": "D",
+    "text": "a² = b² + c² − 2bc cos A"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each side over the sine of its opposite angle is constant.",
+  "id": "qm_m4_007_q2",
+  "topicId": "qm_m4_007"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "In triangle ABC, A = 30°, a = 6 and b = 10. How many triangles are possible?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "0"
+   },
+   {
+    "key": "B",
+    "text": "1"
+   },
+   {
+    "key": "C",
+    "text": "2"
+   },
+   {
+    "key": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "C",
+  "explanation": "sin B = 10 × 0.5 ÷ 6 ≈ 0.833, so B ≈ 56.4° or 123.6°, and both fit with A = 30°.",
+  "id": "qm_m4_007_q3",
+  "topicId": "qm_m4_007"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "In triangle ABC, A = 40°, a = 8 and b = 10. Find the acute value of B to the nearest degree.",
+  "answer": "53",
+  "explanation": "sin B = 10 sin 40° ÷ 8 ≈ 0.80.",
+  "verify": "rnd(asin(10*sin(40*pi/180)/8)*180/pi, 0)",
+  "tech": "active",
+  "id": "qm_m4_007_q4",
+  "topicId": "qm_m4_007"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "In triangle ABC, b = 3, c = 4 and A = 90°. Use the cosine rule to find a².",
+  "answer": "25",
+  "explanation": "cos 90° = 0, so it reduces to Pythagoras.",
+  "verify": "3**2 + 4**2 - 2*3*4*cos(pi/2)",
+  "id": "qm_m4_008_q1",
+  "topicId": "qm_m4_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "Find the area of a triangle with sides 8 and 5 and an included angle of 150°.",
+  "answer": "10",
+  "explanation": "½ × 40 × sin 150° = 20 × ½.",
+  "verify": "Rational(1, 2)*8*5*sin(5*pi/6)",
+  "id": "qm_m4_008_q2",
+  "topicId": "qm_m4_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "In triangle ABC, b = 7, c = 10 and A = 50°. Find a to 2 decimal places.",
+  "answer": "7.68",
+  "explanation": "a² = 149 − 140 cos 50° ≈ 59.0.",
+  "verify": "rnd(sqrt(49 + 100 - 140*cos(50*pi/180)), 2)",
+  "tech": "active",
+  "id": "qm_m4_008_q3",
+  "topicId": "qm_m4_008"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A triangle has sides 5, 7 and 8. Find the angle opposite the side of length 7, in degrees.",
+  "answer": "60",
+  "explanation": "cos θ = (25 + 64 − 49)/80 = 1/2.",
+  "verify": "acos(Rational(25 + 64 - 49, 2*5*8))*180/pi",
+  "id": "qm_m4_008_q4",
+  "topicId": "qm_m4_008"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A boat sails 8 km east and then 6 km north. How far is it from its start?",
+  "answer": "10",
+  "explanation": "√(64 + 36).",
+  "verify": "sqrt(8**2 + 6**2)",
+  "tech": "free",
+  "id": "qm_m4_009_q1",
+  "topicId": "qm_m4_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "A true bearing of 135° points:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "south-east"
+   },
+   {
+    "key": "B",
+    "text": "north-east"
+   },
+   {
+    "key": "C",
+    "text": "south-west"
+   },
+   {
+    "key": "D",
+    "text": "north-west"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Halfway between east (090°) and south (180°).",
+  "id": "qm_m4_009_q2",
+  "topicId": "qm_m4_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Ship A sails 10 km on a bearing of 040°T and ship B sails 15 km on a bearing of 130°T from the same port. How far apart are they, to 1 decimal place?",
+  "answer": "18.0",
+  "explanation": "The angle between the paths is 90°, so √(100 + 225) ≈ 18.0 km.",
+  "verify": "rnd(sqrt(10**2 + 15**2 - 2*10*15*cos(pi/2)), 1)",
+  "tech": "active",
+  "id": "qm_m4_009_q3",
+  "topicId": "qm_m4_009"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A box measures 3 cm × 4 cm × 12 cm. Find the length of its space diagonal.",
+  "answer": "13",
+  "explanation": "√(9 + 16 + 144) = 13 cm.",
+  "verify": "sqrt(3**2 + 4**2 + 12**2)",
+  "tech": "free",
+  "id": "qm_m4_009_q4",
+  "topicId": "qm_m4_009"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f(x) = kx for 0 ≤ x ≤ 2 (and 0 elsewhere) is a probability density function. Find k.",
+  "answer": "1/2",
+  "explanation": "∫₀² kx dx = 2k = 1.",
+  "verify": "solve(integrate(k*x, (x, 0, 2)) - 1, k)",
+  "id": "qm_m4_010_q1",
+  "topicId": "qm_m4_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f(x) = x/2 for 0 ≤ x ≤ 2. Find P(X ≤ 1).",
+  "answer": "1/4",
+  "explanation": "[x²/4] from 0 to 1.",
+  "verify": "integrate(x/2, (x, 0, 1))",
+  "id": "qm_m4_010_q2",
+  "topicId": "qm_m4_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f(x) = 3x² for 0 ≤ x ≤ 1. Find P(0.5 ≤ X ≤ 1).",
+  "answer": "7/8",
+  "explanation": "1 − 1/8.",
+  "verify": "integrate(3*x**2, (x, Rational(1, 2), 1))",
+  "id": "qm_m4_010_q3",
+  "topicId": "qm_m4_010"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "For a continuous random variable X, P(X = 1) is:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "f(1)"
+   },
+   {
+    "key": "B",
+    "text": "0"
+   },
+   {
+    "key": "C",
+    "text": "1"
+   },
+   {
+    "key": "D",
+    "text": "undefined"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The area over a single point is 0.",
+  "id": "qm_m4_010_q4",
+  "topicId": "qm_m4_010"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f(x) = x/2 for 0 ≤ x ≤ 2. Find E(X).",
+  "answer": "4/3",
+  "explanation": "∫ x²/2 dx = 8/6.",
+  "verify": "integrate(x*x/2, (x, 0, 2))",
+  "id": "qm_m4_011_q1",
+  "topicId": "qm_m4_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "f(x) = 3x² for 0 ≤ x ≤ 1. Find E(X).",
+  "answer": "3/4",
+  "explanation": "∫ 3x³ dx = 3/4.",
+  "verify": "integrate(x*3*x**2, (x, 0, 1))",
+  "id": "qm_m4_011_q2",
+  "topicId": "qm_m4_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "f(x) = 3x² for 0 ≤ x ≤ 1. Find Var(X).",
+  "answer": "3/80",
+  "explanation": "E(X²) = 3/5, so 3/5 − 9/16 = 3/80.",
+  "verify": "integrate(x**2*3*x**2, (x, 0, 1)) - integrate(x*3*x**2, (x, 0, 1))**2",
+  "id": "qm_m4_011_q3",
+  "topicId": "qm_m4_011"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "X is uniform on [0, 10], so f(x) = 1/10. Find E(X).",
+  "answer": "5",
+  "explanation": "The midpoint, 5.",
+  "verify": "integrate(x/10, (x, 0, 10))",
+  "id": "qm_m4_011_q4",
+  "topicId": "qm_m4_011"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "μ = 70 and σ = 5. Find the z-score of x = 80.",
+  "answer": "2",
+  "explanation": "(80 − 70)/5.",
+  "verify": "(80 - 70)/Integer(5)",
+  "id": "qm_m4_012_q1",
+  "topicId": "qm_m4_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "μ = 50 and σ = 8. Find x when z = −1.5.",
+  "answer": "38",
+  "explanation": "50 − 12.",
+  "verify": "50 + Rational(-3, 2)*8",
+  "id": "qm_m4_012_q2",
+  "topicId": "qm_m4_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "A student scores 75 in Maths (mean 65, standard deviation 5) and 80 in English (mean 70, standard deviation 10). In which did they do better relative to the class?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "English"
+   },
+   {
+    "key": "B",
+    "text": "Maths"
+   },
+   {
+    "key": "C",
+    "text": "Equally well"
+   },
+   {
+    "key": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "B",
+  "explanation": "z = 2 in Maths and z = 1 in English.",
+  "id": "qm_m4_012_q3",
+  "topicId": "qm_m4_012"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "μ = 100 and σ = 15. Find the z-score of x = 91.",
+  "answer": "-0.6",
+  "explanation": "−9/15.",
+  "verify": "(91 - 100)/Integer(15)",
+  "id": "qm_m4_012_q4",
+  "topicId": "qm_m4_012"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X ~ N(50, 16), so σ = 4. Approximately what percentage of values lie between 46 and 54?",
+  "answer": "68",
+  "explanation": "46 to 54 is within 1 standard deviation of the mean.",
+  "verify": "rnd(100*(Phi(1) - Phi(-1)), 0)",
+  "id": "qm_m4_013_q1",
+  "topicId": "qm_m4_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "X ~ N(50, 16), so σ = 4. Approximately what percentage of values lie above 58?",
+  "answer": "2.5",
+  "explanation": "58 is 2σ above the mean; 5% lie beyond ±2σ, half of it above.",
+  "verify": "Rational(100 - 95, 2)",
+  "id": "qm_m4_013_q2",
+  "topicId": "qm_m4_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "In a normal distribution, the mean, median and mode:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "are all different"
+   },
+   {
+    "key": "B",
+    "text": "are all equal"
+   },
+   {
+    "key": "C",
+    "text": "satisfy mean > median"
+   },
+   {
+    "key": "D",
+    "text": "satisfy median > mode"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The curve is symmetric with a single peak at the mean.",
+  "id": "qm_m4_013_q3",
+  "topicId": "qm_m4_013"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "X ~ N(100, 225), so σ = 15. Approximately what percentage of values lie between 85 and 130?",
+  "answer": "81.5",
+  "explanation": "85 to 100 is 34%, and 100 to 130 is 47.5%.",
+  "verify": "Rational(68, 2) + Rational(95, 2)",
+  "id": "qm_m4_013_q4",
+  "topicId": "qm_m4_013"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Z ~ N(0, 1). P(Z < 1) is approximately:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "0.3413"
+   },
+   {
+    "key": "B",
+    "text": "0.8413"
+   },
+   {
+    "key": "C",
+    "text": "0.1587"
+   },
+   {
+    "key": "D",
+    "text": "0.6827"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Half the area (0.5) plus the area from 0 to 1 (0.3413).",
+  "verify": "rnd(Phi(1), 4)",
+  "tech": "free",
+  "id": "qm_m4_014_q1",
+  "topicId": "qm_m4_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Z ~ N(0, 1). P(−1.96 < Z < 1.96) is approximately:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "0.975"
+   },
+   {
+    "key": "B",
+    "text": "0.90"
+   },
+   {
+    "key": "C",
+    "text": "0.95"
+   },
+   {
+    "key": "D",
+    "text": "0.99"
+   }
+  ],
+  "answer": "C",
+  "explanation": "1.96 is the standard 95% value.",
+  "verify": "rnd(Phi(Rational(196, 100)) - Phi(Rational(-196, 100)), 2)",
+  "tech": "free",
+  "id": "qm_m4_014_q2",
+  "topicId": "qm_m4_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "X ~ N(60, 25), so σ = 5. Find P(X > 67) correct to 4 decimal places.",
+  "answer": "0.0808",
+  "explanation": "z = 1.4 and 1 − 0.9192 = 0.0808.",
+  "verify": "rnd(1 - Phi(Rational(7, 5)), 4)",
+  "tech": "active",
+  "id": "qm_m4_014_q3",
+  "topicId": "qm_m4_014"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "X ~ N(500, 100²). Find k such that P(X < k) = 0.9, to the nearest whole number.",
+  "answer": "628",
+  "explanation": "z ≈ 1.2816, so k ≈ 500 + 128.2.",
+  "verify": "rnd(500 + 100*sqrt(2)*erfinv(Rational(4, 5)), 0)",
+  "tech": "active",
+  "id": "qm_m4_014_q4",
+  "topicId": "qm_m4_014"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Which is a simple random sample of a school's students?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "Drawing 50 student ID numbers at random from all IDs"
+   },
+   {
+    "key": "B",
+    "text": "Surveying the first 50 students at the canteen"
+   },
+   {
+    "key": "C",
+    "text": "Asking for volunteers in an online poll"
+   },
+   {
+    "key": "D",
+    "text": "Surveying 50 students from one class"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Every student has the same chance of being chosen.",
+  "id": "qm_m4_015_q1",
+  "topicId": "qm_m4_015"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "An online poll on a sports website asks whether sport should get more funding. It is likely to be biased because:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "respondents choose themselves and are interested in sport"
+   },
+   {
+    "key": "B",
+    "text": "the sample is too random"
+   },
+   {
+    "key": "C",
+    "text": "online polls are always unbiased"
+   },
+   {
+    "key": "D",
+    "text": "the population is too small"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Self-selected samples over-represent people with strong views.",
+  "id": "qm_m4_015_q2",
+  "topicId": "qm_m4_015"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "To reduce the variation between sample results, you should:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "decrease the sample size"
+   },
+   {
+    "key": "B",
+    "text": "increase the sample size"
+   },
+   {
+    "key": "C",
+    "text": "use volunteers"
+   },
+   {
+    "key": "D",
+    "text": "survey only one group"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Larger random samples give less variable estimates.",
+  "id": "qm_m4_015_q3",
+  "topicId": "qm_m4_015"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "A sample statistic is:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "a value calculated from a sample to estimate a population parameter"
+   },
+   {
+    "key": "B",
+    "text": "a fixed property of the population"
+   },
+   {
+    "key": "C",
+    "text": "always equal to the population value"
+   },
+   {
+    "key": "D",
+    "text": "the size of the sample"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Statistics vary from sample to sample; parameters are fixed.",
+  "id": "qm_m4_015_q4",
+  "topicId": "qm_m4_015"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "In a random sample of 200 people, 46 say yes. Find the sample proportion p̂.",
+  "answer": "0.23",
+  "explanation": "46 ÷ 200.",
+  "verify": "Rational(46, 200)",
+  "id": "qm_m4_016_q1",
+  "topicId": "qm_m4_016"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "The population proportion is p = 0.4 and n = 100. What is the mean of p̂?",
+  "answer": "0.4",
+  "explanation": "E(p̂) = p.",
+  "verify": "Rational(4, 10)",
+  "id": "qm_m4_016_q2",
+  "topicId": "qm_m4_016"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "The population proportion is p = 0.4 and n = 100. The standard deviation of p̂ is:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "0.24"
+   },
+   {
+    "key": "B",
+    "text": "√(0.0024)"
+   },
+   {
+    "key": "C",
+    "text": "√0.24"
+   },
+   {
+    "key": "D",
+    "text": "0.0024"
+   }
+  ],
+  "answer": "B",
+  "explanation": "√(0.4 × 0.6 ÷ 100) = √0.0024 ≈ 0.049.",
+  "verify": "sqrt(Rational(4, 10)*Rational(6, 10)/100)",
+  "id": "qm_m4_016_q3",
+  "topicId": "qm_m4_016"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "If the sample size is multiplied by 4, the standard deviation of p̂ is multiplied by:",
+  "answer": "1/2",
+  "explanation": "It depends on 1/√n.",
+  "verify": "1/sqrt(4)",
+  "id": "qm_m4_016_q4",
+  "topicId": "qm_m4_016"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "For large random samples, the distribution of p̂ is approximately:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "uniform"
+   },
+   {
+    "key": "B",
+    "text": "normal"
+   },
+   {
+    "key": "C",
+    "text": "Bernoulli"
+   },
+   {
+    "key": "D",
+    "text": "exponential"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Repeated sampling gives a bell-shaped distribution of p̂.",
+  "id": "qm_m4_017_q1",
+  "topicId": "qm_m4_017"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "The normal approximation for p̂ works best when:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "n is large and p is not close to 0 or 1"
+   },
+   {
+    "key": "B",
+    "text": "n is small"
+   },
+   {
+    "key": "C",
+    "text": "p is close to 0"
+   },
+   {
+    "key": "D",
+    "text": "p = 1"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Both np and n(1 − p) should be reasonably large.",
+  "id": "qm_m4_017_q2",
+  "topicId": "qm_m4_017"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "p = 0.5 and n = 100. Standardise p̂ = 0.6: find z.",
+  "answer": "2",
+  "explanation": "The standard deviation is 0.05, so z = 0.1/0.05.",
+  "verify": "(Rational(6, 10) - Rational(1, 2))/sqrt(Rational(1, 4)/100)",
+  "id": "qm_m4_017_q3",
+  "topicId": "qm_m4_017"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "p = 0.5 and n = 100. Find the approximate value of P(p̂ > 0.6), to 3 decimal places.",
+  "answer": "0.023",
+  "explanation": "z = 2, and 1 − 0.977 ≈ 0.023.",
+  "verify": "rnd(1 - Phi(2), 3)",
+  "tech": "active",
+  "id": "qm_m4_017_q4",
+  "topicId": "qm_m4_017"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "In a random sample of 400, 100 support a policy. Find p̂.",
+  "answer": "0.25",
+  "explanation": "100 ÷ 400.",
+  "verify": "Rational(100, 400)",
+  "id": "qm_m4_018_q1",
+  "topicId": "qm_m4_018"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "An approximate 95% confidence interval uses z ≈",
+  "choices": [
+   {
+    "key": "A",
+    "text": "1.645"
+   },
+   {
+    "key": "B",
+    "text": "1.96"
+   },
+   {
+    "key": "C",
+    "text": "2.576"
+   },
+   {
+    "key": "D",
+    "text": "1"
+   }
+  ],
+  "answer": "B",
+  "explanation": "95% of the standard normal lies between −1.96 and 1.96.",
+  "verify": "rnd(sqrt(2)*erfinv(Rational(95, 100)), 2)",
+  "id": "qm_m4_018_q2",
+  "topicId": "qm_m4_018"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "n = 400 and p̂ = 0.25. Find the approximate 95% confidence interval for p, to 3 decimal places.",
+  "choices": [
+   {
+    "key": "A",
+    "text": "(0.229, 0.271)"
+   },
+   {
+    "key": "B",
+    "text": "(0.208, 0.292)"
+   },
+   {
+    "key": "C",
+    "text": "(0.236, 0.264)"
+   },
+   {
+    "key": "D",
+    "text": "(0.150, 0.350)"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Standard error √(0.25 × 0.75/400) ≈ 0.0217; 1.96 × 0.0217 ≈ 0.042.",
+  "tech": "active",
+  "id": "qm_m4_018_q3",
+  "topicId": "qm_m4_018"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "A 95% confidence interval for p is (0.31, 0.39). What was p̂?",
+  "answer": "0.35",
+  "explanation": "The interval is centred on p̂.",
+  "verify": "(Rational(31, 100) + Rational(39, 100))/2",
+  "id": "qm_m4_018_q4",
+  "topicId": "qm_m4_018"
+ },
+ {
+  "difficulty": "basic",
+  "type": "numeric",
+  "prompt": "A confidence interval is (0.31, 0.39). What is the margin of error?",
+  "answer": "0.04",
+  "explanation": "Half the width.",
+  "verify": "(Rational(39, 100) - Rational(31, 100))/2",
+  "id": "qm_m4_019_q1",
+  "topicId": "qm_m4_019"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "For the same sample, increasing the confidence level from 95% to 99% makes the interval:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "narrower"
+   },
+   {
+    "key": "B",
+    "text": "wider"
+   },
+   {
+    "key": "C",
+    "text": "the same"
+   },
+   {
+    "key": "D",
+    "text": "shift to the right"
+   }
+  ],
+  "answer": "B",
+  "explanation": "A larger z is needed.",
+  "id": "qm_m4_019_q2",
+  "topicId": "qm_m4_019"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "To halve the margin of error, the sample size must be multiplied by:",
+  "answer": "4",
+  "explanation": "The margin depends on 1/√n.",
+  "verify": "(2)**2",
+  "id": "qm_m4_019_q3",
+  "topicId": "qm_m4_019"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "Using p̂ = 0.5 and z = 1.96, find the smallest sample size giving a margin of error of at most 0.05.",
+  "answer": "385",
+  "explanation": "n ≥ (1.96 × 0.5 ÷ 0.05)² = 384.16, so 385.",
+  "verify": "ceiling((Rational(196, 100)*sqrt(Rational(1, 4))/Rational(5, 100))**2)",
+  "tech": "active",
+  "id": "qm_m4_019_q4",
+  "topicId": "qm_m4_019"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "A 95% confidence interval for p is (0.42, 0.50). Which statement is correct?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "If many samples were taken, about 95% of such intervals would contain p"
+   },
+   {
+    "key": "B",
+    "text": "There is a 95% chance that p equals 0.46"
+   },
+   {
+    "key": "C",
+    "text": "95% of people have values between 0.42 and 0.50"
+   },
+   {
+    "key": "D",
+    "text": "p̂ is between 0.42 and 0.50 with probability 0.95"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Confidence describes the method over repeated samples.",
+  "id": "qm_m4_020_q1",
+  "topicId": "qm_m4_020"
+ },
+ {
+  "difficulty": "basic",
+  "type": "choice",
+  "prompt": "Twenty random samples each give a 95% confidence interval for p. About how many would you expect to contain p?",
+  "choices": [
+   {
+    "key": "A",
+    "text": "20"
+   },
+   {
+    "key": "B",
+    "text": "19"
+   },
+   {
+    "key": "C",
+    "text": "1"
+   },
+   {
+    "key": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "B",
+  "explanation": "95% of 20 is 19.",
+  "id": "qm_m4_020_q2",
+  "topicId": "qm_m4_020"
+ },
+ {
+  "difficulty": "standard",
+  "type": "choice",
+  "prompt": "A council claims 60% of residents support a plan. A survey gives a 95% confidence interval of (0.48, 0.56). The best conclusion is:",
+  "choices": [
+   {
+    "key": "A",
+    "text": "The data do not support the claim, because 0.60 is outside the interval"
+   },
+   {
+    "key": "B",
+    "text": "The claim is supported"
+   },
+   {
+    "key": "C",
+    "text": "The interval proves exactly 52% support"
+   },
+   {
+    "key": "D",
+    "text": "Nothing can be concluded"
+   }
+  ],
+  "answer": "A",
+  "explanation": "0.60 is not a plausible value given this interval.",
+  "id": "qm_m4_020_q3",
+  "topicId": "qm_m4_020"
+ },
+ {
+  "difficulty": "standard",
+  "type": "numeric",
+  "prompt": "1000 samples are taken and a 90% confidence interval is built from each. About how many intervals are expected NOT to contain p?",
+  "answer": "100",
+  "explanation": "10% of 1000.",
+  "verify": "1000*Rational(10, 100)",
+  "id": "qm_m4_020_q4",
+  "topicId": "qm_m4_020"
  }
 ]

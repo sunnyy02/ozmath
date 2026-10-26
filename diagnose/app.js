@@ -50,7 +50,7 @@
     if (scope) {
       const g = E.gradeTargets(G, scope);
       if (!g) return renderStart('No topics found for “' + scope + '”.');
-      return startOrResume({ targets: g.ids, mode: 'screen', label: g.label, limit: limit });
+      return startOrResume({ targets: g.ids, mode: 'screen', label: QM.volumeLabel(g.label), limit: limit });
     }
     renderStart();
   }
@@ -161,7 +161,7 @@
       h('p', { class: 'muted small', text: 'Screening mode: questions stay inside the chosen level. A correct answer also clears the earlier topics it depends on.' }),
       h('div', { class: 'row' }, vols.map(function (v) {
         const g = E.gradeTargets(G, v);
-        return h('button', { class: 'btn', onclick: function () { go({ scope: v }); } }, v, ' ', h('span', { class: 'muted small', text: '(' + g.ids.length + ')' }));
+        return h('button', { class: 'btn', onclick: function () { go({ scope: v }); } }, QM.volumeLabel(v), ' ', h('span', { class: 'muted small', text: '(' + g.ids.length + ')' }));
       }))));
 
     // single topic
@@ -178,7 +178,7 @@
         groups[t.chapter].push(t);
       });
       order.forEach(function (c) {
-        list.append(h('details', { class: 'group', open: !!q || order.length <= 3 }, h('summary', { text: c + ' (' + groups[c].length + ')' }),
+        list.append(h('details', { class: 'group', open: !!q || order.length <= 3 }, h('summary', { text: QM.chapterLabel(c) + ' (' + groups[c].length + ')' }),
           h('ul', { class: 'topic-list' }, groups[c].map(function (t) {
             return h('li', { onclick: function () { go({ target: t.id }); } }, h('span', { text: t.name }), h('span', { class: 'tid', text: 'Start →' }));
           }))));

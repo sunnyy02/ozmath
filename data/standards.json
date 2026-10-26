@@ -863,8 +863,8 @@
   "kind": "unit",
   "text": "Unit 1: Surds, algebra, functions and probability",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U1.T1",
@@ -875,8 +875,36 @@
   "kind": "topic",
   "text": "Topic 1: Surds and quadratic functions",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U1.T1.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 1,
+  "topic": 1,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 4,
+  "text": "Surds: Surds as irrational roots; simplify, rationalise denominators, four operations.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U1.T1.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 1,
+  "topic": 1,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 7,
+  "text": "Quadratic functions: Features and sketches of parabolas; solve by factorising, formula, completing the square, technology; discriminant; models.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U1.T2",
@@ -887,8 +915,36 @@
   "kind": "topic",
   "text": "Topic 2: Binomial expansion and cubic functions",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U1.T2.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 1,
+  "topic": 2,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 3,
+  "text": "Binomial expansion: Combinations, Pascal's triangle and nCr; binomial theorem expansions.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U1.T2.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 1,
+  "topic": 2,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 9,
+  "text": "Cubic functions: Degree and coefficients; expand from factors; cubic graph features and end behaviour; solve cubics; models.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U1.T3",
@@ -899,8 +955,50 @@
   "kind": "topic",
   "text": "Topic 3: Functions and relations",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U1.T3.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 1,
+  "topic": 3,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 5,
+  "text": "Introduction to functions and relations: Relations and functions, vertical line test, function notation, domain and range, piecewise functions.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U1.T3.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 1,
+  "topic": 3,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 4,
+  "text": "Graphs of relations: Circles (centre, radius), parabolas and other relations; sketch and model.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U1.T3.S3",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 1,
+  "topic": 3,
+  "subtopic": 3,
+  "kind": "subtopic",
+  "hours": 2,
+  "text": "Reciprocal functions: Hyperbolic graphs: intercepts, asymptotes, end behaviour; models.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U1.T4",
@@ -911,8 +1009,36 @@
   "kind": "topic",
   "text": "Topic 4: Trigonometric functions",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U1.T4.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 1,
+  "topic": 4,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 2,
+  "text": "Circular measure and radian measure: Radians and degrees; arc length and sector area.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U1.T4.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 1,
+  "topic": 4,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 8,
+  "text": "Introduction to trigonometric functions: Unit circle, periodicity, exact values, graphs and transformations of sin, cos, tan; solve equations incl. Pythagorean identity; models.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U1.T5",
@@ -923,8 +1049,36 @@
   "kind": "topic",
   "text": "Topic 5: Probability",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U1.T5.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 1,
+  "topic": 5,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 4,
+  "text": "Language of events and sets: Outcomes, sample spaces, events; complement, intersection, union, mutually exclusive; Venn diagrams.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U1.T5.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 1,
+  "topic": 5,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 7,
+  "text": "Conditional probability and independence: Probability rules; conditional probability P(A|B); independence and the multiplication rule; relative frequencies; models.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U2",
@@ -934,8 +1088,8 @@
   "kind": "unit",
   "text": "Unit 2: Calculus and further functions",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U2.T1",
@@ -946,8 +1100,36 @@
   "kind": "topic",
   "text": "Topic 1: Exponential functions",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U2.T1.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 2,
+  "topic": 1,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 4,
+  "text": "Indices and index laws: Negative and fractional indices, index laws, radicals and indices, scientific notation.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U2.T1.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 2,
+  "topic": 1,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 6,
+  "text": "Introduction to exponential functions: Graphs of y = a^x and transformations; solve exponential equations; models.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U2.T2",
@@ -958,8 +1140,36 @@
   "kind": "topic",
   "text": "Topic 2: Logarithms and logarithmic functions",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U2.T2.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 2,
+  "topic": 2,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 5,
+  "text": "Logarithms and logarithmic laws: Logarithms as indices; logarithm laws; solve index equations with logarithms.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U2.T2.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 2,
+  "topic": 2,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 7,
+  "text": "Logarithmic functions: Graphs and transformations of logarithmic functions; solve log equations; models such as decibels and the Richter scale.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U2.T3",
@@ -970,8 +1180,22 @@
   "kind": "topic",
   "text": "Topic 3: Introduction to differential calculus",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U2.T3.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 2,
+  "topic": 3,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 10,
+  "text": "Rates of change and the concept of derivatives: Average and instantaneous rates of change; first principles; derivative as gradient of tangent; power rule; derivatives of polynomials.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U2.T4",
@@ -982,8 +1206,22 @@
   "kind": "topic",
   "text": "Topic 4: Applications of differential calculus",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U2.T4.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 2,
+  "topic": 4,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 12,
+  "text": "Graphical applications of derivatives: Tangents and normals; displacement and velocity; stationary points and their nature; sketch polynomials up to degree 4; local and global extrema.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U2.T5",
@@ -994,8 +1232,22 @@
   "kind": "topic",
   "text": "Topic 5: Further differentiation",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U2.T5.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 2,
+  "topic": 5,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 11,
+  "text": "Differentiation rules: Chain, product and quotient rules for power and polynomial functions, in simplest factorised form.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U3",
@@ -1005,8 +1257,8 @@
   "kind": "unit",
   "text": "Unit 3: Further calculus and introduction to statistics",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U3.T1",
@@ -1017,8 +1269,36 @@
   "kind": "topic",
   "text": "Topic 1: Differentiation of exponential and logarithmic functions",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U3.T1.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 3,
+  "topic": 1,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 6,
+  "text": "Calculus of exponential functions: The number e; derivative of e^x and related forms.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U3.T1.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 3,
+  "topic": 1,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 8,
+  "text": "Calculus of logarithmic functions: ln as the inverse of e^x; solve base-e equations; derivative of ln x; models.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U3.T2",
@@ -1029,8 +1309,36 @@
   "kind": "topic",
   "text": "Topic 2: Differentiation of trigonometric functions and differentiation rules",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U3.T2.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 3,
+  "topic": 2,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 5,
+  "text": "Calculus of trigonometric functions: Derivatives of sin x, cos x and tan x; models.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U3.T2.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 3,
+  "topic": 2,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 5,
+  "text": "Differentiation rules: Chain, product and quotient rules with exponential, logarithmic and trigonometric functions.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U3.T3",
@@ -1041,8 +1349,22 @@
   "kind": "topic",
   "text": "Topic 3: Further applications of differentiation",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U3.T3.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 3,
+  "topic": 3,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 10,
+  "text": "The second derivative and applications of differentiation: Second derivative, acceleration, concavity and inflection points; second derivative test; sketching; optimisation.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U3.T4",
@@ -1053,8 +1375,22 @@
   "kind": "topic",
   "text": "Topic 4: Introduction to integration",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U3.T4.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 3,
+  "topic": 4,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 9,
+  "text": "Anti-differentiation: Anti-derivatives and indefinite integrals of powers, e^x, 1/x, sin, cos and linear composites; initial conditions; displacement from velocity or acceleration.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U3.T5",
@@ -1065,8 +1401,50 @@
   "kind": "topic",
   "text": "Topic 5: Discrete random variables",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U3.T5.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 3,
+  "topic": 5,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 5,
+  "text": "General discrete random variables: Discrete random variables and probability functions; mean, variance and standard deviation; models.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U3.T5.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 3,
+  "topic": 5,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 2,
+  "text": "Bernoulli distributions: Bernoulli random variables; mean p and variance p(1 - p).",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U3.T5.S3",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 3,
+  "topic": 5,
+  "subtopic": 3,
+  "kind": "subtopic",
+  "hours": 5,
+  "text": "Binomial distributions: Binomial probabilities, mean np and variance np(1 - p); at least / at most language; models.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U4",
@@ -1076,8 +1454,8 @@
   "kind": "unit",
   "text": "Unit 4: Further calculus, trigonometry and statistics",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U4.T1",
@@ -1088,8 +1466,36 @@
   "kind": "topic",
   "text": "Topic 1: Further integration",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U4.T1.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 4,
+  "topic": 1,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 3,
+  "text": "Fundamental theorem of calculus and definite integrals: Rectangle sums; definite integral as a limit of sums; fundamental theorem; area under a non-negative curve.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U4.T1.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 4,
+  "topic": 1,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 8,
+  "text": "Applications of integration: Area between curve and axis and between curves; trapezoidal rule; total change; motion.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U4.T2",
@@ -1100,8 +1506,22 @@
   "kind": "topic",
   "text": "Topic 2: Trigonometry",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U4.T2.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 4,
+  "topic": 2,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 10,
+  "text": "Cosine and sine rules: Sine rule incl. ambiguous case, cosine rule, area formula; 2D and 3D problems with bearings, elevation and depression.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U4.T3",
@@ -1112,8 +1532,36 @@
   "kind": "topic",
   "text": "Topic 3: Continuous random variables and the normal distribution",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U4.T3.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 4,
+  "topic": 3,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 6,
+  "text": "General continuous random variables: Probability density and cumulative distribution functions; probabilities, mean and variance by integration; z-scores.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U4.T3.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 4,
+  "topic": 3,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 6,
+  "text": "Normal distributions: Normal curve features, N(mu, sigma^2), standard normal; probabilities and quantiles with technology.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U4.T4",
@@ -1124,8 +1572,36 @@
   "kind": "topic",
   "text": "Topic 4: Sampling and proportions",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U4.T4.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 4,
+  "topic": 4,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 3,
+  "text": "Random sampling: Random samples, sources of bias, procedures that ensure randomness, simulated samples.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U4.T4.S2",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 4,
+  "topic": 4,
+  "subtopic": 2,
+  "kind": "subtopic",
+  "hours": 8,
+  "text": "Sample proportions: The sample proportion as a random variable with mean p and sd sqrt(p(1 - p)/n); approximate normality for large n.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:MM.U4.T5",
@@ -1136,8 +1612,22 @@
   "kind": "topic",
   "text": "Topic 5: Interval estimates for proportions",
   "verbatim": true,
-  "title_status": "unverified",
-  "source": "QCAA Mathematical Methods 2025 v1.3 (topic titles from a third-party summary)"
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
+ },
+ {
+  "id": "qcaa25:MM.U4.T5.S1",
+  "framework": "qcaa2025",
+  "band": "methods",
+  "unit": 4,
+  "topic": 5,
+  "subtopic": 1,
+  "kind": "subtopic",
+  "hours": 11,
+  "text": "Confidence intervals for proportions: Approximate confidence interval for p; margin of error; relation to confidence level and sample size; interpretation.",
+  "verbatim": false,
+  "title_status": "official",
+  "source": "QCAA Mathematical Methods 2025 syllabus (official PDF; sub-topic summaries paraphrased)"
  },
  {
   "id": "qcaa25:SM.U1",

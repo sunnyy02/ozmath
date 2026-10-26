@@ -67,7 +67,7 @@
     const cur = current();
     groups.forEach(function (g) {
       const det = h('details', { class: 'group', open: true },
-        h('summary', null, g.key, ' ', h('span', { class: 'muted small', text: '(' + g.items.length + ')' })),
+        h('summary', null, QM.chapterLabel(g.key), ' ', h('span', { class: 'muted small', text: '(' + g.items.length + ')' })),
         h('ul', { class: 'topic-list' }, g.items.map(function (t) {
           return h('li', { 'data-id': t.id, class: t.id === cur ? 'on' : null, onclick: function () { location.hash = t.id; } },
             h('span', { text: t.name }), h('span', { class: 'tid', text: t.id }));
@@ -97,7 +97,7 @@
         h('span', { class: 'tag ' + (t.status === 'reviewed' ? 'mastered' : 'shaky'), text: t.status === 'reviewed' ? 'Teacher-reviewed' : 'Draft' }),
         h('span', { class: 'spacer' }), h('code', { text: t.id })),
       h('h1', { text: t.name, style: 'margin-top:10px' }),
-      h('p', { class: 'muted', text: t.chapter }),
+      h('p', { class: 'muted', text: QM.chapterLabel(t.chapter) }),
       h('p', { text: t.description }),
       h('h3', { text: 'A student who has mastered this can:' }),
       h('ul', null, t.mastery_criteria.map(function (m) { return h('li', { text: m }); })),

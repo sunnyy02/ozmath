@@ -2,8 +2,10 @@
 """Machine-check question answers with SymPy and write data/verification_report.json.
 
 Each question may carry `verify`: a SymPy expression (string) for the correct answer.
-Available names: everything in `sympy` (sqrt, Rational, Integer, expand, factor, solve, simplify, ...),
-symbols a b c k m n p q t x y, and rnd(expr, dp) for rounding to dp decimal places.
+Available names: everything in `sympy` (sqrt, Rational, Integer, expand, factor, solve, simplify, diff,
+integrate, exp, log, sin, cos, pi, E, ...), symbols a b c k m n p q t x y z u v h r s, rnd(expr, dp) for
+rounding, Phi(z) for the standard normal CDF and binom_pmf(n, k, p).
+In choice texts, `e` means Euler's number and `ln` the natural log.
 The string is evaluated with no Python builtins except abs/len/max/min/sorted/round/range.
 
 numeric  The verify result (number, tuple, or list of solutions) must equal `answer`.
@@ -19,6 +21,7 @@ answer's format, not its mathematics.
 Run:  python3 scripts/verify_questions.py   (needs sympy: pip install sympy)
 """
 import ast
+import statistics
 import json
 import os
 import re
@@ -37,16 +40,27 @@ except ImportError:
     sys.exit(2)
 
 TRANSFORMS = standard_transformations + (implicit_multiplication_application, convert_xor)
-SYMS = {n: sp.Symbol(n) for n in "a b c k m n p q t x y".split()}
+SYMS = {n: sp.Symbol(n) for n in "a b c k m n p q t x y z u v h r s".split()}
+PARSE_LOCALS = dict(SYMS, e=sp.E, ln=sp.log)
 
 
 def rnd(expr, dp):
     return sp.Rational(str(round(float(sp.N(expr, 30)), dp)))
 
 
+def Phi(z):
+    """Standard normal cumulative probability."""
+    return (1 + sp.erf(sp.sympify(z) / sp.sqrt(2))) / 2
+
+
+def binom_pmf(n_, k_, p_):
+    return sp.binomial(n_, k_) * sp.sympify(p_)**k_ * (1 - sp.sympify(p_))**(n_ - k_)
+
+
 NS = {k: getattr(sp, k) for k in dir(sp) if not k.startswith("_")}
 NS.update(SYMS)
-NS.update({"rnd": rnd, "abs": abs, "len": len, "max": max, "min": min, "sorted": sorted, "round": round,
+NS.update({"sum": sum, "mean": statistics.mean, "median": statistics.median, "pvariance": lambda v: sp.Rational(statistics.pvariance([sp.Rational(i) for i in v])),
+           "E": sp.E, "Phi": Phi, "binom_pmf": binom_pmf, "rnd": rnd, "abs": abs, "len": len, "max": max, "min": min, "sorted": sorted, "round": round,
            "range": range, "__builtins__": {}})
 
 
@@ -63,14 +77,28 @@ def is_literal(src):
 
 
 def parse_math(text):
-    return parse_expr(to_sympy_text(text), local_dict=dict(SYMS), transformations=TRANSFORMS)
+    return parse_expr(to_sympy_text(text), local_dict=dict(PARSE_LOCALS), transformations=TRANSFORMS)
 
 
 def same(a, b):
+    """Exact equality for numbers (to 1e-12, so surds, logs and pi compare correctly); identity for expressions."""
     try:
-        d = sp.simplify(sp.nsimplify(a) - sp.nsimplify(b)) if not (getattr(a, "free_symbols", None) or getattr(b, "free_symbols", None)) \
-            else sp.simplify(sp.expand(a - b))
-        return d == 0
+        a, b = sp.sympify(a), sp.sympify(b)
+        if not (a.free_symbols or b.free_symbols):
+            d = sp.N(a - b, 40)
+            if d.is_real is False or not d.is_number:
+                return sp.simplify(a - b) == 0
+            return abs(float(d)) < 1e-12
+        d = a - b
+        if sp.simplify(sp.expand(d)) == 0:
+            return True
+        # last resort: compare at several sample points (catches equal trig/log forms simplify misses)
+        syms = sorted(d.free_symbols, key=str)
+        for pt in (0.37, 1.21, 2.53, -0.81):
+            v = sp.N(d.subs({s_: pt + 0.11 * i for i, s_ in enumerate(syms)}), 30)
+            if not v.is_number or abs(complex(v)) > 1e-9:
+                return False
+        return True
     except Exception:
         return False
 
@@ -144,7 +172,11 @@ def check_choice(q, result):
         if v is None:
             unparsed.append(c["key"])
             continue
-        ok = multiset_equal(v, target, False) if mode == "set" else same(v, target)
+        if mode == "expr" and SYMS["c"] in target.free_symbols:
+            # indefinite integral "F(x) + c": equal up to a constant, so compare derivatives
+            ok = SYMS["c"] in v.free_symbols and same(sp.diff(v, SYMS["x"]), sp.diff(target, SYMS["x"]))
+        else:
+            ok = multiset_equal(v, target, False) if mode == "set" else same(v, target)
         if ok:
             matches.append(c["key"])
     if matches == [q["answer"]]:

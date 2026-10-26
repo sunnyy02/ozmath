@@ -24,7 +24,7 @@
     <p class="muted">A map of Queensland maths from Year 9 (Australian Curriculum v9.0) to the QCAA 2025 senior subjects. Each topic links to the topics it depends on. The diagnosis asks a few questions and, when a student is stuck, works back through those prerequisites to find where the gap starts.</p>
     <div class="stats" id="stats"><div class="stat"><b>…</b>loading</div></div>
     <div class="row">
-      <a class="btn primary" href="diagnose/?target=qm_m1_007&amp;demo=1">See a demo diagnosis</a>
+      <a class="btn primary" href="diagnose/?target=qm_m3_021&amp;demo=1">See a demo diagnosis</a>
       <a class="btn" href="explore/#qm_m1_002">Explore the map</a>
     </div>
   </section>
@@ -69,7 +69,7 @@
         card.append(h('div', { class: 'row' },
           h('a', { class: 'btn small', href: 'explore/?band=' + b.id + '#' + ts[0].id, text: 'Explore' }),
           vols.map(function (v) {
-            return h('a', { class: 'btn small', href: 'diagnose/?scope=' + encodeURIComponent(v), text: 'Check ' + v });
+            return h('a', { class: 'btn small', href: 'diagnose/?scope=' + encodeURIComponent(v), text: 'Check ' + QM.volumeLabel(v) });
           })));
       }
       box.append(card);
