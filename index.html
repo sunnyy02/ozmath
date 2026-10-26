@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QLD Maths Taxonomy</title>
+<meta name="description" content="Prerequisite map of Queensland maths from Year 9 to Year 12, with an adaptive diagnosis that finds the gap behind a struggle.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237a1f3d'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='sans-serif'%3E%E2%88%9A%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="./"><span class="logo">√</span><span>QLD Maths Taxonomy<small>Year 9 to Year 12</small></span></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="./" aria-current="page">Home</a>
+    <a href="explore/">Explore</a>
+    <a href="diagnose/">Diagnose</a>
+  </nav>
+</header>
+<div class="draft-banner">Draft: AI-generated topics, prerequisites and questions, not yet reviewed by teachers. Use as guidance only.</div>
+<main id="root">
+  <section class="card hero">
+    <h1>Find the gap behind a maths struggle</h1>
+    <p class="muted">A map of Queensland maths from Year 9 (Australian Curriculum v9.0) to the QCAA 2025 senior subjects. Each topic links to the topics it depends on. The diagnosis asks a few questions and, when a student is stuck, works back through those prerequisites to find where the gap starts.</p>
+    <div class="stats" id="stats"><div class="stat"><b>…</b>loading</div></div>
+    <div class="row">
+      <a class="btn primary" href="diagnose/?target=qm_m1_007&amp;demo=1">See a demo diagnosis</a>
+      <a class="btn" href="explore/#qm_m1_002">Explore the map</a>
+    </div>
+  </section>
+  <section class="card">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><b>Pick a target.</b> One topic, a whole unit, or a year level.</li>
+      <li><b>Answer up to 2 questions per topic.</b> Right first time means mastered, so earlier topics are skipped.</li>
+      <li><b>Wrong twice?</b> The tool moves to that topic's prerequisites and keeps going back until it finds solid ground.</li>
+      <li><b>Get a learning path</b> from the root-cause gap up to the target, in teaching order.</li>
+    </ol>
+  </section>
+  <section class="card">
+    <h2>Levels</h2>
+    <div class="grid" id="bands"></div>
+  </section>
+</main>
+<footer class="site-footer">
+  Forked from <a href="https://github.com/xiaoyang111222/cn-math-taxonomy">cn-math-taxonomy</a> (CC BY-NC 4.0). Non-commercial use only.
+  Curriculum references: ACARA Australian Curriculum v9.0 and QCAA senior syllabuses 2025.
+</footer>
+<script src="assets/common.js"></script>
+<script>
+(function () {
+  const h = QM.h;
+  QM.loadData('./').then(function (D) {
+    const hard = D.deps.filter(function (d) { return d.strength === 'hard'; }).length;
+    const stats = document.getElementById('stats');
+    stats.textContent = '';
+    [[D.topics.length, 'topics'], [D.deps.length, 'prerequisite links (' + hard + ' hard)'],
+     [D.questions.length, 'questions'], [D.standards.filter(function (s) { return s.kind !== 'unit'; }).length, 'curriculum items']]
+      .forEach(function (x) { stats.append(h('div', { class: 'stat' }, h('b', { text: String(x[0]) }), x[1])); });
+    const box = document.getElementById('bands');
+    QM.BANDS.forEach(function (b) {
+      const ts = D.topics.filter(function (t) { return t.band === b.id; });
+      const vols = [];
+      ts.forEach(function (t) { const v = QM.volumeOf(t); if (vols.indexOf(v) < 0) vols.push(v); });
+      const card = h('div', { class: 'card band-card ' + b.id + (ts.length ? '' : ' empty') },
+        h('h3', { text: b.label }), h('p', { class: 'muted small', text: b.blurb }),
+        h('p', { class: 'small', text: ts.length ? ts.length + ' topics' : 'Not built yet' }));
+      if (ts.length) {
+        card.append(h('div', { class: 'row' },
+          h('a', { class: 'btn small', href: 'explore/?band=' + b.id + '#' + ts[0].id, text: 'Explore' }),
+          vols.map(function (v) {
+            return h('a', { class: 'btn small', href: 'diagnose/?scope=' + encodeURIComponent(v), text: 'Check ' + v });
+          })));
+      }
+      box.append(card);
+    });
+  }).catch(function (e) {
+    document.getElementById('stats').textContent = 'Could not load data (' + e.message + '). Serve the folder over HTTP: python3 -m http.server';
+  });
+})();
+</script>
+</body>
+</html>

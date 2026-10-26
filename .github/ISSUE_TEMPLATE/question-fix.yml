@@ -1,0 +1,28 @@
+name: Question or answer is wrong
+description: A question's prompt, answer, choices, explanation or difficulty needs fixing
+title: "[question] "
+labels: ["question-fix"]
+body:
+  - type: input
+    id: question_id
+    attributes:
+      label: Question id
+      description: Shown under each question in the diagnosis, e.g. qm_m1_002_q3
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      placeholder: e.g. the keyed answer is C but B is also correct because ...
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix
+  - type: dropdown
+    id: role
+    attributes:
+      label: You are a
+      options: [Teacher, Student, Parent, Other]

@@ -1,0 +1,13 @@
+{
+  "name": "qld-maths-taxonomy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prerequisite map and adaptive diagnosis for Queensland maths, Year 9 to Year 12. Fork of cn-math-taxonomy.",
+  "license": "CC-BY-NC-4.0",
+  "scripts": {
+    "build": "python3 scripts/standards_seed.py && python3 scripts/build.py",
+    "check": "python3 scripts/validate.py && python3 scripts/verify_questions.py && node tests/test_engine.js",
+    "serve": "python3 -m http.server 8000",
+    "smoke": "node tests/smoke.js http://localhost:8000 screenshots"
+  }
+}

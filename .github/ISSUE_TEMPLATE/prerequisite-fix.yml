@@ -1,0 +1,31 @@
+name: Prerequisite or topic is wrong
+description: A prerequisite link, its hard/soft strength, a topic's scope, or a curriculum mapping needs fixing
+title: "[graph] "
+labels: ["graph-fix"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic id(s)
+      description: e.g. qm_10o_005, or an edge like qm_m1_003 -> qm_10_006
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of problem
+      options: [Missing prerequisite, Prerequisite should not exist, Hard should be soft (or the reverse), Topic too broad or too narrow, Wrong curriculum code, Missing topic]
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: Classroom experience and syllabus references help most.
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: You are a
+      options: [QLD maths teacher, Other teacher, Student, Parent, Other]
