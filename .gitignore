@@ -11,3 +11,7 @@ __pycache__/
 PROMPT*.md
 chain.sh
 .cf-token-workers
+.cache/
+data/_blind/
+sources/*.jsonld
+sources/*.pdf

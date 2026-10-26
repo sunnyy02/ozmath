@@ -1,0 +1,242 @@
+[
+ {
+  "topicId": "qm_9_003",
+  "prerequisiteId": "qm_9_002",
+  "strength": "hard",
+  "reason": "The zero and negative exponent rules come from extending the index laws"
+ },
+ {
+  "topicId": "qm_9_005",
+  "prerequisiteId": "qm_9_004",
+  "strength": "soft",
+  "reason": "Factorising reverses expanding, so expanding is used to check"
+ },
+ {
+  "topicId": "qm_9_006",
+  "prerequisiteId": "qm_9_004",
+  "strength": "hard",
+  "reason": "Factorising a quadratic means finding the binomial product that expands to it"
+ },
+ {
+  "topicId": "qm_9_006",
+  "prerequisiteId": "qm_9_005",
+  "strength": "soft",
+  "reason": "Common-factor factorising is the simpler first case"
+ },
+ {
+  "topicId": "qm_9_009",
+  "prerequisiteId": "qm_9_006",
+  "strength": "hard",
+  "reason": "The equation must be factorised before the null factor law can be used"
+ },
+ {
+  "topicId": "qm_9_010",
+  "prerequisiteId": "qm_9_008",
+  "strength": "hard",
+  "reason": "Transformations are described relative to the graph of y = x²"
+ },
+ {
+  "topicId": "qm_10_001",
+  "prerequisiteId": "qm_9_002",
+  "strength": "hard",
+  "reason": "Terms are simplified with the index laws"
+ },
+ {
+  "topicId": "qm_10_001",
+  "prerequisiteId": "qm_9_004",
+  "strength": "hard",
+  "reason": "Builds on expanding binomial products"
+ },
+ {
+  "topicId": "qm_10_002",
+  "prerequisiteId": "qm_9_004",
+  "strength": "hard",
+  "reason": "Both identities are special cases of expanding binomial products"
+ },
+ {
+  "topicId": "qm_10_003",
+  "prerequisiteId": "qm_9_006",
+  "strength": "hard",
+  "reason": "Extends the monic factorising method"
+ },
+ {
+  "topicId": "qm_10_004",
+  "prerequisiteId": "qm_9_009",
+  "strength": "hard",
+  "reason": "Uses the null factor law"
+ },
+ {
+  "topicId": "qm_10_004",
+  "prerequisiteId": "qm_10_003",
+  "strength": "hard",
+  "reason": "Many equations need non-monic factorising"
+ },
+ {
+  "topicId": "qm_10_004",
+  "prerequisiteId": "qm_10_002",
+  "strength": "soft",
+  "reason": "Some equations are a difference of two squares"
+ },
+ {
+  "topicId": "qm_10_005",
+  "prerequisiteId": "qm_9_007",
+  "strength": "soft",
+  "reason": "Lines and their gradients give the graphical meaning of a solution"
+ },
+ {
+  "topicId": "qm_10o_001",
+  "prerequisiteId": "qm_9_001",
+  "strength": "hard",
+  "reason": "Surds are irrational square roots"
+ },
+ {
+  "topicId": "qm_10o_001",
+  "prerequisiteId": "qm_9_002",
+  "strength": "soft",
+  "reason": "√(ab) = √a × √b parallels the index laws"
+ },
+ {
+  "topicId": "qm_10o_002",
+  "prerequisiteId": "qm_10o_001",
+  "strength": "hard",
+  "reason": "Surds must be simplified before like surds can be collected"
+ },
+ {
+  "topicId": "qm_10o_002",
+  "prerequisiteId": "qm_9_004",
+  "strength": "soft",
+  "reason": "Expanding surd brackets uses the same method as binomial products"
+ },
+ {
+  "topicId": "qm_10o_003",
+  "prerequisiteId": "qm_10o_002",
+  "strength": "hard",
+  "reason": "Uses multiplication and simplification of surds"
+ },
+ {
+  "topicId": "qm_10o_004",
+  "prerequisiteId": "qm_10_002",
+  "strength": "hard",
+  "reason": "Completing the square builds a perfect square"
+ },
+ {
+  "topicId": "qm_10o_004",
+  "prerequisiteId": "qm_9_006",
+  "strength": "soft",
+  "reason": "Same coefficient reasoning as monic factorising"
+ },
+ {
+  "topicId": "qm_10o_005",
+  "prerequisiteId": "qm_10o_004",
+  "strength": "hard",
+  "reason": "The formula is derived by completing the square"
+ },
+ {
+  "topicId": "qm_10o_005",
+  "prerequisiteId": "qm_10o_001",
+  "strength": "hard",
+  "reason": "Exact answers need simplified surds"
+ },
+ {
+  "topicId": "qm_10o_006",
+  "prerequisiteId": "qm_10o_005",
+  "strength": "hard",
+  "reason": "The discriminant is the expression under the square root in the formula"
+ },
+ {
+  "topicId": "qm_10o_007",
+  "prerequisiteId": "qm_10o_004",
+  "strength": "hard",
+  "reason": "Turning point form comes from completing the square"
+ },
+ {
+  "topicId": "qm_10o_007",
+  "prerequisiteId": "qm_9_010",
+  "strength": "hard",
+  "reason": "Uses transformations of y = x²"
+ },
+ {
+  "topicId": "qm_m1_001",
+  "prerequisiteId": "qm_10o_003",
+  "strength": "hard",
+  "reason": "Extends rationalising a single-surd denominator"
+ },
+ {
+  "topicId": "qm_m1_001",
+  "prerequisiteId": "qm_10_002",
+  "strength": "hard",
+  "reason": "The conjugate product is a difference of two squares"
+ },
+ {
+  "topicId": "qm_m1_002",
+  "prerequisiteId": "qm_10_004",
+  "strength": "hard",
+  "reason": "Factorising methods"
+ },
+ {
+  "topicId": "qm_m1_002",
+  "prerequisiteId": "qm_10o_005",
+  "strength": "hard",
+  "reason": "Quadratic formula for equations that do not factorise"
+ },
+ {
+  "topicId": "qm_m1_003",
+  "prerequisiteId": "qm_10o_006",
+  "strength": "hard",
+  "reason": "Uses the discriminant conditions"
+ },
+ {
+  "topicId": "qm_m1_003",
+  "prerequisiteId": "qm_10_006",
+  "strength": "hard",
+  "reason": "The condition becomes an inequality to solve"
+ },
+ {
+  "topicId": "qm_m1_004",
+  "prerequisiteId": "qm_10o_007",
+  "strength": "hard",
+  "reason": "Connects the general form to turning point features"
+ },
+ {
+  "topicId": "qm_m1_004",
+  "prerequisiteId": "qm_m1_002",
+  "strength": "soft",
+  "reason": "x-intercepts require solving the quadratic"
+ },
+ {
+  "topicId": "qm_m1_005",
+  "prerequisiteId": "qm_10o_007",
+  "strength": "hard",
+  "reason": "Uses turning point form"
+ },
+ {
+  "topicId": "qm_m1_005",
+  "prerequisiteId": "qm_10_005",
+  "strength": "soft",
+  "reason": "Two unknown coefficients can lead to simultaneous equations"
+ },
+ {
+  "topicId": "qm_m1_006",
+  "prerequisiteId": "qm_m1_002",
+  "strength": "hard",
+  "reason": "The intersection condition is a quadratic equation"
+ },
+ {
+  "topicId": "qm_m1_006",
+  "prerequisiteId": "qm_10_005",
+  "strength": "soft",
+  "reason": "Same substitution idea as simultaneous linear equations"
+ },
+ {
+  "topicId": "qm_m1_006",
+  "prerequisiteId": "qm_m1_003",
+  "strength": "soft",
+  "reason": "Tangency is a discriminant condition"
+ },
+ {
+  "topicId": "qm_m1_007",
+  "prerequisiteId": "qm_m1_004",
+  "strength": "hard",
+  "reason": "The optimum is the turning point"
+ }
+]

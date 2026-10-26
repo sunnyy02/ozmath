@@ -1,0 +1,686 @@
+[
+ {
+  "id": "qm_9_001",
+  "name": "Rational and irrational numbers",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Number",
+  "type": "conceptual",
+  "description": "Tell rational numbers (fractions, terminating or recurring decimals) from irrational ones such as √2 and π, and estimate square roots.",
+  "mastery_criteria": [
+   "Classifies numbers as rational or irrational",
+   "Writes terminating decimals as fractions",
+   "Places a square root between two whole numbers"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9N01",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number",
+  "root_reason": "Year 9 is the lowest level in this graph; Year 7-8 assumed knowledge is not modelled."
+ },
+ {
+  "id": "qm_9_002",
+  "name": "Index laws with positive integer exponents",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Algebra",
+  "type": "procedural",
+  "description": "Multiply, divide and raise powers with the same base, for numbers and variables.",
+  "mastery_criteria": [
+   "Adds exponents when multiplying powers of the same base",
+   "Subtracts exponents when dividing",
+   "Multiplies exponents for a power of a power"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9A01",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra",
+  "root_reason": "Year 9 is the lowest level in this graph; Year 7-8 assumed knowledge is not modelled."
+ },
+ {
+  "id": "qm_9_003",
+  "name": "Zero and negative exponents",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Algebra",
+  "type": "procedural",
+  "description": "Use a⁰ = 1 and a⁻ⁿ = 1/aⁿ, and write answers with positive exponents.",
+  "mastery_criteria": [
+   "Evaluates zero and negative powers of numbers",
+   "Simplifies expressions with negative exponents"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9A01",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_9_004",
+  "name": "Expanding binomial products",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Algebra",
+  "type": "procedural",
+  "description": "Expand products such as (x + a)(x + b) and (ax + b)(cx + d) and collect like terms.",
+  "mastery_criteria": [
+   "Multiplies every term in one bracket by every term in the other",
+   "Collects like terms correctly, including signs"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9A02",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra",
+  "root_reason": "Year 9 is the lowest level in this graph; Year 7-8 assumed knowledge is not modelled."
+ },
+ {
+  "id": "qm_9_005",
+  "name": "Factorising by taking out a common factor",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Algebra",
+  "type": "procedural",
+  "description": "Take out the highest common factor of the terms, including variables.",
+  "mastery_criteria": [
+   "Finds the HCF of numbers and pronumerals",
+   "Checks a factorisation by expanding"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9A02",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_9_006",
+  "name": "Factorising monic quadratics",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Algebra",
+  "type": "procedural",
+  "description": "Factorise x² + bx + c by finding two numbers that multiply to c and add to b.",
+  "mastery_criteria": [
+   "Finds the factor pair of c that adds to b, including negatives",
+   "Checks the factorisation by expanding"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9A02",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_9_007",
+  "name": "Gradient, midpoint and distance",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Algebra",
+  "type": "procedural",
+  "description": "Find the gradient, midpoint and length of a line segment from the coordinates of its end points.",
+  "mastery_criteria": [
+   "Uses rise over run for gradient",
+   "Averages coordinates for the midpoint",
+   "Uses Pythagoras' theorem for distance"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9A03",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra",
+  "root_reason": "Year 9 is the lowest level in this graph; Year 7-8 assumed knowledge is not modelled."
+ },
+ {
+  "id": "qm_9_008",
+  "name": "Graphing quadratic functions",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Algebra",
+  "type": "conceptual",
+  "description": "Graph y = x² + bx + c from a table of values and read off intercepts and the turning point, using the symmetry of the parabola.",
+  "mastery_criteria": [
+   "Plots a parabola from a table of values",
+   "Reads intercepts from the rule or graph",
+   "Uses symmetry to locate the turning point"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9A04",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra",
+  "root_reason": "Year 9 is the lowest level in this graph; Year 7-8 assumed knowledge is not modelled."
+ },
+ {
+  "id": "qm_9_009",
+  "name": "Solving monic quadratic equations by factorising",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Algebra",
+  "type": "procedural",
+  "description": "Rearrange to = 0, factorise and use the null factor law.",
+  "mastery_criteria": [
+   "Rearranges a quadratic equation to = 0",
+   "Applies the null factor law to each factor"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9A04",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_9_010",
+  "name": "Transformations of y = x²",
+  "band": "y9",
+  "level": 9,
+  "chapter": "Year 9 · Algebra",
+  "type": "conceptual",
+  "description": "Describe how a, h and k in y = a(x − h)² + k dilate, reflect and translate the graph of y = x².",
+  "mastery_criteria": [
+   "Describes vertical and horizontal translations",
+   "Describes dilation and reflection from a",
+   "Reads the turning point from the rule"
+  ],
+  "standards": [
+   {
+    "id": "AC9M9A06",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_10_001",
+  "name": "Expanding and simplifying with index laws",
+  "band": "y10",
+  "level": 10,
+  "chapter": "Year 10 · Algebra",
+  "type": "procedural",
+  "description": "Expand, simplify and solve using the distributive law together with the index laws.",
+  "mastery_criteria": [
+   "Expands and collects like terms in longer expressions",
+   "Combines index laws with expanding",
+   "Solves linear equations with brackets"
+  ],
+  "standards": [
+   {
+    "id": "AC9M10A01",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_10_002",
+  "name": "Difference of two squares and perfect squares",
+  "band": "y10",
+  "level": 10,
+  "chapter": "Year 10 · Algebra",
+  "type": "procedural",
+  "description": "Recognise and use a² − b² = (a − b)(a + b) and (a ± b)² = a² ± 2ab + b².",
+  "mastery_criteria": [
+   "Factorises a difference of two squares",
+   "Expands and recognises perfect squares",
+   "Uses the identities for mental arithmetic"
+  ],
+  "standards": [
+   {
+    "id": "AC9M10A01",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_10_003",
+  "name": "Factorising non-monic quadratics",
+  "band": "y10",
+  "level": 10,
+  "chapter": "Year 10 · Algebra",
+  "type": "procedural",
+  "description": "Factorise ax² + bx + c with a ≠ 1, taking out any common factor first.",
+  "mastery_criteria": [
+   "Takes out a common factor first",
+   "Factorises ax² + bx + c by splitting the middle term or by inspection"
+  ],
+  "standards": [
+   {
+    "id": "AC9M10A01",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_10_004",
+  "name": "Solving quadratic equations algebraically",
+  "band": "y10",
+  "level": 10,
+  "chapter": "Year 10 · Algebra",
+  "type": "procedural",
+  "description": "Solve quadratic equations by factorising, including non-monic cases and the difference of two squares.",
+  "mastery_criteria": [
+   "Chooses an appropriate factorisation",
+   "Solves equations with fractional or zero roots",
+   "Rearranges equations to = 0 first"
+  ],
+  "standards": [
+   {
+    "id": "AC9M10A01",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_10_005",
+  "name": "Simultaneous linear equations",
+  "band": "y10",
+  "level": 10,
+  "chapter": "Year 10 · Algebra",
+  "type": "procedural",
+  "description": "Solve two linear equations in two unknowns by substitution or elimination, and interpret the solution as the intersection of two lines.",
+  "mastery_criteria": [
+   "Solves by substitution",
+   "Solves by elimination",
+   "Interprets the solution as a point of intersection"
+  ],
+  "standards": [
+   {
+    "id": "AC9M10A02",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra"
+ },
+ {
+  "id": "qm_10_006",
+  "name": "Linear inequalities",
+  "band": "y10",
+  "level": 10,
+  "chapter": "Year 10 · Algebra",
+  "type": "procedural",
+  "description": "Solve linear inequalities, reversing the inequality sign when multiplying or dividing by a negative number.",
+  "mastery_criteria": [
+   "Solves inequalities with the same steps as equations",
+   "Reverses the sign when multiplying or dividing by a negative"
+  ],
+  "standards": [
+   {
+    "id": "AC9M10A02",
+    "confidence": "exact"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Algebra",
+  "root_reason": "Builds on solving linear equations (Year 7-8), which is not modelled in this graph."
+ },
+ {
+  "id": "qm_10o_001",
+  "name": "Simplifying surds",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Number and algebra (optional)",
+  "type": "procedural",
+  "description": "Write √n in simplest form a√b by taking out the largest square factor.",
+  "mastery_criteria": [
+   "Finds the largest square factor",
+   "Writes a surd in simplest form",
+   "Converts a√b back to √n"
+  ],
+  "standards": [
+   {
+    "id": "acopt:N.01",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number and algebra (optional)"
+ },
+ {
+  "id": "qm_10o_002",
+  "name": "Adding, subtracting and multiplying surds",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Number and algebra (optional)",
+  "type": "procedural",
+  "description": "Collect like surds and expand products involving surds.",
+  "mastery_criteria": [
+   "Simplifies before collecting like surds",
+   "Multiplies surds using √a × √b = √(ab)",
+   "Expands brackets containing surds"
+  ],
+  "standards": [
+   {
+    "id": "acopt:N.01",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number and algebra (optional)"
+ },
+ {
+  "id": "qm_10o_003",
+  "name": "Rationalising a single-surd denominator",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Number and algebra (optional)",
+  "type": "procedural",
+  "description": "Multiply by √b/√b to remove a surd from the denominator.",
+  "mastery_criteria": [
+   "Rationalises a/√b",
+   "Simplifies the result fully"
+  ],
+  "standards": [
+   {
+    "id": "acopt:N.01",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number and algebra (optional)"
+ },
+ {
+  "id": "qm_10o_004",
+  "name": "Completing the square",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Number and algebra (optional)",
+  "type": "procedural",
+  "description": "Rewrite x² + bx + c as (x + b/2)² + k and use it to solve equations.",
+  "mastery_criteria": [
+   "Adds and subtracts (b/2)²",
+   "Writes a monic quadratic as (x + h)² + k",
+   "Solves an equation by completing the square"
+  ],
+  "standards": [
+   {
+    "id": "acopt:A.02",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number and algebra (optional)"
+ },
+ {
+  "id": "qm_10o_005",
+  "name": "The quadratic formula",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Number and algebra (optional)",
+  "type": "procedural",
+  "description": "Solve ax² + bx + c = 0 with x = (−b ± √(b² − 4ac))/(2a) and simplify the surd.",
+  "mastery_criteria": [
+   "Identifies a, b and c with their signs",
+   "Substitutes correctly into the formula",
+   "Simplifies exact answers"
+  ],
+  "standards": [
+   {
+    "id": "acopt:A.02",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number and algebra (optional)"
+ },
+ {
+  "id": "qm_10o_006",
+  "name": "The discriminant and the number of real solutions",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Number and algebra (optional)",
+  "type": "reasoning",
+  "description": "Use Δ = b² − 4ac to decide whether a quadratic equation has two, one or no real solutions.",
+  "mastery_criteria": [
+   "Calculates the discriminant",
+   "Links the sign of Δ to the number of real solutions"
+  ],
+  "standards": [
+   {
+    "id": "acopt:A.03",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number and algebra (optional)"
+ },
+ {
+  "id": "qm_10o_007",
+  "name": "Turning point form and sketching parabolas",
+  "band": "y10opt",
+  "level": 10,
+  "chapter": "Year 10 Optional · Number and algebra (optional)",
+  "type": "conceptual",
+  "description": "Sketch y = a(x − h)² + k showing the turning point, intercepts and whether it is a maximum or minimum.",
+  "mastery_criteria": [
+   "Reads the turning point and its nature",
+   "Finds intercepts from turning point form",
+   "Converts general form to turning point form"
+  ],
+  "standards": [
+   {
+    "id": "acopt:A.04",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "strand": "Number and algebra (optional)"
+ },
+ {
+  "id": "qm_m1_001",
+  "name": "Rationalising binomial surd denominators",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T1 Surds and quadratic functions",
+  "type": "procedural",
+  "description": "Use the conjugate to rationalise denominators such as a + √b, and write results in the form p + q√r.",
+  "mastery_criteria": [
+   "Identifies the conjugate",
+   "Multiplies by conjugate over conjugate",
+   "Simplifies to p + q√r"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T1",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_002",
+  "name": "Solving quadratic equations: choosing a method",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T1 Surds and quadratic functions",
+  "type": "procedural",
+  "description": "Choose between factorising, square roots, completing the square and the formula, and give exact solutions.",
+  "mastery_criteria": [
+   "Selects an efficient method",
+   "Gives exact answers in simplest surd form",
+   "Solves equations reducible to quadratics"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T1",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_003",
+  "name": "The discriminant with an unknown coefficient",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T1 Surds and quadratic functions",
+  "type": "reasoning",
+  "description": "Find the values of a parameter that give a quadratic two, one or no real solutions.",
+  "mastery_criteria": [
+   "Writes the discriminant in terms of the parameter",
+   "Solves the resulting equation or inequality"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T1",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_004",
+  "name": "Key features of a quadratic in general form",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T1 Surds and quadratic functions",
+  "type": "procedural",
+  "description": "From y = ax² + bx + c, find intercepts, the axis of symmetry x = −b/(2a) and the turning point.",
+  "mastery_criteria": [
+   "Finds the axis of symmetry",
+   "Finds the turning point",
+   "Finds all intercepts"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T1",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_005",
+  "name": "Finding a quadratic rule from given features",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T1 Surds and quadratic functions",
+  "type": "reasoning",
+  "description": "Determine a quadratic's rule from its turning point, intercepts or points on the graph.",
+  "mastery_criteria": [
+   "Chooses turning point form or intercept form to suit the information",
+   "Solves for unknown coefficients"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T1",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_006",
+  "name": "Intersections of a line and a parabola",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T1 Surds and quadratic functions",
+  "type": "procedural",
+  "description": "Find where a line meets a parabola by substitution, and use the discriminant to count intersections.",
+  "mastery_criteria": [
+   "Substitutes to form a quadratic equation",
+   "Solves for the intersection points",
+   "Uses the discriminant to decide tangency"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T1",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ },
+ {
+  "id": "qm_m1_007",
+  "name": "Quadratic models: maximum and minimum problems",
+  "band": "methods",
+  "level": 11,
+  "chapter": "Methods U1 · T1 Surds and quadratic functions",
+  "type": "application",
+  "description": "Build a quadratic model from a situation and use its turning point to find a maximum or minimum.",
+  "mastery_criteria": [
+   "Writes a quadratic model from a description",
+   "Finds and interprets the turning point in context"
+  ],
+  "standards": [
+   {
+    "id": "qcaa25:MM.U1.T1",
+    "confidence": "inferred"
+   }
+  ],
+  "tech": "free",
+  "status": "draft",
+  "unit": 1
+ }
+]
