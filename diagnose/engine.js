@@ -1,21 +1,17 @@
-/* 诊断引擎：纯函数、无 DOM、无依赖。浏览器中暴露为 window.DiagEngine，Node 中 require() 即可。
+/* Diagnosis engine: pure functions, no DOM, no dependencies. window.DiagEngine in the browser, require() in Node.
+ * Forked from cn-math-taxonomy (CC BY-NC 4.0, https://github.com/xiaoyang111222/cn-math-taxonomy);
+ * the adaptive algorithm is unchanged, labels, chapter parsing, ranking and answer judging are adapted for QLD.
  *
- * 数据流：buildGraph(topics, deps, questions?) -> graph      （questions 缺失时用 topics 的 diagnostic_question）
- *         createSession(graph, targets, {limit, seed, avoid}) -> session   （会话是可 JSON 序列化的纯数据）
- *         nextQuestion(graph, session) -> topicId | null     （下一个要考的知识点）
- *         nextItem(graph, session) -> {topicId, question, attempt} | null   （要出的具体题目；attempt 为 1 或 2）
- *         applyAnswer(graph, session, id, 'correct'|'wrong'|'skip', {text}) -> 新 session（不修改入参）
- *         summarize(graph, session) -> 结果（根因、学习路径、掌握/不稳/薄弱/未测）
- *         gradeTargets(graph, '一年级'|'七上'|'高一'|'选必二', subject?) -> {ids, volumes, label} | null
- *           默认 subject 为 math，不把英语卷进数学的整册；'english' 只取英语（含九全），'physics' 只取物理（八上、八下、九全），'all' 不限学科
- *         createSession(graph, ids, {mode:'screen'}) -> 筛查会话：范围 = 目标本身，回溯不出范围，默认题量上限 SCREEN_LIMIT
- *         chapterSummary(graph, session) -> 按章汇总（薄弱章节在前）
- *         layout(graph, session, summary) -> 路径图的分层布局
- *         judgeQuestion(question, userText) -> {verdict:'correct'|'wrong'|'manual', reason}
- *         judgeAnswer(user, reference) -> 同上（只按参考答案文本判，旧接口）
+ * Data flow: buildGraph(topics, deps, questions?) -> graph
+ *            createSession(graph, targets, {limit, seed, avoid, mode}) -> session (plain JSON)
+ *            nextItem(graph, session) -> {topicId, question, attempt} | null
+ *            applyAnswer(graph, session, id, 'correct'|'wrong'|'skip', {text}) -> new session
+ *            summarize(graph, session) -> root causes, learning path, mastered / shaky / weak / untested
+ *            gradeTargets(graph, 'Year 10' | 'Methods U1' | 'Methods') -> {ids, volumes, label} | null
+ *            chapterSummary, layout, judgeQuestion, judgeAnswer
  *
- * 每个知识点最多 2 题：第一题对 -> 掌握（并推断祖先掌握）；第一题错 / 不会 -> 再出一道同级或更容易的题：
- *   第二题对 -> 不稳（shaky，不向先修回溯）；第二题也错 -> 薄弱（weak，向先修回溯，hard 先于 soft）。
+ * At most 2 questions per topic. 1st correct -> mastered (ancestors inferred mastered). 1st wrong -> a 2nd, easier
+ * question: correct -> shaky (no backtracking); wrong -> weak, and its prerequisites (hard before soft) are tested next.
  */
 (function (root, factory) {
   if (typeof module !== 'undefined' && module.exports) module.exports = factory();
@@ -23,7 +19,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
 
-  /* ------------------------------------------------------------------ 图 */
+  /* ------------------------------------------------------------------ graph */
 
   const DIFF_RANK = { basic: 0, standard: 1, advanced: 2 };
 
@@ -46,13 +42,13 @@
       prereqs[d.topicId].push({ id: d.prerequisiteId, strength: strength, reason: d.reason });
       dependents[d.prerequisiteId].push({ id: d.topicId, strength: strength });
     });
-    // 先修按 hard 优先、再 soft，同级按 topics 文件顺序，保证出题次序确定
+    // prerequisites: hard before soft, then topics-file order, so question order is deterministic
     const rank = function (e) { return (e.strength === 'hard' ? 0 : 1) * 1e6 + index[e.id]; };
     Object.keys(prereqs).forEach(function (id) {
       prereqs[id].sort(function (a, b) { return rank(a) - rank(b); });
       dependents[id].sort(function (a, b) { return index[a.id] - index[b.id]; });
     });
-    // 题库：每个知识点的题目，按题号排序；没有题库（或某知识点没有题）时回退到 diagnostic_question
+    // question bank per topic, sorted by question number; falls back to diagnostic_question
     const bank = Object.create(null);
     topics.forEach(function (t) { bank[t.id] = []; });
     let fromFile = 0;
@@ -72,12 +68,12 @@
     };
   }
 
-  /** 严格祖先集合（不含自身），带缓存。 */
+  /** Strict ancestor set (excluding the topic itself), memoised. */
   function ancestorSet(graph, id) {
     const memo = graph._anc;
     if (memo[id]) return memo[id];
     const visiting = graph._visiting || (graph._visiting = Object.create(null));
-    if (visiting[id]) throw new Error('先修图存在环：' + id);
+    if (visiting[id]) throw new Error('Cycle in prerequisite graph: ' + id);
     visiting[id] = true;
     const out = new Set();
     graph.prereqs[id].forEach(function (p) {
@@ -96,7 +92,7 @@
     return out;
   }
 
-  /** 对节点子集做拓扑排序（先修在前）；同层按 topics 文件顺序，确定性。 */
+  /** Deterministic topological sort of a node subset (prerequisites first). */
   function topoSort(graph, ids) {
     const set = new Set(ids);
     const indeg = Object.create(null);
@@ -117,11 +113,11 @@
         if (indeg[d.id] === 0) ready.push(d.id);
       });
     }
-    if (order.length !== set.size) throw new Error('拓扑排序失败：子图存在环');
+    if (order.length !== set.size) throw new Error('Topological sort failed: cycle in subgraph');
     return order;
   }
 
-  /** 目标集合的先修子图：目标 + 所有祖先（含小学外部节点），拓扑序。 */
+  /** Prerequisite subgraph of the targets: targets + all ancestors, topologically sorted. */
   function subgraph(graph, targets) {
     const set = new Set(targets);
     ancestors(graph, targets).forEach(function (a) { set.add(a); });
@@ -139,7 +135,7 @@
     return (list || []).find(function (q) { return q.id === qid; }) || null;
   }
 
-  /* ------------------------------------------------------------------ 会话 */
+  /* ------------------------------------------------------------------ session */
 
   const RESULTS = { correct: 1, wrong: 1, skip: 1 };
   const DEFAULT_LIMIT = 16;
@@ -148,15 +144,15 @@
   function createSession(graph, targets, opts) {
     opts = opts || {};
     const ts = Array.from(new Set(targets));
-    if (!ts.length) throw new Error('至少需要一个目标知识点');
-    ts.forEach(function (id) { if (!graph.byId[id]) throw new Error('未知知识点：' + id); });
+    if (!ts.length) throw new Error('At least one target topic is needed');
+    ts.forEach(function (id) { if (!graph.byId[id]) throw new Error('Unknown topic: ' + id); });
     const screen = opts.mode === 'screen';
     const limit = Math.max(1, Math.floor(opts.limit == null ? (screen ? SCREEN_LIMIT : DEFAULT_LIMIT) : opts.limit));
-    // 筛查模式：诊断范围就是目标集合本身（不把先修祖先并进来），回溯只在范围内进行
+    // screening mode: scope is the target set itself; backtracking stays inside it
     const sub = screen ? { nodes: topoSort(graph, ts) } : subgraph(graph, ts);
     const pos = Object.create(null);
     sub.nodes.forEach(function (id, i) { pos[id] = i; });
-    // 离目标最近（拓扑序最靠后）的目标先问；其余目标作为后备留在栈里
+    // ask the target nearest the end of the topological order first; the rest wait on the stack
     const stack = ts.filter(function (id) { return isTestable(graph, id); })
       .sort(function (a, b) { return pos[b] - pos[a]; });
     return {
@@ -177,7 +173,7 @@
     };
   }
 
-  /* ---- 可种子化的伪随机：同一 (seed, 知识点, 第几题) 永远得到同一个数，所以会话可以重放 ---- */
+  /* ---- seeded PRNG: same (seed, topic, attempt) always gives the same number, so sessions replay exactly ---- */
   function hashStr(str) {
     let h = 2166136261 >>> 0;
     for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
@@ -202,12 +198,11 @@
   const rankOf = function (q) { return DIFF_RANK[q.difficulty] == null ? 1 : DIFF_RANK[q.difficulty]; };
 
   /**
-   * 给知识点 id 选第 attempt 题（1 或 2）。
-   *  - 已在本次会话里出过的题不再出；
-   *  - 第一题：优先没出过（session.avoid 之外）的题，并尽量避开 advanced；
-   *  - 第二题：同级或更容易——优先 basic，其次与第一题同难度，再其次其它更容易的，最后才是更难的（取最容易的）；
-   *    难度优先于“没出过”，同档里仍优先没出过的；
-   *  - 档内用 seed 决定的伪随机数选一道。
+   * Pick question number `attempt` (1 or 2) for topic id.
+   *  - never repeat a question within a session;
+   *  - 1st: prefer questions not seen before (session.avoid), avoid advanced when possible;
+   *  - 2nd: same level or easier - basic first, then the 1st question's level, then any easier, harder only as a last resort;
+   *  - within a tier, the seeded PRNG chooses.
    */
   function pickQuestion(graph, session, id, attempt) {
     const all = graph.bank[id] || [];
@@ -244,18 +239,18 @@
   }
 
   /**
-   * 记录一次作答（针对 nextItem 给出的那道题）。
-   *  - 第一题 correct：该点及其所有尚未判定的祖先记为掌握（祖先为 inferred）；
-   *  - 第一题 wrong/skip：还没有结论，该点仍排在最前面，下一题给它出第二题（没有第二题可出就直接判薄弱）；
-   *  - 第二题 correct：不稳（shaky），不向先修回溯；
-   *  - 第二题 wrong/skip：薄弱，并把其先修（hard 先、soft 后）压到出题栈顶。
-   * 直接作答（direct）的判定不会被推断（inferred）覆盖。extra.text 是用户输入的答案（只用于记录）。
+   * Record an answer to the question nextItem gave.
+   *  - 1st correct: topic and all undecided ancestors become mastered (ancestors 'inferred');
+   *  - 1st wrong/skip: no verdict yet, ask a 2nd question (weak at once if none is left);
+   *  - 2nd correct: shaky, no backtracking;
+   *  - 2nd wrong/skip: weak, and its prerequisites (hard first) go on top of the stack.
+   * Direct verdicts are never overwritten by inferred ones. extra.text is the typed answer (log only).
    */
   function applyAnswer(graph, session, id, result, extra) {
-    if (!RESULTS[result]) throw new Error('作答结果必须是 correct / wrong / skip');
-    if (!graph.byId[id]) throw new Error('未知知识点：' + id);
+    if (!RESULTS[result]) throw new Error('Result must be correct / wrong / skip');
+    if (!graph.byId[id]) throw new Error('Unknown topic: ' + id);
     const s = cloneSession(session);
-    if (s.status[id]) { delete s.status[id]; s.attempts[id] = []; } // 对已有结论的点重新作答 = 重新开始
+    if (s.status[id]) { delete s.status[id]; s.attempts[id] = []; } // answering a decided topic again restarts it
     const prev = s.attempts[id] || [];
     const q = pickQuestion(graph, s, id, prev.length + 1);
     const rec = { id: id, qid: q ? q.id : null, result: result };
@@ -273,7 +268,7 @@
         s.status[id] = { s: 'shaky', src: 'direct' };
       }
     } else if (nth === 1 && pickQuestion(graph, s, id, 2)) {
-      // 第一题没过：等第二题再下结论
+      // first question missed: wait for the second
     } else {
       s.status[id] = { s: 'weak', src: 'direct' };
       const scope = s.scope ? new Set(s.scope) : null;
@@ -303,27 +298,27 @@
     return q ? { topicId: id, question: q, attempt: attempt } : null;
   }
 
-  /** 由作答记录重建会话（用于刷新恢复、撤销、更正）。 */
+  /** Rebuild a session from its answer log (restore, undo, correction). */
   function replay(graph, targets, answers, opts) {
     let s = createSession(graph, targets, opts);
     answers.forEach(function (a) { s = applyAnswer(graph, s, a.id, a.result, { text: a.text }); });
     return s;
   }
 
-  /** 状态：mastered / shaky / weak / unknown。只答错一题就遇到题量上限的点按 weak 算（见 isUnconfirmed）。 */
+  /** mastered / shaky / weak / unknown. A topic with one wrong answer when the cap was hit counts as weak (isUnconfirmed). */
   function statusOf(session, id) {
     const st = session.status[id];
     if (st) return st.s;
     return isUnconfirmed(session, id) ? 'weak' : 'unknown';
   }
 
-  /** 第一题答错、但没来得及出第二题（题量用完）的点。 */
+  /** First answer wrong but the question cap was reached before a second. */
   function isUnconfirmed(session, id) {
     const a = session.attempts[id];
     return !session.status[id] && !!a && a.length === 1 && a[0].result !== 'correct';
   }
 
-  /* ------------------------------------------------------------------ 结果 */
+  /* ------------------------------------------------------------------ results */
 
   function summarize(graph, session) {
     const nodes = session.order;
@@ -343,16 +338,16 @@
       const testableUnk = unk.filter(function (p) { return isTestable(graph, p.id); });
       return {
         id: id,
-        // 先修里还没测到的（题量用完）——此时它未必是真正的根因
+        // untested prerequisites (cap reached): the real root cause may be further back
         pendingPrereqs: testableUnk.filter(function (p) { return inScope(p.id); }).map(function (p) { return p.id; }),
-        // 筛查模式下范围之外的先修（不在本次范围内，没有检查）
+        // screening mode: prerequisites outside the chosen scope, not checked
         outOfScopePrereqs: testableUnk.filter(function (p) { return !inScope(p.id); }).map(function (p) { return p.id; }),
-        // 小学外部节点（无诊断题，不测）
+        // prerequisites with no questions
         externalPrereqs: unk.filter(function (p) { return !isTestable(graph, p.id); }).map(function (p) { return p.id; })
       };
     });
 
-    // 学习路径：（根因 ∪ 不稳的点）的所有后代（子图内）∪ 它们自己，去掉已掌握，按拓扑序
+    // learning path: roots and shaky topics plus everything after them in the subgraph, minus mastered
     const inSub = new Set(nodes);
     const reach = new Set();
     const queue = roots.map(function (r) { return r.id; }).concat(shaky);
@@ -364,14 +359,14 @@
       });
     }
     const rootSet = new Set(roots.map(function (r) { return r.id; }));
-    const targetSet = new Set(scope ? [] : session.targets); // 筛查模式下“全部知识点都是目标”没有意义，不标目标
+    const targetSet = new Set(scope ? [] : session.targets); // in screening mode every topic is a target, so none is marked
     const topoPos = Object.create(null);
     nodes.forEach(function (id, i) { topoPos[id] = i; });
     const path = nodes.filter(function (id) { return reach.has(id) && st(id) !== 'mastered'; })
       .map(function (id) {
         return { id: id, status: st(id), isRoot: rootSet.has(id), isTarget: targetSet.has(id) };
       });
-    // 学习路径按年级从低到高；同一年级内保持拓扑序（先修在前）。没有 grade 的手造图保持原顺序。
+    // order the path by level (Year 9 -> Unit 4), keeping topological order within a level
     path.sort(function (a, b) {
       return gradeRank(graph, a.id) - gradeRank(graph, b.id) || topoPos[a.id] - topoPos[b.id];
     });
@@ -390,12 +385,12 @@
     };
   }
 
-  /* ------------------------------------------------------------------ 路径图布局 */
+  /* ------------------------------------------------------------------ path diagram layout */
 
   /**
-   * 选出要画的节点：学习路径 ∪ 目标 ∪ 根因 ∪ 实际问过的点；
-   * 边取这些节点上的“可达关系的传递约简”，非直接先修的边标 direct:false（画虚线）。
-   * 分层：纵向，先修在上、目标在下。
+   * Nodes: learning path + targets + root causes + every topic asked.
+   * Edges: transitive reduction of reachability on those nodes; non-direct edges get direct:false (dotted).
+   * Layers run top (prerequisites) to bottom (targets).
    */
   function layout(graph, session, summary) {
     const S = new Set();
@@ -433,7 +428,7 @@
     const rows = [];
     for (let i = 0; i < nLayers; i++) rows.push([]);
     ids.forEach(function (id) { rows[layer[id]].push(id); });
-    // 重心法减少交叉
+    // barycentre ordering to reduce crossings
     const slot = Object.create(null);
     rows.forEach(function (r) { r.forEach(function (id, i) { slot[id] = i; }); });
     const bary = function (id, nbrs) {
@@ -470,116 +465,59 @@
     return { nodes: nodes, edges: edges, layers: nLayers, maxCols: rows.reduce(function (m, r) { return Math.max(m, r.length); }, 1) };
   }
 
-  /* ------------------------------------------------------------------ 章节解析 */
+  /* ------------------------------------------------------------------ levels and chapters */
 
-  /** 年级数字 ×2 + 学期，用于学习路径排序。没有 grade 时返回 0。 */
+  // Year 9 < Year 10 < Year 10 optional < Unit 1 < ... < Unit 4 (same order as scripts/qlib.py rank_of)
+  const BAND_RANK = { y9: 0, y10: 1, y10opt: 2 };
+  const SENIOR = { general: 1, methods: 1, specialist: 1 };
+
+  /** Rank used to order the learning path. Hand-made graphs without a band rank 0. */
   function gradeRank(graph, id) {
     const t = graph.byId[id];
-    if (!t || typeof t.grade !== 'number') return 0;
-    return t.grade * 2 + (t.semester === '下' ? 1 : 0);
+    if (!t || !t.band) return 0;
+    if (SENIOR[t.band]) return 2 + (t.unit || 0);
+    return BAND_RANK[t.band] == null ? 0 : BAND_RANK[t.band];
   }
 
   /**
-   * 初中："七上 第一章 有理数 1.1" -> {volume:'七上', chapterNo:'第一章', chapterName:'有理数', section:'1.1'}
-   * 小学："一年级上册 第1单元 单元名" 或 "一年级上册 综合与实践 活动名"
+   * "Year 10 · Algebra"                             -> {volume:'Year 10', chapterNo:'', chapterName:'Algebra'}
+   * "Methods U1 · T1 Surds and quadratic functions" -> {volume:'Methods U1', chapterNo:'T1', chapterName:'Surds and quadratic functions'}
    */
   function parseChapter(chapter) {
     const s = chapter || '';
-    const pm = /^([一二三四五六七八九])年级([上下全])册 (第\d+单元|预备单元\d) (.+)$/.exec(s);
-    if (pm) return { volume: pm[1] + pm[2], chapterNo: pm[3], chapterName: pm[4], section: '' };
-    const pi = /^([一二三四五六])年级([上下])册 (综合与实践) (.+)$/.exec(s);
-    if (pi) return { volume: pi[1] + pi[2], chapterNo: pi[3], chapterName: pi[4], section: '' };
-    // 高中英语按册名解析，避免「第1单元 Teenage Life」被空格拆成章名和节。
-    const enHs = /^(必修第([一二三])册|选择性必修第([一二三四])册) (欢迎单元|第\d+单元) (.+)$/.exec(s);
-    if (enHs) {
-      return {
-        volume: enHs[2] ? ('必修' + enHs[2]) : ('选必' + enHs[3]),
-        chapterNo: enHs[4],
-        chapterName: enHs[5],
-        section: ''
-      };
-    }
-    // 高中数学不拆上下册。高一/高二是必修两册，选必一/二/三是选择性必修三册。
-    const hs = /^(高[一二]|选必[一二三]) (数学建模|数学探究) (\S+)$/.exec(s);
-    if (hs) return { volume: hs[1], chapterNo: hs[2], chapterName: hs[3], section: '' };
-    const m = /^(\S+) (第\S+章) (\S+?)(?: (\S+))?$/.exec(s);
-    if (!m) return { volume: '', chapterNo: '', chapterName: s, section: '' };
-    return { volume: m[1], chapterNo: m[2], chapterName: m[3], section: m[4] || '' };
+    const k = s.indexOf(' · ');
+    if (k < 0) return { volume: '', chapterNo: '', chapterName: s, section: '' };
+    const volume = s.slice(0, k);
+    const rest = s.slice(k + 3);
+    const m = /^(T\d+) (.+)$/.exec(rest);
+    return m ? { volume: volume, chapterNo: m[1], chapterName: m[2], section: '' }
+      : { volume: volume, chapterNo: '', chapterName: rest, section: '' };
   }
 
-  /** 学科：显式 subject 优先，否则 cne_ 是英语、cnp_ 是物理、cnc_ 是语文，其余算数学。 */
-  function subjectOf(topic) {
-    if (!topic) return 'math';
-    if (topic.subject === 'english' || topic.subject === 'math' || topic.subject === 'physics' || topic.subject === 'chinese') return topic.subject;
-    if (String(topic.id || '').indexOf('cne_') === 0) return 'english';
-    if (String(topic.id || '').indexOf('cnp_') === 0) return 'physics';
-    if (String(topic.id || '').indexOf('cnc_') === 0) return 'chinese';
-    return 'math';
-  }
+  /** Single subject in this fork; kept for API compatibility. */
+  function subjectOf() { return 'math'; }
 
   /**
-   * 整年级 / 整册的知识点：'一年级' = 一上 + 一下，'七上' = 七年级上册。
-   * 高中不拆上下册：'高一' / '高一必修' = 必修第一册，'高二' / '高二必修' = 必修第二册。
-   * '选必一' / '选择性必修第一册'、选必二、选必三 = 选择性必修三册。
-   * 高中英语用「必修一」「必修二」「必修三」「选必四」，不占用数学的「高一」「高二」。
-   * subject 默认 math，避免三上、四上和选必一把英语和数学混在一起。
-   * 不带 subject 时「必修一」没有数学知识点，返回 null。
-   * 返回 {ids, volumes, label}（ids 按 topics 文件顺序，只含正式知识点）；不认识的写法返回 null。
+   * Topics in a whole year, band or unit: 'Year 9', 'Year 10', 'Year 10 Optional', 'Methods' (all units),
+   * 'Methods U1', 'General U3' ... Case-insensitive. Returns {ids, volumes, label} or null.
    */
-  function gradeTargets(graph, scope, subject) {
-    const subj = subject == null || subject === '' ? 'math' : subject;
-    const key = String(scope == null ? '' : scope).trim();
-    const books = {
-      '高一': ['高一', '高一（必修第一册）'],
-      '高一必修': ['高一', '高一（必修第一册）'],
-      '高二': ['高二', '高二（必修第二册）'],
-      '高二必修': ['高二', '高二（必修第二册）'],
-      '选必一': ['选必一', '选必一（选择性必修第一册）'],
-      '选择性必修第一册': ['选必一', '选必一（选择性必修第一册）'],
-      '选必二': ['选必二', '选必二（选择性必修第二册）'],
-      '选择性必修第二册': ['选必二', '选必二（选择性必修第二册）'],
-      '选必三': ['选必三', '选必三（选择性必修第三册）'],
-      '选择性必修第三册': ['选必三', '选必三（选择性必修第三册）'],
-      '必修一': ['必修一', '必修一（必修第一册）'],
-      '必修第一册': ['必修一', '必修一（必修第一册）'],
-      '必修二': ['必修二', '必修二（必修第二册）'],
-      '必修第二册': ['必修二', '必修二（必修第二册）'],
-      '必修三': ['必修三', '必修三（必修第三册）'],
-      '必修第三册': ['必修三', '必修三（必修第三册）'],
-      '选必四': ['选必四', '选必四（选择性必修第四册）'],
-      '选择性必修第四册': ['选必四', '选必四（选择性必修第四册）']
-    };
-    let volumes = null;
-    let label = '';
-    if (books[key]) {
-      volumes = [books[key][0]];
-      label = books[key][1];
-    } else {
-      const g = /^([一二三四五六七八九])年级$/.exec(key);
-      const v = /^([一二三四五六七八九])([上下])$/.exec(key);
-      const whole = /^([一二三四五六七八九])全$/.exec(key);
-      if (g) {
-        volumes = [g[1] + '上', g[1] + '下'];
-        if (g[1] === '九') volumes.push('九全');
-        label = g[1] + '年级';
-      } else if (whole) {
-        volumes = [whole[1] + '全'];
-        label = whole[1] + '年级全一册';
-      } else if (v) { volumes = [key]; label = v[1] + '年级' + (v[2] === '上' ? '上册' : '下册'); }
-    }
-    if (!volumes) return null;
+  function gradeTargets(graph, scope) {
+    const key = String(scope == null ? '' : scope).trim().toLowerCase().replace(/\s+/g, ' ');
+    if (!key) return null;
+    const volumes = [];
+    graph.topics.forEach(function (t) {
+      const v = parseChapter(t.chapter).volume;
+      const vl = v.toLowerCase();
+      if ((vl === key || vl.indexOf(key + ' u') === 0) && volumes.indexOf(v) < 0) volumes.push(v);
+    });
+    if (!volumes.length) return null;
     const ids = graph.topics.filter(function (t) {
-      if (t.external) return false;
-      if (subj !== 'all' && subjectOf(t) !== subj) return false;
-      return volumes.indexOf(parseChapter(t.chapter).volume) >= 0;
+      return !t.external && volumes.indexOf(parseChapter(t.chapter).volume) >= 0;
     }).map(function (t) { return t.id; });
-    return ids.length ? { ids: ids, volumes: volumes, label: label } : null;
+    return ids.length ? { ids: ids, volumes: volumes, label: volumes.length === 1 ? volumes[0] : String(scope).trim() } : null;
   }
 
-  /**
-   * 按章汇总：范围内每章的 掌握 / 不稳 / 薄弱 / 未测 数量和薄弱、不稳的知识点 id。
-   * 章按教材顺序给出，再按「薄弱数多、不稳数多」稳定排序，薄弱的章排前面。
-   */
+  /** Per-chapter counts of mastered / shaky / weak / untested; chapters with most weak topics first. */
   function chapterSummary(graph, session) {
     const inOrder = new Set(session.order);
     const byKey = Object.create(null);
@@ -609,11 +547,7 @@
     return list;
   }
 
-  /**
-   * 把 URL / 选择器里的 id 展开成图中的知识点。
-   * aliases 形如 { "cnm_ext_002": { targets: ["cnm_p010", ...] } } 或 { id: ["cnm_p010"] }。
-   * 未知 id 原样保留，交给 createSession 报错。
-   */
+  /** Expand ids from the URL through data/id-aliases.json ({old: {targets: [...]}} or {old: [...]}). Unknown ids pass through. */
   function resolveTargets(rawIds, aliases) {
     const map = aliases || {};
     const out = [];
@@ -632,27 +566,27 @@
     return out;
   }
 
-  /* ------------------------------------------------------------------ 判题 */
+  /* ------------------------------------------------------------------ answer judging */
+  // Gives 'correct' / 'wrong' only when sure; otherwise 'manual' (the student compares with the worked answer).
 
   function normalizeText(input) {
     let s = String(input == null ? '' : input);
-    s = s.replace(/²/g, '^2').replace(/³/g, '^3').replace(/[º˚∘゜]/g, '°');
-    s = s.normalize('NFKC'); // 全角 -> 半角（数字、字母、，；：（）＝－ 等）
+    s = s.replace(/²/g, '^2').replace(/³/g, '^3').replace(/[º˚∘]/g, '°');
+    s = s.normalize('NFKC');
     s = s.replace(/[−‐-―﹣]/g, '-')
-      .replace(/[、]/g, ',')
-      .replace(/[。]/g, '.')
       .replace(/[“”‘’]/g, '"')
       .replace(/[×·⋅∙]/g, '*')
       .replace(/÷/g, '/')
-      .replace(/[≦⩽]/g, '≤').replace(/[≧⩾]/g, '≥')
       .replace(/<=/g, '≤').replace(/>=/g, '≥')
       .replace(/[\[\]{}]/g, function (c) { return c === '[' || c === '{' ? '(' : ')'; });
-    s = s.replace(/(\d)\s*度/g, '$1°');
-    s = s.replace(/(\d)\s+(\d+\s*\/\s*\d+)/g, '$1又$2'); // 带分数 "1 1/2"
+    s = s.replace(/\s+(and|or)\s+/gi, ',');                       // "2 and -3" -> "2,-3"
+    s = s.replace(/(\d)\s*(degrees?|deg)\b/gi, '$1°');
+    s = s.replace(/(\d)\s+(\d+\s*\/\s*\d+)/g, '$1&$2');  // mixed number "1 1/2" -> "1&1/2"
     s = s.replace(/\s+/g, '').toLowerCase();
-    s = s.replace(/^(答案|答)[:=]/, '').replace(/或者/g, '或');
+    s = s.replace(/^(answer|ans)[:=]/, '');
+    s = s.replace(/^\$(?=[\d.])/, '').replace(/^-\$(?=[\d.])/, '-');  // $200 -> 200
     s = s.replace(/[.!]+$/, '');
-    if (/^[+-]?\d{1,3}(,\d{3})+(\.\d+)?$/.test(s)) s = s.replace(/,/g, ''); // 千分位
+    if (/^[+-]?\d{1,3}(,\d{3})+(\.\d+)?$/.test(s)) s = s.replace(/,/g, ''); // thousands separators
     return s;
   }
 
@@ -698,24 +632,21 @@
   }
 
   const UNIT_ALIASES = {
-    '米': 'm', 'm': 'm', '厘米': 'cm', 'cm': 'cm', '毫米': 'mm', 'mm': 'mm', '千米': 'km', '公里': 'km', 'km': 'km',
-    '千克': 'kg', '公斤': 'kg', 'kg': 'kg', '克': 'g', 'g': 'g', '秒': 's', 's': 's', '分钟': 'min', 'min': 'min',
-    '小时': 'h', 'h': 'h', '平方米': 'm^2', 'm^2': 'm^2', '平方厘米': 'cm^2', 'cm^2': 'cm^2',
-    '立方米': 'm^3', 'm^3': 'm^3', '立方厘米': 'cm^3', 'cm^3': 'cm^3', '元': '元', '度': '°', '°': '°',
-    // 物理：只收多字母单位，单字母（a、v、w、n、j）会和数学里的字母答案混淆，不收
-    'm/s': 'm/s', '米/秒': 'm/s', 'km/h': 'km/h', '千米/时': 'km/h', 'kg/m^3': 'kg/m^3', 'g/cm^3': 'g/cm^3',
-    'pa': 'Pa', '帕': 'Pa', '帕斯卡': 'Pa', 'kpa': 'kPa', 'hz': 'Hz', '赫兹': 'Hz', 'db': 'dB', '分贝': 'dB',
-    'kw*h': 'kW·h', '千瓦时': 'kW·h', 'ml': 'mL', '毫升': 'mL', 'n/kg': 'N/kg', 'j/kg': 'J/kg'
+    'm': 'm', 'metre': 'm', 'metres': 'm', 'cm': 'cm', 'mm': 'mm', 'km': 'km',
+    'kg': 'kg', 'g': 'g', 's': 's', 'sec': 's', 'seconds': 's', 'min': 'min', 'h': 'h', 'hr': 'h', 'hours': 'h',
+    'm^2': 'm^2', 'm2': 'm^2', 'sqm': 'm^2', 'cm^2': 'cm^2', 'cm2': 'cm^2', 'km^2': 'km^2', 'ha': 'ha',
+    'm^3': 'm^3', 'm3': 'm^3', 'cm^3': 'cm^3', 'cm3': 'cm^3', 'l': 'L', 'ml': 'mL',
+    'm/s': 'm/s', 'km/h': 'km/h', '°': '°', 'units': '', 'unit': ''
   };
 
   function canonUnit(u) {
     if (!u) return { name: '', known: true };
-    if (UNIT_ALIASES[u]) return { name: UNIT_ALIASES[u], known: true };
-    if (/^[一-龥]{1,4}$/.test(u)) return { name: u, known: false };
-    return null; // 不像单位，说明这不是“数+单位”
+    if (UNIT_ALIASES[u] != null) return { name: UNIT_ALIASES[u], known: true };
+    if (/^[a-z]{3,12}$/.test(u)) return { name: u, known: false }; // a word we don't know: let the student self-check
+    return null; // not a unit, so this is not "number + unit"
   }
 
-  /** 解析数值：整数、小数、分数 a/b、带分数、百分数、带符号/括号；末尾可带单位。失败返回 null。 */
+  /** Integer, decimal, fraction a/b, mixed number, percentage, signs and brackets; optional trailing unit. */
   function parseNumeric(str) {
     let t = str;
     let neg = false;
@@ -724,10 +655,10 @@
       if ((t[0] === '-' || t[0] === '+') && isWrapped(t.slice(1))) { if (t[0] === '-') neg = !neg; t = t.slice(2, -1); continue; }
       break;
     }
-    const m = /^([+-]?)(?:(\d+)又)?(\d+(?:\.\d+)?|\.\d+)(?:\/(\d+(?:\.\d+)?|\.\d+))?(%|°)?(.*)$/.exec(t);
+    const m = /^([+-]?)(?:(\d+)&)?(\d+(?:\.\d+)?|\.\d+)(?:\/(\d+(?:\.\d+)?|\.\d+))?(%|°)?(.*)$/.exec(t);
     if (!m) return null;
     const whole = m[2], numS = m[3], denS = m[4], mark = m[5];
-    let rest = m[6];
+    const rest = m[6];
     if (whole && !denS) return null;
     let val;
     if (whole) {
@@ -754,7 +685,7 @@
       if (rest) return null;
     } else if (mark === '°') {
       unit = { name: '°', known: true };
-      if (!/^[一-龥]{0,2}$/.test(rest)) return null;
+      if (rest) return null;
     } else if (rest) {
       unit = canonUnit(rest);
       if (!unit) return null;
@@ -782,7 +713,7 @@
 
   function parseAnswer(input) {
     const norm = normalizeText(input);
-    const parts = splitTop(norm.replace(/[和或与及]/g, ','), ',;').map(analyzePart);
+    const parts = splitTop(norm, ',;').map(analyzePart);
     return { norm: norm, parts: parts };
   }
 
@@ -824,7 +755,7 @@
       if (refVarsDistinct) {
         if (u.parts.every(function (p) { return p.variable; })) res = sameMultiset(u.parts, r.parts, false);
         else if (u.parts.every(function (p) { return !p.variable; })) {
-          // 未写变量名时按参考答案的出现顺序对应（x 在前 y 在后）
+          // no variable names written: match in the reference's order (b then c)
           res = 'eq';
           for (let i = 0; i < u.parts.length; i++) {
             const c = partCompare(u.parts[i], r.parts[i]);
@@ -841,12 +772,7 @@
     return { relation: allNumeric(u.parts) && allNumeric(r.parts) ? 'different' : 'unsure' };
   }
 
-  /**
-   * 判题：只在“可靠”时给 correct/wrong，其余返回 manual（让用户对照参考答案自评）。
-   *  - 规范化后完全相同、或数值/多答案集合等价 -> correct
-   *  - 双方都能解析为数值（含坐标）但不等价 -> wrong
-   *  - 其余（代数式、文字、多种写法）-> manual
-   */
+  /** Identical or numerically equivalent -> correct; both numeric but different -> wrong; anything else -> manual. */
   function judgeAnswer(user, reference) {
     const u = parseAnswer(user);
     const r = parseAnswer(reference);
@@ -859,8 +785,6 @@
     return { verdict: 'manual', reason: 'unsure' };
   }
 
-  /* ------------------------------------------------------------------ 按题型判题 */
-
   const MANUAL_EMPTY = { verdict: 'manual', reason: 'empty' };
 
   function judgeChoice(user, q) {
@@ -869,7 +793,7 @@
     const choices = q.choices || [];
     const keys = choices.map(function (c) { return c.key; });
     let letter = null;
-    const m = /^[(（]?([A-Za-z])[)）.．、:：]?$/.exec(raw);
+    const m = /^\(?([A-Za-z])[).:]?$/.exec(raw);
     if (m) letter = m[1].toUpperCase();
     else {
       const n = normalizeText(raw);
@@ -888,8 +812,16 @@
       if (parseAnswer(refs[i]).norm === u.norm) return { verdict: 'correct', reason: 'identical' };
     }
     const main = parseAnswer(q.answer);
+    const named = function (ps) { return ps.every(function (p) { return p.variable; }); };
+    if (!q.unordered && main.parts.length > 1 && named(main.parts) && named(u.parts)) {
+      // both sides name their variables (b = -2, c = 1): match by name, in any order
+      const byName = sameMultiset(u.parts, main.parts, false);
+      if (byName === 'eq') return { verdict: 'correct', reason: 'equivalent' };
+      if (byName === 'unsure') return { verdict: 'manual', reason: 'unsure' };
+      return allNumeric(u.parts) ? { verdict: 'wrong', reason: 'numeric-mismatch' } : { verdict: 'manual', reason: 'unsure' };
+    }
     if (!q.unordered && main.parts.length > 1) {
-      // 多个答案且顺序有关：逐项按顺序比较（变量名忽略）
+      // several answers in a fixed order: compare position by position (variable names ignored)
       if (u.parts.length !== main.parts.length) {
         return allNumeric(u.parts) ? { verdict: 'wrong', reason: 'count-mismatch' } : { verdict: 'manual', reason: 'unsure' };
       }
@@ -921,27 +853,17 @@
     for (let i = 0; i < refs.length; i++) {
       if (judgeAnswer(user, refs[i]).verdict === 'correct') return { verdict: 'correct', reason: 'equivalent' };
     }
-    return { verdict: 'manual', reason: 'unsure' }; // 文字 / 代数式写法太多，不可靠时让用户对照参考答案自评
+    return { verdict: 'manual', reason: 'unsure' };
   }
 
-  /** 按题型判题：choice 比字母（或选项文字）；numeric 数值等价；short 规范化精确匹配 + accept；self 永远自评。 */
-  /**
-   * 带 percent: true 的题（目前只有物理的效率题），answer 是百分数的数值部分，如 50 表示 50%。
-   * 学生写 50 或 50%（全角 ％ 也算）都判对；0.5 不算，题干问的是「百分之多少」，0.5 也可能是把 0.5% 写错。
-   * 没有 percent 的题（全部数学题）不经过这里，50% 仍按 0.5 判。
-   */
-  function stripPercent(user) {
-    const s = String(user == null ? '' : user).trim();
-    return s.replace(/\s*[%％]$/, '');
-  }
-
+  /** choice: letter or choice text; numeric: exact rational equivalence; short: normalised match; self: always manual. */
   function judgeQuestion(q, user) {
     switch (q.type) {
       case 'choice': return judgeChoice(user, q);
-      case 'numeric': return judgeNumeric(q.percent === true ? stripPercent(user) : user, q);
+      case 'numeric': return judgeNumeric(user, q);
       case 'short': return judgeShort(user, q);
       case 'self': return { verdict: 'manual', reason: 'self' };
-      default: return judgeAnswer(user, q.answer); // legacy：来自 diagnostic_question
+      default: return judgeAnswer(user, q.answer);
     }
   }
 
