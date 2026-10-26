@@ -33,7 +33,7 @@ python3 -m http.server 8000      # from the repo root
 # open http://localhost:8000/
 ```
 
-Useful links: `diagnose/?target=qm_m4_018&demo=1` (Year 12 demo with a simulated student), `diagnose/?scope=Methods%20U3` (screen a whole unit), `diagnose/?scope=Methods` (all four units), `explore/?band=methods#qm_m3_011`.
+Useful links: `diagnose/?target=qm_m4_018&demo=1` (Year 12 demo with a simulated student), `diagnose/?scope=Methods%20U3` (screen a whole unit), `diagnose/?scope=Methods` (all four units), `explore/?band=methods#qm_m3_011`, `map/` (the whole graph; filter by level, click a topic to highlight its prerequisites and dependents).
 
 ## Build and check
 
@@ -60,6 +60,7 @@ scripts/build.py           builds data/ from content, with transitive reduction
 scripts/validate.py        all structural rules         scripts/verify_questions.py  SymPy answer check
 scripts/blind_pass.py      independent re-solve workflow   scripts/ingest_mrac.py   official AC wording
 diagnose/                  engine.js (algorithm) + app.js (UI)    explore/   topic browser and graph
+map/                       the full graph, filterable by level
 docs/                      sources, modelling guide, question format, roadmap
 ```
 

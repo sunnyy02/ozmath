@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-26: full map page
+
+- New `map/` page draws the whole prerequisite graph (all topics and links), with level filters, a soft-link toggle, search, and click-to-highlight of everything a topic depends on and everything that builds on it. Linked from the navigation and from each topic in Explore ("Show on full map").
+
 ## 2026-10-26: Mathematical Methods Units 1–4
 
 - Methods is complete: 93 topics across all 20 syllabus topics (Units 1–2 = Year 11, Units 3–4 = Year 12), 373 questions.

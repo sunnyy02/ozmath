@@ -104,7 +104,8 @@
       t.root_reason ? h('p', { class: 'small muted', text: 'Starting point: ' + t.root_reason }) : null,
       h('div', { class: 'row' },
         h('a', { class: 'btn primary', href: '../diagnose/?target=' + id, text: 'Diagnose this topic' }),
-        h('a', { class: 'btn', href: '../diagnose/?target=' + id + '&demo=1', text: 'Demo' })));
+        h('a', { class: 'btn', href: '../diagnose/?target=' + id + '&demo=1', text: 'Demo' }),
+        h('a', { class: 'btn', href: '../map/?focus=' + id, text: 'Show on full map' })));
     box.append(head);
 
     // graph

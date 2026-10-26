@@ -86,6 +86,18 @@ const fs = require('fs');
   await p.waitForTimeout(400);
   await p.screenshot({ path: OUT + '/09-explore-methods-u4.png', fullPage: true });
 
+  // full map
+  await p.goto(BASE + '/map/?levels=Methods%20U1,Methods%20U2,Methods%20U3,Methods%20U4,Year%209,Year%2010,Year%2010%20Optional');
+  await p.waitForSelector('#cy canvas');
+  check(/133 of 133 topics/.test(await p.locator('#summary').textContent()), 'full map shows all 133 topics');
+  await p.goto(BASE + '/map/?focus=qm_m2_014');
+  await p.waitForSelector('text=Builds towards');
+  check(/topics before it/.test(await p.locator('#sel').textContent()), 'full map focuses a topic and lists its prerequisites');
+  await p.waitForTimeout(600);
+  await p.screenshot({ path: OUT + '/10-full-map-focus.png' });
+  await p.uncheck('#soft');
+  check(/\(\d+ hard, 0 soft\)/.test(await p.locator('#summary').textContent()), 'soft links can be hidden');
+
   // start page, phone width, dark theme
   const m = await page(390, 'dark');
   await m.goto(BASE + '/diagnose/');
